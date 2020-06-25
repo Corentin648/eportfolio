@@ -20,7 +20,6 @@ class Home extends Component{
                                 <h3>Work Experience</h3>
                             </Card.Header>
                                 <Card.Text>
-
                                     <h5 className={"mt-5"} align={"justify"}>Projet Declick 4'Teens</h5>
                                     <h6 className={"font-italic py-2"} align={"justify"}>Collège Lautrec, Toulouse</h6>
                                     <div align={"justify"}>

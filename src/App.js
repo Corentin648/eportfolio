@@ -6,6 +6,7 @@ import Home from './composants/Home';
 import Spanish from "./composants/Spanish";
 
 import Menu from './composants/Menu';
+import {Image} from "react-bootstrap";
 
 function App() {
   return (
