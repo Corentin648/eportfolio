@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {Card, CardDeck} from "react-bootstrap";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Container from "react-bootstrap/Container";
 
 
 class Home extends Component{
@@ -75,6 +77,18 @@ class Home extends Component{
                     </Card>
 
                 </CardDeck>
+
+                <Jumbotron className={"mt-5"} fluid>
+                    <Container >
+                        <h1>Education</h1>
+
+                        <h5 className={"d-flex justify-content-left"} style={{marginLeft:'20rem'}}><u>ENSEEIHT, Toulouse (France)</u> -- <i>Digital sciences</i></h5>
+                        <p>
+                            Engineering school specialised in computer science and telecommunications
+                        </p>
+                    </Container>
+                </Jumbotron>
+
             </div>
 
         )

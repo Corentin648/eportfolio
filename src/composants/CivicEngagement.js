@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactPlayer from "react-player";
+import {Image} from "react-bootstrap";
 
 
 class CivicEngagement extends Component{
@@ -11,14 +12,11 @@ class CivicEngagement extends Component{
                 <h3
                     className={"mt-5 d-flex justify-content-left"}
                     style={{marginLeft:'20rem'}}
-                > Project 1 -- Video presenting my choice for my second year field at ENSEEIHT</h3>
+                > Project 1 -- Spreading Sciences</h3>
 
-                <ReactPlayer
-                    className={"mt-5"}
-                    style={{marginLeft:'20rem'}}
-                    url={" https://youtu.be/K_phshsuixc"}>
-                </ReactPlayer>
-            </div>
+                <div className={"mt-4"}></div>
+                    <Image src={require("../poster_shs.png")} width={"743rem"} height={"529rem"}/>
+                </div>
         )
     }
 
