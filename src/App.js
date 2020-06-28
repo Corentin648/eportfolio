@@ -4,9 +4,8 @@ import './App.css';
 
 import Home from './composants/Home';
 import Spanish from "./composants/Spanish";
-
 import Menu from './composants/Menu';
-import {Image} from "react-bootstrap";
+import LeadershipManagement from "./composants/LeadershipManagement";
 
 function App() {
   return (
@@ -22,6 +21,7 @@ function App() {
             <Switch>
                 <Route path={"/"} component={Home} exact />
                 <Route path={"/spanish"} component={Spanish} />
+                <Route path={"/leadership"} component={LeadershipManagement} />
             </Switch>
         </div>
       </BrowserRouter>

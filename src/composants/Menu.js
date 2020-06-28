@@ -24,6 +24,7 @@ class Menu extends Component {
                     <Nav className="justify-content-center">
                         <NavLink className={"d-inline p-4 bg-dark text-white"} to={"/"}><h3>Home</h3></NavLink>
                         <NavLink className={"d-inline p-4 bg-dark text-white"} to={"/spanish"}><h3>Spanish</h3></NavLink>
+                        <NavLink className={"d-inline p-4 bg-dark text-white"} to={"/leadership"}><h3>Leadership & Management</h3></NavLink>
                     </Nav>
                 </Navbar.Collapse>
                 <Navbar.Collapse className="justify-content-end">
