@@ -6,6 +6,7 @@ import Home from './composants/Home';
 import Spanish from "./composants/Spanish";
 import Menu from './composants/Menu';
 import LeadershipManagement from "./composants/LeadershipManagement";
+import CivicEngagement from "./composants/CivicEngagement";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                 <Route path={"/"} component={Home} exact />
                 <Route path={"/spanish"} component={Spanish} />
                 <Route path={"/leadership"} component={LeadershipManagement} />
+                <Route path={"/civicengagement"} component={CivicEngagement} />
             </Switch>
         </div>
       </BrowserRouter>
