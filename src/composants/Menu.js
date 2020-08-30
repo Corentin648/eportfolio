@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import {Navbar, Nav, Image, NavDropdown} from "react-bootstrap";
+import {Link} from "react-router-dom";
 //import './Menu.css';
 
 class Menu extends Component {
 
     /* <NavLink className={"d-inline p-4 bg-dark text-white"} to={"/leadership"}><LMdropdown/></NavLink>
+
+       <NavDropdown.Item href="/leadership">Leadership & Management</NavDropdown.Item>
     */
 
     render() {
@@ -22,10 +25,10 @@ class Menu extends Component {
                         <NavLink className={"d-inline p-4 bg-dark text-white"} to={"/"}><h3>Home</h3></NavLink>
                         <NavLink className={"d-inline p-4 bg-dark text-white"} to={"/spanish"}><h3>Spanish</h3></NavLink>
                         <NavDropdown className={"d-inline p-3 bg-dark text-white"} title={<h3 className={"text-white"}>Leadership & Management</h3>} id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/leadership">Leadership & Management</NavDropdown.Item>
+                            <NavDropdown.Item><Link to={"/leadership"}>Leadership & Management</Link></NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="/civicengagement">Civic Engagement</NavDropdown.Item>
-                            <NavDropdown.Item href="/swot">SWOT</NavDropdown.Item>
+                            <NavDropdown.Item><Link to={"/civicengagement"}>Civic Engagement</Link></NavDropdown.Item>
+                            <NavDropdown.Item>SWOT</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

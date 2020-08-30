@@ -21,8 +21,8 @@ function App() {
 
             <Switch>
                 <Route path={"/"} component={Home} exact />
-                <Route path={"/spanish"} component={Spanish} />
                 <Route path={"/leadership"} component={LeadershipManagement} />
+                <Route path={"/spanish"} component={Spanish} />
                 <Route path={"/civicengagement"} component={CivicEngagement} />
             </Switch>
         </div>
