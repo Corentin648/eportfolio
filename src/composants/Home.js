@@ -8,7 +8,7 @@ class Home extends Component{
 
     render() {
         return(
-            <div className={"d-block"}>
+            <div className={""}>
 
                 <h3>Welcome to my E-portfolio website !</h3>
 
@@ -16,7 +16,8 @@ class Home extends Component{
 
                 <CardDeck style={{marginTop: '15rem'}}>
 
-                    <Card className={"bg-dark text-white"} style={{ width: '18rem' , marginLeft: '10rem', marginRight:'7rem'}}>
+                    <div style={{width: '50rem'}}>
+                    <Card className={"bg-dark text-white"} style={{ width: '30rem' , marginLeft: '10rem', marginRight:'7rem'}}>
                         <Card.Body>
                             <Card.Header>
                                 <h3>Work Experience</h3>
@@ -42,10 +43,14 @@ class Home extends Component{
                                 </Card.Text>
                         </Card.Body>
                     </Card>
+                    </div>
+
 
                     <div className={"ml-5"}></div>
 
-                    <Card className={"bg-dark text-white"} style={{ width: '18rem' , marginLeft: '7rem', marginRight: '10rem'}}>
+                    <div style={{width: "50rem"}}>
+
+                    <Card className={"bg-dark text-white"} style={{marginLeft: '7rem', marginRight: '10rem'}}>
                         <Card.Body>
                             <Card.Header>
                                 <h3>Computer Skills</h3>
@@ -75,6 +80,7 @@ class Home extends Component{
                             </Card.Text>
                         </Card.Body>
                     </Card>
+                    </div>
 
                 </CardDeck>
 

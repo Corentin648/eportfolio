@@ -10,6 +10,7 @@ import CivicEngagement from "./composants/CivicEngagement";
 
 function App() {
   return (
+      <body>
       <BrowserRouter>
         <div className="App">
 
@@ -27,6 +28,7 @@ function App() {
             </Switch>
         </div>
       </BrowserRouter>
+      </body>
   );
 }
 
