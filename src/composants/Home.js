@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Card, CardDeck} from "react-bootstrap";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import Container from "react-bootstrap/Container";
+import './Home.css';
 
 
 class Home extends Component{
@@ -91,10 +91,10 @@ class Home extends Component{
 
                 <div className={"mt-5"}></div>
 
-                <CardDeck style={{display: "flex", marginTop: '15rem', flexDirection: "row", justifyContent: "space-around"}}>
+                <CardDeck className={"cardDeck"}>
 
                     <div>
-                    <Card className={"bg-dark text-white"} style={{width: "500px", height: "600px"}}>
+                    <Card id = {"card1"} className={"bg-dark text-white"} style={{width: "500px", height: "600px"}}>
                         <Card.Body>
                             <Card.Header>
                                 <h3>Work Experience</h3>
@@ -157,15 +157,10 @@ class Home extends Component{
 
                 </CardDeck>
 
-                <Jumbotron className={"mt-5"} style={{display: "flex", justifyContent: "center"}}>
-                    <Container >
-                        <h1>Education</h1>
-
+                <Jumbotron className={"mt-5"} style={{display: "flex", justifyContent: "center", flexDirection: "column", paddingTop: "5px"}}>
+                        <h1 style={{marginBottom: "30px"}}>Education</h1>
                         <h5><u>ENSEEIHT, Toulouse (France)</u> -- <i>Digital sciences</i></h5>
-                        <p>
-                            Engineering school specialised in computer science and telecommunications
-                        </p>
-                    </Container>
+                        <p>Engineering school specialised in computer science and telecommunications</p>
                 </Jumbotron>
 
             </div>
