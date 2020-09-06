@@ -2,7 +2,6 @@
     .cardDeck {
         display: flex;
         margin-top: 100px;
-        flex-direction: row;
         justify-content: space-around;
     }
 }
