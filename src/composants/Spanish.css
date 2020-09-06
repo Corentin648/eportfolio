@@ -1,0 +1,29 @@
+@media screen and (max-width: 1200px) {
+    .player-wrapper {
+        position: relative;
+        /*padding-top: 56.25%;*/
+        width: 370px;
+        height: 208px;
+    }
+
+    .player {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .player-wrapper {
+        position: relative;
+        /*padding-top: 56.25%;*/
+        width: 640px;
+        height: 360px;
+    }
+
+    .player {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
