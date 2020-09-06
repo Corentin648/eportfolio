@@ -62,6 +62,7 @@ class Menu extends Component {
                 <Navbar.Brand className={"d-inline p-2 text-white"}>
                     E-portfolio <br/>
                     Corentin Dominguez <br/>
+                    Engineering Student <br/>
                 </Navbar.Brand>
                 </div>
                 <Navbar.Toggle aria-controls={"justify-content-left"}/>

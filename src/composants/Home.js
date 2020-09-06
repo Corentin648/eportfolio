@@ -10,9 +10,7 @@ class Home extends Component{
         return(
             <div className={""}>
 
-                <h3>Welcome to my E-portfolio website !</h3>
-
-                <div className={"mt-5"}></div>
+                <h1 style={{marginTop: "70px"}}>Presentation of my experience and my skills</h1>
 
                 <CardDeck className={"cardDeck"}>
 
