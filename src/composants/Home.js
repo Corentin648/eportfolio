@@ -52,10 +52,11 @@ class Home extends Component{
                             <Card.Text>
                                 <div align={"justify"}>
                                     <ul>
-                                        <li className={"my-4"}>Java +++</li>
-                                        <li className={"my-4"}>C +++</li>
-                                        <li className={"my-4"}>Ada ++</li>
+                                        <li className={"my-4"}>Web Front-End : Javascript (React.js), HTML, CSS</li>
+                                        <li className={"my-4"}>Game development : Godot Engine (GDScript & C#)</li>
                                         <li className={"my-4"}>Python ++</li>
+                                        <li className={"my-4"}>Java Android ++</li>
+                                        <li className={"my-4"}>Ada ++</li>
                                     </ul>
                                 </div>
                             </Card.Text>
