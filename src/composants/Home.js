@@ -14,8 +14,8 @@ class Home extends Component{
 
                 <CardDeck className={"cardDeck"}>
 
-                    <div>
-                    <Card id={"card1"} className={"bg-dark text-white"} style={{width: "500px", height: "600px"}}>
+                    <div id = {"card1"}>
+                    <Card className={"bg-dark text-white"}>
                         <Card.Body>
                             <Card.Header>
                                 <h3>Work Experience</h3>
@@ -43,8 +43,8 @@ class Home extends Component{
                     </Card>
                     </div>
 
-                    <div>
-                    <Card className={"bg-dark text-white"} style={{width: "500px", height: "600px"}}>
+                    <div id={"card2"}>
+                    <Card className={"bg-dark text-white"}>
                         <Card.Body>
                             <Card.Header>
                                 <h3>Computer Skills</h3>
