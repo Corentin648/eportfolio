@@ -10,7 +10,7 @@ class Home extends Component{
         return(
             <div className={""}>
 
-                <h1 style={{marginTop: "70px"}}>Presentation of my experience and my skills</h1>
+                <h1 style={{marginTop: "70px"}}>Presentation of my computing experience and my skills</h1>
 
                 <CardDeck className={"cardDeck"}>
 
@@ -18,19 +18,18 @@ class Home extends Component{
                     <Card className={"bg-dark text-white"}>
                         <Card.Body>
                             <Card.Header>
-                                <h3>Work Experience</h3>
+                                <h3>Personal projects (github.com/Corentin648)</h3>
                             </Card.Header>
                                 <Card.Text>
-                                    <h5 className={"mt-5"} align={"justify"}>Projet Declick 4'Teens</h5>
-                                    <h6 className={"font-italic py-2"} align={"justify"}>Collège Lautrec, Toulouse</h6>
+                                    <h5 className={"mt-5"} align={"justify"}>Game of life Web</h5>
+                                    <h6 className={"font-italic py-2"} align={"justify"}>September 2020</h6>
                                     <div align={"justify"}>
-                                        Creation of a video game with middle school pupils on a platform created for it.
-                                        We are three students for fifteen pupils.
-                                        I learn, weeks after weeks, to lead a team of young people and among others to fix some conflicts.
+                                        Creation of a web site with Reat.js. It aims to parameter a game of life. We can choose size of the grid,
+                                        size of the cases but also rules of life and death that are applied in game.
+                                        We can also act on the grid like add a pattern, play and pause the game and make it progress step by step or step back.
                                     </div>
-
                                     <h5 className={"pt-5"} align={"justify"}>Develop a Python Game</h5>
-                                    <h6 className={"font-italic py-2"} align={"justify"}>Personal project</h6>
+                                    <h6 className={"font-italic py-2"} align={"justify"}>March - May 2018</h6>
                                     <div align={"justify"}>
                                         Creation of a platform game with two players in Python language.
                                         It allowed me to know how the “ object technology” works in Python.
@@ -53,10 +52,9 @@ class Home extends Component{
                                 <div align={"justify"}>
                                     <ul>
                                         <li className={"my-4"}>Web Front-End : Javascript (React.js), HTML, CSS</li>
-                                        <li className={"my-4"}>Game development : Godot Engine (GDScript & C#)</li>
-                                        <li className={"my-4"}>Python ++</li>
-                                        <li className={"my-4"}>Java Android ++</li>
-                                        <li className={"my-4"}>Ada ++</li>
+                                        <li className={"my-4"}>Game development : Godot Engine (GDScript & C#), LibGDX (Java)</li>
+                                        <li className={"my-4"}>Android applications : Java/XML, Firebase (Data Base)</li>
+                                        <li className={"my-4"}>Programming in general : Java, C, Python, Ada</li>
                                     </ul>
                                 </div>
                             </Card.Text>
