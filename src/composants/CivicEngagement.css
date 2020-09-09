@@ -1,0 +1,13 @@
+@media screen and (min-width: 1200px) {
+    .imgPoster {
+        width: 50%;
+        height: 35.6%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .imgPoster {
+        width: 80%;
+        height: 57.0%;
+    }
+}

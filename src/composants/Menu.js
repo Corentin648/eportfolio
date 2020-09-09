@@ -86,10 +86,10 @@ class Menu extends Component {
                         +33 6 77 65 24 94 <br/>
                         corentin.dmz@live.fr <br/>
                         <div className={"mt-2"}></div>
-                        <a href="https://www.facebook.com/corentin.dmz.9" target={"_blank"}>
+                        <a href="https://www.facebook.com/corentin.dmz.9" target={"_blank"} rel={"noopener noreferrer"}>
                             <Image src={require("../icone_fb32.png")} width={"32px"} height={"32px"}/>
                         </a>
-                        <a className={"pl-2"} href="https://github.com/Corentin648" target={"_blank"}>
+                        <a className={"pl-2"} href="https://github.com/Corentin648" target={"_blank"} rel={"noopener noreferrer"}>
                             <Image src={require("../logo_github.png")} width={"32px"} height={"32px"}/>
                         </a>
                     </div>
