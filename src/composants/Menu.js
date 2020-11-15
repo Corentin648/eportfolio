@@ -1,108 +1,128 @@
 import React, {Component} from 'react';
-import {NavLink} from 'react-router-dom';
-import {Navbar, Nav, Image, NavDropdown} from "react-bootstrap";
-import {Link} from "react-router-dom";
 import './Menu.css';
+import Image from "react-bootstrap/cjs/Image";
+import {Link, Router} from "react-router-dom";
 
 class Menu extends Component {
 
-    /* <NavLink className={"d-inline p-4 bg-dark text-white"} to={"/leadership"}><LMdropdown/></NavLink>
+    componentDidMount() {
+        window.onscroll = function () {
+            onScrollDown()
+        };
 
-       <NavDropdown.Item href="/leadership">Leadership & Management</NavDropdown.Item>
-    */
+        let header = document.getElementById("myTopnav");
+        let sticky = header.offsetTop;
 
-    /*
-            const appNavbar = (
-            <Navbar bg={"dark"} expand={"lg"}>
-                <Navbar.Brand className={"d-inline p-2 text-white"}>
-                    E-portfolio <br/>
-                    Corentin Dominguez <br/>
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls={"justify-content-center"}/>
-                <Navbar.Collapse className={"justify-content-center"}>
-                    <Nav className="justify-content-center">
-                        <NavLink className={"d-inline p-4 bg-dark text-white"} to={"/"}><h3>Home</h3></NavLink>
-                        <NavLink className={"d-inline p-4 bg-dark text-white"} to={"/spanish"}><h3>Spanish</h3></NavLink>
-                        <NavDropdown className={"d-inline p-3 bg-dark text-white"} title={<h3 className={"text-white"}>Leadership & Management</h3>} id="basic-nav-dropdown">
-                            <NavDropdown.Item><Link to={"/leadership"}>Leadership & Management</Link></NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item><Link to={"/civicengagement"}>Civic Engagement</Link></NavDropdown.Item>
-                            <NavDropdown.Item>SWOT</NavDropdown.Item>
-                        </NavDropdown>
-                    </Nav>
-                </Navbar.Collapse>
-                <Navbar.Collapse className="justify-content-end">
-                    <Navbar.Text className={"d-inline p-2 bg-dark text-white"}>
-                        <h3 align={"justify"}>Contact :</h3>
-                        <div align={"justify"}>
-                            8 Place du Pont Neuf <br/>
-                            31000 Toulouse (France) <br/>
-                            +33 6 77 65 24 94 <br/>
-                            corentin.dmz@live.fr <br/>
-                            <div className={"mt-2"}></div>
-                            <a href="https://www.facebook.com/corentin.dmz.9" target={"_blank"}>
-                                <Image src={require("../icone_fb32.png")} width={"32px"} height={"32px"}/>
-                            </a>
-                            <a className={"pl-2"} href="https://github.com/Corentin648" target={"_blank"}>
-                                <Image src={require("../logo_github.png")} width={"32px"} height={"32px"}/>
-                            </a>
-                        </div>
-                    </Navbar.Text>
-                </Navbar.Collapse>
-            </Navbar>
-        );
-     */
+        /* Permet de laisser la TopNav toujours visible en haut */
+        function onScrollDown() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    }
 
 
     render() {
 
+
         const appNavbar = (
-            <Navbar bg={"dark"} expand={"lg"}>
-                <div id={"brandNav"}>
-                <Navbar.Brand className={"d-inline p-2 text-white"}>
-                    E-portfolio <br/>
-                    Corentin Dominguez <br/>
-                    Engineering Student <br/>
-                </Navbar.Brand>
-                </div>
-                <Navbar.Toggle aria-controls={"justify-content-left"}/>
-                <Navbar.Collapse>
-                    <Nav style={{ width: "85%", display: "flex", justifyContent: "space-around", alignItems: "center"}}>
-                        <NavLink className={"bg-dark text-white"} to={"/"}><h3>Home</h3></NavLink>
-                        <NavLink className={"bg-dark text-white"} to={"/spanish"}><h3>Spanish</h3></NavLink>
-                        <NavDropdown className={"pt-4 bg-dark text-white"} title={<h3 className={"text-white"}>Leadership & Management</h3>} id="basic-nav-dropdown">
-                            <NavDropdown.Item><Link to={"/leadership"}>Leadership & Management</Link></NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item><Link to={"/civicengagement"}>Civic Engagement</Link></NavDropdown.Item>
-                            <NavDropdown.Item>SWOT</NavDropdown.Item>
-                        </NavDropdown>
-                    </Nav>
-                </Navbar.Collapse>
-                <Navbar.Text className={"d-inline p-2 bg-dark text-white"}>
-                    <h3 align={"justify"}>Contact :</h3>
-                    <div align={"justify"}>
-                        8 Place du Pont Neuf <br/>
+
+            <div>
+                <div style={{
+                    color: "#333",
+                    background: "darkcyan",
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-around",
+                    alignItems: "center",
+                    height: "150px"
+                }}>
+
+                    <Image id={"brand-n7"} style={{marginLeft: "150px"}} src={require("../logo_n7.jpg")} width={"128px"} height={"128px"}/>
+
+                    <h1 style={{width: "100%", textAlign: "center"}}>Eportfolio Corentin Dominguez</h1>
+                    {/*
+                    <div style={{marginTop: "30px", marginBottom: "30px"}} align={"justify"}>
+                        Address : 33 Rue du Rempart Matabiau<br/>
                         31000 Toulouse (France) <br/>
-                        +33 6 77 65 24 94 <br/>
-                        corentin.dmz@live.fr <br/>
-                        <div className={"mt-2"}></div>
-                        <a href="https://www.facebook.com/corentin.dmz.9" target={"_blank"} rel={"noopener noreferrer"}>
-                            <Image src={require("../icone_fb32.png")} width={"32px"} height={"32px"}/>
-                        </a>
-                        <a className={"pl-2"} href="https://github.com/Corentin648" target={"_blank"} rel={"noopener noreferrer"}>
-                            <Image src={require("../logo_github.png")} width={"32px"} height={"32px"}/>
-                        </a>
+                        Phone : +33 6 77 65 24 94 <br/>
+                        Mail : corentin.dmz@live.fr <br/>
+
+                        <div className={"mt-2"}> Networks :
+                            <a href="https://www.facebook.com/corentin.dmz.9" target={"_blank"}
+                               rel={"noopener noreferrer"}>
+                                <Image src={require("../icone_fb32.png")} width={"32px"} height={"32px"}/>
+                            </a>
+                            <a className={"pl-2"} href="https://github.com/Corentin648" target={"_blank"}
+                               rel={"noopener noreferrer"}>
+                                <Image src={require("../logo_github.png")} width={"32px"} height={"32px"}/>
+                            </a>
+                        </div>
+                    */}
+                    <div className="contactBar">
+                        <li><i style={{paddingRight: "15px"}} className="fa fa-home"/>33 Rue Rempart Matabiau</li>
+                        <li style={{paddingLeft: "40px", paddingBottom: "10px"}}>Toulouse (31000)</li>
+                        <li><i style={{paddingRight: "15px"}} className="fa fa-phone"/>06 77 65 24 94</li>
+                        <li><i style={{paddingRight: "15px"}} className="fa fa-envelope"/>corentin.dmz@live.fr</li>
+                        <li><i style={{paddingRight: "15px"}} className="fa fa-globe"/>
+                            <a style={{paddingRight: "10px"}} href="https://www.facebook.com/corentin.dmz.9" target={"_blank"} rel={"noopener noreferrer"}>Facebook</a>
+                            <a href="https://github.com/Corentin648" target={"_blank"} rel={"noopener noreferrer"}>Github</a>
+                        </li>
                     </div>
-                </Navbar.Text>
-            </Navbar>
+                </div>
+                <div className="topnav" id="myTopnav">
+                    <Link to="/" className="active">Home</Link>
+                    <Link to={"/spanish"}>Spanish</Link>
+                    <Link to="#sport">Sport</Link>
+                    <div className="dropdown">
+                        <button className="dropbtn">Leadership & Management
+                            <i style={{paddingLeft: "15px"}} className="fa fa-caret-down"/>
+                        </button>
+                        <div className="dropdown-content">
+                            <Link to="/leadership">Leadership & Management</Link>
+                            <Link to="/civicengagement">Civic Engagement</Link>
+                            <Link to="#">SWOT</Link>
+                        </div>
+                    </div>
+
+                    <a href="javascript:void(0);" className="icon" style={{fontSize: "15px"}}
+                       onClick={() => onClickToggle()}>&#9776;</a>
+
+                    <link rel="stylesheet"
+                          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+                </div>
+            </div>
+
+
         );
 
-        return(
+        function onClickToggle() {
+            let x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function onClickTest(event) {
+            let x = document.getElementById("spanish");
+            x.className = "active";
+            window.location="/spanish";
+            event.preventDefault();
+            event.stopPropagation();
+        }
+
+        return (
             <div>
                 {appNavbar}
             </div>
         );
     }
+
+
 }
 
 export default Menu;

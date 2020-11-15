@@ -1,3 +1,26 @@
+.card-header {
+    background-color: darkcyan;
+    color: #333;
+}
+
+.educationFooter {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,139,139,0.8);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+educationFooter:hover {
+    background-color: rgba(0,139,139,1);
+}
+
 @media screen and (min-width: 1200px) {
     .cardDeck {
         display: flex;
@@ -7,24 +30,15 @@
         width: 100%;
     }
 
-    /*#card1 {
-        width: 500px;
-        height: 600px;
-        border: 1px solid black;
-    }
-
-    #card2 {
-        width: 500px;
-        height: 500px;
-        border: 1px solid black;
-    }*/
-
     .card {
         width: 500px;
         height: 600px;
     }
 
 }
+
+/* TODO : il faut faire un responsive pour les (petits) portables */
+
 @media only screen and (max-width: 1200px) {
     .cardDeck {
         display: flex;
@@ -37,11 +51,17 @@
 
     .card {
         width: 80vw;
-        height: 650px;
+        height: 720px;
         padding-bottom: 20px;
     }
 
     #card2 {
         margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .photocorentin {
+        display: none;
     }
 }

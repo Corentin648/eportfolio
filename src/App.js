@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {HashRouter, Route, Switch} from "react-router-dom";
 import './App.css';
 
 import Home from './composants/Home';
@@ -11,7 +11,7 @@ import CivicEngagement from "./composants/CivicEngagement";
 function App() {
   return (
       <body>
-      <BrowserRouter>
+      <HashRouter forceRefresh={"true"}>
         <div className="App">
 
             { /*
@@ -23,13 +23,14 @@ function App() {
             <Menu/>
 
             <Switch>
-                <Route path={"/"} component={Home} exact/>
+                <Route exact path={"/"} component={Home}/>
                 <Route path={"/leadership"} component={LeadershipManagement} />
                 <Route path={"/spanish"} component={Spanish} />
                 <Route path={"/civicengagement"} component={CivicEngagement} />
+                <Route path={"/"} component={() => <div>The page doesn't exist</div>}/>
             </Switch>
         </div>
-      </BrowserRouter>
+      </HashRouter>
       </body>
   );
 }

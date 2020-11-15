@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Card, CardDeck} from "react-bootstrap";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import './Home.css';
+import {Image} from "react-bootstrap";
 
 
 class Home extends Component{
@@ -10,7 +11,12 @@ class Home extends Component{
         return(
             <div className={""}>
 
-                <h1 style={{marginTop: "70px"}}>Presentation of my computing experience and my skills</h1>
+                <div style={{display: "flex"}}>
+                    <img className={"photocorentin"} style={{marginTop: "30px", marginLeft: "30px"}} src={require("../photo_corentin.jpg")} width={"200px"} height={"268px"}/>
+
+                    <h1 style={{width: "100%", alignSelf: "center"}}>Presentation of my computing experience and my skills</h1>
+
+                </div>
 
                 <CardDeck className={"cardDeck"}>
 
@@ -18,7 +24,7 @@ class Home extends Component{
                     <Card className={"bg-dark text-white"}>
                         <Card.Body>
                             <Card.Header>
-                                <h3>Personal projects (github.com/Corentin648)</h3>
+                                <h3>Personal projects (<a style={{color: "#333"}} href={"https://github.com/Corentin648"} target={"_blank"} rel={"noopener noreferrer"}> github.com/Corentin648)</a></h3>
                             </Card.Header>
                                 <Card.Text>
                                     <h5 className={"mt-5"} align={"justify"}>Game of life Web</h5>
@@ -76,11 +82,11 @@ class Home extends Component{
                     </div>
                 </CardDeck>
 
-                <Jumbotron className={"mt-5"} style={{display: "flex", justifyContent: "center", flexDirection: "column", paddingTop: "5px"}}>
-                        <h1 style={{marginBottom: "30px"}}>Education</h1>
+                <div className={"educationFooter"}>
+                        <h1 style={{marginBottom: "50px"}}>Education</h1>
                         <h5><u>ENSEEIHT, Toulouse (France)</u> -- <i>Digital sciences</i></h5>
                         <p>Engineering school specialised in computer science and telecommunications</p>
-                </Jumbotron>
+                </div>
 
             </div>
 
