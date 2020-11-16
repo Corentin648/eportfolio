@@ -42,7 +42,7 @@ educationFooter:hover {
 @media only screen and (max-width: 1200px) {
     .cardDeck {
         display: flex;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-left: 0px;
         flex-direction: column;
         align-items: center;
@@ -61,7 +61,15 @@ educationFooter:hover {
 }
 
 @media only screen and (max-width: 600px) {
-    .photocorentin {
+    #photo-corentin {
         display: none;
     }
+
+    #presentation-title {
+        margin-top: 50px;
+    }
+
+
+
+
 }

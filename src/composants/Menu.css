@@ -154,7 +154,6 @@
 
 /* Style de la barre contact */
 .contactBar {
-    /*height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 450px; /* Set the width of the sidebar */
     height: 100%;
     z-index: 1; /* Stay on top */

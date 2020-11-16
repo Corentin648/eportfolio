@@ -12,9 +12,9 @@ class Home extends Component{
             <div className={""}>
 
                 <div style={{display: "flex"}}>
-                    <img className={"photocorentin"} style={{marginTop: "30px", marginLeft: "30px"}} src={require("../photo_corentin.jpg")} width={"200px"} height={"268px"}/>
+                    <img id={"photo-corentin"} style={{marginTop: "30px", marginLeft: "30px"}} src={require("../photo_corentin.jpg")} width={"200px"} height={"268px"}/>
 
-                    <h1 style={{width: "100%", alignSelf: "center"}}>Presentation of my computing experience and my skills</h1>
+                    <h1 id={"presentation-title"} style={{width: "100%", alignSelf: "center"}}>Presentation of my computing experience and my skills</h1>
 
                 </div>
 
@@ -24,10 +24,13 @@ class Home extends Component{
                     <Card className={"bg-dark text-white"}>
                         <Card.Body>
                             <Card.Header>
-                                <h3>Personal projects (<a style={{color: "#333"}} href={"https://github.com/Corentin648"} target={"_blank"} rel={"noopener noreferrer"}> github.com/Corentin648)</a></h3>
+                                <h3>Personal projects
+                                    <a href="https://github.com/Corentin648" target={"_blank"} rel={"noopener noreferrer"}><i style={{marginLeft: "15px", color: "#333"}} className="fa fa-github"/></a>
+                                </h3>
                             </Card.Header>
                                 <Card.Text>
-                                    <h5 className={"mt-5"} align={"justify"}>Game of life Web</h5>
+                                    <h5 className={"mt-5"} align={"justify"}>Game of life Web <a href="http://corentindominguez.freeboxos.fr:8080/" style={{color: "white"}} target={"_blank"} rel={"noopener noreferrer"}>(here)</a>
+                                    </h5>
                                     <h6 className={"font-italic py-2"} align={"justify"}>September 2020</h6>
                                     <div align={"justify"}>
                                         Creation of a web site with Reat.js. It aims to parameter a game of life. We can choose size of the grid,
