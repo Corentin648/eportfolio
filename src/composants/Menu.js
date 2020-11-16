@@ -42,7 +42,7 @@ class Menu extends Component {
 
                     <Image id={"brand-n7"} style={{marginLeft: "150px"}} src={require("../logo_n7.jpg")} width={"128px"} height={"128px"}/>
 
-                    <h1 style={{width: "100%", textAlign: "center"}}>Eportfolio Corentin Dominguez</h1>
+                    <h1 id={"home-link"} style={{width: "100%", textAlign: "center"}}><Link to={"/"}>Eportfolio Corentin Dominguez</Link></h1>
                     {/*
                     <div style={{marginTop: "30px", marginBottom: "30px"}} align={"justify"}>
                         Address : 33 Rue du Rempart Matabiau<br/>
@@ -73,7 +73,7 @@ class Menu extends Component {
                     </div>
                 </div>
                 <div className="topnav" id="myTopnav">
-                    <Link to="/" className="active">Home</Link>
+                    <Link  activeStyle={{color : "darkcyan"}} to="/" className="active">Home</Link>
                     <Link to={"/spanish"}>Spanish</Link>
                     <Link to="#sport">Sport</Link>
                     <div className="dropdown">
