@@ -177,9 +177,11 @@
 }
 .contactBar a {
     color: white;
+    text-decoration: underline;
 }
 .contactBar a:hover {
     color: darkcyan;
+    text-decoration: none;
 }
 
 

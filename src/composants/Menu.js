@@ -40,7 +40,7 @@ class Menu extends Component {
                     height: "150px"
                 }}>
 
-                    <Image id={"brand-n7"} style={{marginLeft: "150px"}} src={require("../logo_n7.jpg")} width={"128px"} height={"128px"}/>
+                    <Image id={"brand-n7"} style={{marginLeft: "150px"}} src={require("../logo_n7.png")} width={"200px"} height={"104px"}/>
 
                     <h1 id={"home-link"} style={{width: "100%", textAlign: "center"}}><Link to={"/"}>Eportfolio Corentin Dominguez</Link></h1>
 
@@ -69,6 +69,7 @@ class Menu extends Component {
                             <Link to="#">SWOT</Link>
                         </div>
                     </div>
+                    <Link to="/personalprojects">Personal Projects</Link>
 
                     <a href="javascript:void(0);" className="icon" style={{fontSize: "15px"}}
                        onClick={() => onClickToggle()}>&#9776;</a>
