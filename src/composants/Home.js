@@ -100,7 +100,7 @@ class Home extends Component{
                 */}
 
                 <div className={"educationFooter"}>
-                    <h1 style={{marginBottom: "50px"}}>Education</h1>
+                    <h1 style={{marginBottom: "50px", marginTop: "10px"}}>Education</h1>
                     <h5><u>ENSEEIHT, Toulouse (France)</u> -- <i>Digital sciences</i></h5>
                     <p>Engineering school specialised in computer science and telecommunications</p>
                 </div>
