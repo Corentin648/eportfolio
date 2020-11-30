@@ -1,0 +1,9 @@
+
+/* Style du lien vers le pdf du CV*/
+#pdf_resume a:hover{
+    text-decoration: none;
+    color: darkcyan;
+}
+#pdf_resume a {
+    color: #333;
+}

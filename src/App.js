@@ -8,6 +8,7 @@ import Menu from './composants/Menu';
 import LeadershipManagement from "./composants/LeadershipManagement";
 import CivicEngagement from "./composants/CivicEngagement";
 import PersonalProjects from "./composants/PersonalProjects";
+import PPP from "./composants/PPP";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
                 <Route path={"/spanish"} component={Spanish} />
                 <Route path={"/civicengagement"} component={CivicEngagement} />
                 <Route path={"/personalprojects"} component={PersonalProjects} />
+                <Route path={"/ppp"} component={PPP} />
                 <Route path={"/"} component={() => <div>The page doesn't exist</div>}/>
             </Switch>
         </div>

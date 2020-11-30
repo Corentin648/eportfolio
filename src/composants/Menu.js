@@ -69,6 +69,7 @@ class Menu extends Component {
                             <Link to="#">SWOT</Link>
                         </div>
                     </div>
+                    <Link to="/ppp">PPP</Link>
                     <Link to="/personalprojects">Personal Projects</Link>
 
                     <a href="javascript:void(0);" className="icon" style={{fontSize: "15px"}}
