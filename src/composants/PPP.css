@@ -1,9 +1,16 @@
 
-/* Style du lien vers le pdf du CV*/
-#pdf_resume a:hover{
+/* Style des trois liens*/
+.link a:hover{
     text-decoration: none;
     color: darkcyan;
 }
-#pdf_resume a {
+.link a {
     color: #333;
+}
+
+.link {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 30px;
+    text-align: left;
 }
