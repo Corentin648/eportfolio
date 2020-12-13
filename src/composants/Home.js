@@ -24,11 +24,8 @@ class Home extends Component {
                     personal skills</h1>
 
 
-                <div style={{display: "flex"}}>
-
-                    <div style={{width: "100%"}}>
+                <div style={{width: "100%"}}>
                         <CardDeck className={"cardDeck"}>
-
                             <div id={"card1"}>
                                 <Card className={"bg-dark text-white"}>
                                     <Card.Body>
@@ -85,7 +82,6 @@ class Home extends Component {
                                 </Card>
                             </div>
                         </CardDeck>
-                    </div>
                 </div>
 
                 <div className={"education-footer"}>

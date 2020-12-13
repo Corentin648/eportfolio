@@ -27,6 +27,7 @@
     }
 }
 
+/* Style des cards */
 .card-header {
     background-color: #008b8b;
     color: #333;
@@ -46,31 +47,19 @@
     }
 
     #card1 {
-        /*margin-right: 30px;*/
+        margin-right: 30px;
+        margin-left: 15px;
     }
 
     #card2 {
-        /*margin-left: 30px;*/
+        margin-left: 30px;
     }
-
-    #card3 {
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-    }
-
-    #card3 .card {
-        width: 500px;
-        height: 600px;
-    }
-
 }
 
 @media only screen and (max-width: 1200px) {
     .cardDeck {
         display: flex;
         margin-top: 30px;
-        margin-left: 0px;
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -78,7 +67,6 @@
 
     .card {
         width: 80vw;
-        /*padding-bottom: 20px;*/
     }
 
     #card1 .card{
@@ -93,7 +81,7 @@
     }
 }
 
-/* Style de la liste des skills*/
+/* Style de la liste des skills */
 ul li a {
     color: white;
     text-decoration: underline;
