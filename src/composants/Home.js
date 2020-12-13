@@ -89,7 +89,6 @@ class Home extends Component {
                     <h5><u>ENSEEIHT, Toulouse (France)</u> -- <i>Digital sciences</i></h5>
                     <p>Engineering school specialised in computer science and telecommunications</p>
                 </div>
-
             </div>
 
         )
