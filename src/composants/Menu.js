@@ -57,10 +57,11 @@ class Menu extends Component {
                     <Link to={"/spanish"}>Spanish</Link>
                     <Link to="#sport">Sport</Link>
                     <div className="dropdown">
-                        <button className="dropbtn">Leadership & Management
+                        <button className="dropbtn" onClick={() => onClickDropdown()}>Leadership & Management
                             <i style={{paddingLeft: "15px"}} className="fa fa-caret-down"/>
                         </button>
                         <div className="dropdown-content">
+                            {/* TODO : ajouter des button ici pour faire disparaitre la liste quand on clique */}
                             <Link to="/leadership">Leadership & Management</Link>
                             <Link to="/civicengagement">Civic Engagement</Link>
                             <Link to="#">SWOT</Link>
@@ -80,6 +81,13 @@ class Menu extends Component {
 
 
         );
+
+        function onClickDropdown() {
+            let dropdown_content = document.getElementsByClassName("dropdown-content");
+            /*for (let element of dropdown_content) {
+                element.style.display = "none"
+            }*/
+        }
 
         function onClickToggle() {
             let x = document.getElementById("myTopnav");
