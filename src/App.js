@@ -16,12 +16,6 @@ function App() {
       <HashRouter forceRefresh={"true"}>
         <div className="App">
 
-            { /*
-            <h3 className={"m-3 d-flex justify-content-center"}>E-portfolio Corentin Dominguez</h3>
-
-            <h5 className={"m-3 d-flex justify-content-center"}>Engineering Student</h5>
-            */}
-
             <Menu/>
 
             <Switch>
