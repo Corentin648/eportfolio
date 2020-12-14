@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import {Card, CardDeck} from "react-bootstrap";
-import Jumbotron from "react-bootstrap/Jumbotron";
 import './Home.css';
-import {Image} from "react-bootstrap";
 import {Link} from "react-router-dom";
 
 
@@ -18,7 +16,7 @@ class Home extends Component {
                     marginTop: "-70px",
                     marginLeft: "30px"
                 }}
-                     src={require("../photo_corentin_carree.jpg")} width={"200px"} height={"200px"}/>
+                     src={require("../photo_corentin_carree.jpg")} width={"200px"} height={"200px"} alt={""}/>
 
                      <h1 id={"titre-home"} style={{width: "100%", textAlign: "center"}}>Computing and
                     personal skills</h1>

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './Menu.css';
 import Image from "react-bootstrap/cjs/Image";
-import {Link, Router} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 class Menu extends Component {
 
@@ -23,10 +23,7 @@ class Menu extends Component {
         }
     }
 
-
     render() {
-
-
         const appNavbar = (
 
             <div>
@@ -72,6 +69,7 @@ class Menu extends Component {
                     <Link to="/ppp">PPP</Link>
                     <Link to="/personalprojects">Personal Projects</Link>
 
+                    {/* eslint-disable-next-line no-script-url,jsx-a11y/anchor-is-valid */}
                     <a href="javascript:void(0);" className="icon" style={{fontSize: "15px"}}
                        onClick={() => onClickToggle()}>&#9776;</a>
 
@@ -90,14 +88,6 @@ class Menu extends Component {
             } else {
                 x.className = "topnav";
             }
-        }
-
-        function onClickTest(event) {
-            let x = document.getElementById("spanish");
-            x.className = "active";
-            window.location="/spanish";
-            event.preventDefault();
-            event.stopPropagation();
         }
 
         return (
