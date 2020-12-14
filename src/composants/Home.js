@@ -14,7 +14,7 @@ class Home extends Component {
 
                 <img id={"photo-corentin"} style={{
                     position: "absolute",
-                    float: "left",
+                    /*float: "left",*/
                     marginTop: "-70px",
                     marginLeft: "30px"
                 }}
