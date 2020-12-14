@@ -8,6 +8,7 @@
     .topnav {
         height: 54px;
         overflow: visible;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5), 0px -8px 16px 0px rgba(0,0,0,0.5);
     }
 }
 
@@ -15,13 +16,13 @@
 @media screen and (max-width: 750px){
     .topnav {
         overflow: hidden;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     }
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
-
 }
 /* Style the links inside the navigation bar */
 .topnav a {
