@@ -8,7 +8,7 @@
     .topnav {
         height: 55px;
         overflow: visible;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5), 0px -8px 16px 0px rgba(0,0,0,0.5);
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 -8px 16px 0 rgba(0,0,0,0.5);
     }
 }
 
@@ -16,7 +16,7 @@
 @media screen and (max-width: 750px){
     .topnav {
         overflow: hidden;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
     }
 }
 
@@ -74,7 +74,7 @@
     /*top: 50px;*/
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -160,7 +160,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: start;
+    align-items: flex-start;
 }
 .contactBar li {
     text-decoration: none;

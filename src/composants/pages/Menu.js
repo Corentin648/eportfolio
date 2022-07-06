@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import '../styles/Menu.css';
 import Image from "react-bootstrap/cjs/Image";
 import {Link} from "react-router-dom";
+import { faPhone, faEnvelope, faEarthAmericas, faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 class Menu extends Component {
 
@@ -44,9 +46,9 @@ class Menu extends Component {
                     <div className="contactBar">
                         <li><i style={{paddingRight: "15px"}} className="fa fa-home"/>33 Rue Rempart Matabiau</li>
                         <li style={{paddingLeft: "40px", paddingBottom: "10px"}}>Toulouse (31000)</li>
-                        <li><i style={{paddingRight: "15px"}} className="fa fa-phone"/>06 77 65 24 94</li>
-                        <li><i style={{paddingRight: "15px"}} className="fa fa-envelope"/>corentin.dmz@live.fr</li>
-                        <li><i style={{paddingRight: "15px"}} className="fa fa-globe"/>
+                        <li><FontAwesomeIcon style={{paddingRight: "15px"}} icon={faPhone}/>06 77 65 24 94</li>
+                        <li><FontAwesomeIcon style={{paddingRight: "15px"}} icon={faEnvelope}/>corentin.dmz@live.fr</li>
+                        <li><FontAwesomeIcon style={{paddingRight: "15px"}} icon={faEarthAmericas}/>
                             <a style={{paddingRight: "10px"}} href="https://www.facebook.com/corentin.dmz.9" target={"_blank"} rel={"noopener noreferrer"}>Facebook</a>
                             <a href="https://github.com/Corentin648" target={"_blank"} rel={"noopener noreferrer"}>Github</a>
                         </li>
@@ -58,7 +60,7 @@ class Menu extends Component {
                     <Link to="#sport">Sport</Link>
                     <div className="dropdown">
                         <button className="dropbtn" onClick={() => onClickDropdown()}>Leadership & Management
-                            <i style={{paddingLeft: "15px"}} className="fa fa-caret-down"/>
+                            <FontAwesomeIcon style={{paddingLeft: "15px"}} icon={faCaretDown}/>
                         </button>
                         <div className="dropdown-content">
                             {/* TODO : ajouter des button ici pour faire disparaitre la liste quand on clique */}
@@ -73,9 +75,6 @@ class Menu extends Component {
                     {/* eslint-disable-next-line no-script-url,jsx-a11y/anchor-is-valid */}
                     <a href="javascript:void(0);" className="icon" style={{fontSize: "15px"}}
                        onClick={() => onClickToggle()}>&#9776;</a>
-
-                    <link rel="stylesheet"
-                          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
                 </div>
             </div>
 
@@ -83,8 +82,8 @@ class Menu extends Component {
         );
 
         function onClickDropdown() {
-            let dropdown_content = document.getElementsByClassName("dropdown-content");
-            /*for (let element of dropdown_content) {
+            /*let dropdown_content = document.getElementsByClassName("dropdown-content");
+            for (let element of dropdown_content) {
                 element.style.display = "none"
             }*/
         }

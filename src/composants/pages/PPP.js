@@ -13,13 +13,13 @@ class PPP extends Component{
                 <h1 style={{marginTop: "50px", textAlign: "center"}}>Welcome to my PPP page</h1><br/>
 
                 <h3 className={"link"}>
-                    <a href = {job_ad} target = "_blank">Here is the job ad I have chosen</a>
+                    <a href = {job_ad} target = "_blank" rel=" noopener noreferrer">Here is the job ad I have chosen</a>
                 </h3>
                 <h3 className={"link"}>
-                    <a href = {resume} target = "_blank">You can download my resume here</a>
+                    <a href = {resume} target = "_blank" rel="noopener noreferrer">You can download my resume here</a>
                 </h3>
                 <h3 className={"link"}>
-                    <a href = {ppt} target = "_blank">Here is my presentation's PPT</a>
+                    <a href = {ppt} target = "_blank" rel="noopener noreferrer">Here is my presentation's PPT</a>
                 </h3>
 
             </div>
