@@ -2,13 +2,13 @@ import React from 'react';
 import {HashRouter, Route, Switch} from "react-router-dom";
 import './App.css';
 
-import Home from './composants/Home';
-import Spanish from "./composants/Spanish";
-import Menu from './composants/Menu';
-import LeadershipManagement from "./composants/LeadershipManagement";
-import CivicEngagement from "./composants/CivicEngagement";
-import PersonalProjects from "./composants/PersonalProjects";
-import PPP from "./composants/PPP";
+import Home from './composants/pages/Home';
+import Spanish from "./composants/pages/Spanish";
+import Menu from './composants/pages/Menu';
+import LeadershipManagement from "./composants/pages/leadership-management/LeadershipManagement";
+import CivicEngagement from "./composants/pages/leadership-management/CivicEngagement";
+import PersonalProjects from "./composants/pages/PersonalProjects";
+import PPP from "./composants/pages/PPP";
 
 function App() {
   return (

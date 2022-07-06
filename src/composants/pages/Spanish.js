@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactPlayer from "react-player";
-import './Spanish.css';
+import '../styles/Spanish.css';
 
 class Spanish extends Component{
 

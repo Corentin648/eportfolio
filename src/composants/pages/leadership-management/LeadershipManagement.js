@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactPlayer from "react-player";
-import "./LeadershipManagement.css";
+import "../../styles/leadership-management/LeadershipManagement.css";
 
 
 class LeadershipManagement extends Component{

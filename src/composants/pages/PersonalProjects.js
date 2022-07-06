@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Card} from "react-bootstrap";
-import './PersonalProjects.css';
+import '../styles/PersonalProjects.css';
 
 class PersonalProjects extends Component{
 
@@ -16,7 +16,7 @@ class PersonalProjects extends Component{
                             </h3>
                         </Card.Header>
                         <Card.Text>
-                            <h5 className={"mt-5"} align={"justify"}>Game of life Web <a href="http://corentindominguez.freeboxos.fr:8080/" style={{color: "white"}} target={"_blank"} rel={"noopener noreferrer"}>(here)</a>
+                            <h5 className={"mt-5"} align={"justify"}>Game of life Web <a href="src/composants/pages/PersonalProjects" style={{color: "white"}} target={"_blank"} rel={"noopener noreferrer"}>(here)</a>
                             </h5>
                             <h6 className={"font-italic py-2"} align={"justify"}>September 2020</h6>
                             <div align={"justify"}>

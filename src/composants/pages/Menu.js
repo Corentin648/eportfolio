@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Menu.css';
+import '../styles/Menu.css';
 import Image from "react-bootstrap/cjs/Image";
 import {Link} from "react-router-dom";
 
@@ -37,7 +37,7 @@ class Menu extends Component {
                     height: "150px"
                 }}>
 
-                    <Image id={"brand-n7"} style={{marginLeft: "5vw"}} src={require("../logo_n7_v3.png")} width={"200px"} height={"104px"}/>
+                    <Image id={"brand-n7"} style={{marginLeft: "5vw"}} src={require("../../assets/logo_n7_v3.png")} width={"200px"} height={"104px"}/>
 
                     <h1 id={"home-link"} style={{width: "100%", textAlign: "center"}}><Link to={"/"}>Eportfolio Corentin Dominguez</Link></h1>
 
