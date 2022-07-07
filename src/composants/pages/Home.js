@@ -8,7 +8,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div className={""}>
+            <div>
 
                 <img id={"photo-corentin"} style={{
                     position: "absolute",
@@ -18,8 +18,8 @@ class Home extends Component {
                 }}
                      src={require("../../assets/photo_corentin_carree.jpg")} width={"200px"} height={"200px"} alt={""}/>
 
-                     <h1 id={"titre-home"} style={{width: "100%", textAlign: "center"}}>Computing and
-                    personal skills</h1>
+                <h1 id={"titre-home"} className={"text-5xl"} style={{width: "100%", textAlign: "center"}}>Computing and
+                personal skills</h1>
 
 
                 <div style={{width: "100%"}}>
