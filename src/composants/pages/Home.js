@@ -10,16 +10,25 @@ class Home extends Component {
         return (
             <div>
 
-                <img id={"photo-corentin"} style={{
-                    position: "absolute",
-                    /*float: "left",*/
-                    marginTop: "-70px",
-                    marginLeft: "30px"
-                }}
-                     src={require("../../assets/photo_corentin_carree.jpg")} width={"200px"} height={"200px"} alt={""}/>
+                <div className={"w-full flex justify-center"}>
+                    <div className={"w-3/5 mt-8 flex justify-between items-center"}>
+                       <div className={"flex flex-column items-left"}>
+                            <h1 className={"text-3xl md:text-5xl md:leading-normal text-left"}>
+                                Hi there, I'm Corentin Dominguez, a software programming student
+                            </h1>
+                            <Link
+                                className={"bg-[#008b8b] hover:bg-[#56c1c0] mt-4 rounded-sm p-3 w-min whitespace-nowrap hover:no-underline text-gray-800 hover:text-gray-800"}
+                                to={"/personalprojects"}>
+                                Browse my projects
+                            </Link>
+                       </div>
 
-                <h1 id={"titre-home"} className={"text-5xl"} style={{width: "100%", textAlign: "center"}}>Computing and
-                personal skills</h1>
+                        <img
+                            className={"w-52 h-52 hidden lg:flex rounded-full shadow-black/50"}
+                            src={require("../../assets/photo_corentin_carree.jpg")}
+                            alt={""}/>
+                    </div>
+                </div>
 
 
                 <div style={{width: "100%"}}>
