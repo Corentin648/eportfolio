@@ -16,6 +16,9 @@ class Home extends Component {
                             <h1 className={"text-3xl md:text-5xl md:leading-normal text-left"}>
                                 Hi there, I'm Corentin Dominguez, a software programming student
                             </h1>
+                           <h3 className={"mt-3 mb-4 text-xl text-left text-gray-600"}>
+                               Currently studying at ENSEEIHT, an engineering school in Toulouse
+                           </h3>
                             <Link
                                 className={"bg-[#008b8b] hover:bg-[#56c1c0] mt-4 rounded-sm p-3 w-min whitespace-nowrap hover:no-underline text-gray-800 hover:text-gray-800"}
                                 to={"/personalprojects"}>
@@ -31,7 +34,7 @@ class Home extends Component {
                 </div>
 
 
-                <div style={{width: "100%"}}>
+                <div className={"mb-12 w-full"}>
                         <CardDeck className={"cardDeck"}>
                             <div id={"card1"}>
                                 <Card className={"bg-dark text-white"}>
@@ -89,12 +92,6 @@ class Home extends Component {
                                 </Card>
                             </div>
                         </CardDeck>
-                </div>
-
-                <div className={"education-footer"}>
-                    <h1 style={{marginBottom: "50px", marginTop: "10px"}}>Education</h1>
-                    <h5><u>ENSEEIHT, Toulouse (France)</u> -- <i>Digital sciences</i></h5>
-                    <p>Engineering school specialised in computer science and telecommunications</p>
                 </div>
             </div>
 
