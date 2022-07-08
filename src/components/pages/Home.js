@@ -37,10 +37,10 @@ class Home extends Component {
                 <div className={"pb-12 w-full"}>
                         <CardDeck className={"cardDeck"}>
                             <div id={"card1"}>
-                                <Card className={"bg-dark text-white"}>
+                                <Card className={"bg-[#333] text-white"}>
                                     <Card.Body>
                                         <Card.Header>
-                                            <h3>Computer Skills
+                                            <h3>Some of my programming skills
                                                 <a href="https://github.com/Corentin648" target={"_blank"}
                                                    rel={"noopener noreferrer"}><i
                                                     style={{marginLeft: "15px", color: "#333"}}
@@ -50,8 +50,6 @@ class Home extends Component {
                                         <Card.Text>
                                             <div align={"justify"}>
                                                 <ul>
-                                                    <li className={"my-4"}><Link to={"/personalprojects"}>Presentation
-                                                        of my personal projects</Link></li>
                                                     <li className={"my-4"}>Web Front-End : Javascript (React.js), HTML,
                                                         CSS
                                                     </li>
@@ -72,10 +70,10 @@ class Home extends Component {
                             </div>
 
                             <div id={"card2"}>
-                                <Card className={"bg-dark text-white"}>
+                                <Card className={"bg-[#333] text-white"}>
                                     <Card.Body>
                                         <Card.Header>
-                                            <h3>Personal Skills</h3>
+                                            <h3>My personality</h3>
                                         </Card.Header>
                                         <Card.Text>
                                             <div align={"justify"}>

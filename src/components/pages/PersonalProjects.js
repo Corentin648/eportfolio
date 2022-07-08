@@ -7,7 +7,7 @@ class PersonalProjects extends Component{
     render() {
         return(
 
-            <div id = {"card1"} style={{width: "100%", marginTop: "50px", display: "flex", justifyContent: "center"}}>
+            <div id = {"card1"} className={"h-full"} style={{width: "100%", marginTop: "50px", display: "flex", justifyContent: "center"}}>
                 <Card className={"bg-dark text-white"} style={{width: "80vw", overflow: "auto"}}>
                     <Card.Body>
                         <Card.Header>
@@ -16,7 +16,7 @@ class PersonalProjects extends Component{
                             </h3>
                         </Card.Header>
                         <Card.Text>
-                            <h5 className={"mt-5"} align={"justify"}>Game of life Web <a href="src/composants/pages/PersonalProjects" style={{color: "white"}} target={"_blank"} rel={"noopener noreferrer"}>(here)</a>
+                            <h5 className={"mt-5"} align={"justify"}>Game of life Web <a href="src/components/pages/PersonalProjects" style={{color: "white"}} target={"_blank"} rel={"noopener noreferrer"}>(here)</a>
                             </h5>
                             <h6 className={"font-italic py-2"} align={"justify"}>September 2020</h6>
                             <div align={"justify"}>

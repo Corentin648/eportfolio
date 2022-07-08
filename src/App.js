@@ -1,14 +1,15 @@
 import React from 'react';
 import {HashRouter, Route, Switch} from "react-router-dom";
 import './App.css';
+import Footer from "./components/pages/Footer";
 
-import Home from './composants/pages/Home';
-import Spanish from "./composants/pages/Spanish";
-import Menu from './composants/pages/Menu';
-import LeadershipManagement from "./composants/pages/leadership-management/LeadershipManagement";
-import CivicEngagement from "./composants/pages/leadership-management/CivicEngagement";
-import PersonalProjects from "./composants/pages/PersonalProjects";
-import PPP from "./composants/pages/PPP";
+import Home from './components/pages/Home';
+import Spanish from "./components/pages/Spanish";
+import Menu from './components/pages/Menu';
+import LeadershipManagement from "./components/pages/leadership-management/LeadershipManagement";
+import CivicEngagement from "./components/pages/leadership-management/CivicEngagement";
+import PersonalProjects from "./components/pages/PersonalProjects";
+import PPP from "./components/pages/PPP";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
                 <Route path={"/ppp"} component={PPP} />
                 <Route path={"/"} component={() => <div>The page doesn't exist</div>}/>
             </Switch>
+
+            <Footer/>
         </div>
       </HashRouter>
       </body>
