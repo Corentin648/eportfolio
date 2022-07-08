@@ -91,6 +91,53 @@ class Home extends Component {
                             </div>
                         </CardDeck>
                 </div>
+
+               <div className={"w-full flex justify-center"}>
+                    <div className={"w-4/5 lg:w-3/5 flex flex-col lg:flex-row lg:justify-between"}>
+                       <div className={"bg-[#333] w-[500px] h-[400px] flex flex-col justify-center items-center rounded-sm shadow-2xl shadow-black"}>
+                          <div className={"bg-[#008b8b] p-3 w-11/12 whitespace-nowrap text-lg rounded-sm"}>
+                              Some of my programming skills
+                              <a href="https://github.com/Corentin648" target={"_blank"}
+                                 rel={"noopener noreferrer"}><i
+                                  style={{marginLeft: "15px", color: "#333"}}
+                                  className="fa fa-github"/>
+                              </a>
+                          </div>
+
+                           <div className={"text-white text-left p-3"}>
+                               <ul>
+                                   <li className={"my-4"}>Web Front-End : Javascript (React.js), HTML,
+                                       CSS
+                                   </li>
+                                   <li className={"my-4"}>Game development : Godot Engine (GDScript &
+                                       C#), LibGDX (Java)
+                                   </li>
+                                   <li className={"my-4"}>Android applications : Java/XML, Firebase
+                                       (Data Base)
+                                   </li>
+                                   <li className={"my-4"}>Programming in general : Java, C, Python,
+                                       Ada
+                                   </li>
+                               </ul>
+                           </div>
+
+                       </div>
+                        <div className={"bg-[#333] w-[500px] h-[400px] flex flex-col justify-center items-center rounded-sm shadow-2xl shadow-black"}>
+                            <div className={"bg-[#008b8b] p-3 w-11/12 whitespace-nowrap text-lg rounded-sm"}>My personality</div>
+
+                            <div className={"text-white text-left p-3"}>
+                                <ul>
+                                    <li className={"my-4"}>Good communication skills</li>
+                                    <li className={"my-4"}>Team spirit</li>
+                                    <li className={"my-4"}>Autonomous</li>
+                                    <li className={"mt-4"}>Flexible</li>
+                                    <li className={"mt-4"}>Enterprising</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+               </div>
             </div>
 
         )
