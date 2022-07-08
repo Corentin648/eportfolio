@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Card, CardDeck} from "react-bootstrap";
 import '../styles/Home.css';
 import {Link} from "react-router-dom";
 
@@ -33,69 +32,10 @@ class Home extends Component {
                     </div>
                 </div>
 
-
-                <div className={"pb-12 w-full"}>
-                        <CardDeck className={"cardDeck"}>
-                            <div id={"card1"}>
-                                <Card className={"bg-[#333] text-white"}>
-                                    <Card.Body>
-                                        <Card.Header>
-                                            <h3>Some of my programming skills
-                                                <a href="https://github.com/Corentin648" target={"_blank"}
-                                                   rel={"noopener noreferrer"}><i
-                                                    style={{marginLeft: "15px", color: "#333"}}
-                                                    className="fa fa-github"/></a>
-                                            </h3>
-                                        </Card.Header>
-                                        <Card.Text>
-                                            <div align={"justify"}>
-                                                <ul>
-                                                    <li className={"my-4"}>Web Front-End : Javascript (React.js), HTML,
-                                                        CSS
-                                                    </li>
-                                                    <li className={"my-4"}>Game development : Godot Engine (GDScript &
-                                                        C#), LibGDX (Java)
-                                                    </li>
-                                                    <li className={"my-4"}>Android applications : Java/XML, Firebase
-                                                        (Data Base)
-                                                    </li>
-                                                    <li className={"my-4"}>Programming in general : Java, C, Python,
-                                                        Ada
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-
-                            <div id={"card2"}>
-                                <Card className={"bg-[#333] text-white"}>
-                                    <Card.Body>
-                                        <Card.Header>
-                                            <h3>My personality</h3>
-                                        </Card.Header>
-                                        <Card.Text>
-                                            <div align={"justify"}>
-                                                <ul>
-                                                    <li className={"my-4"}>Good communication skills</li>
-                                                    <li className={"my-4"}>Team spirit</li>
-                                                    <li className={"my-4"}>Autonomous</li>
-                                                    <li className={"mt-4"}>Flexible</li>
-                                                    <li className={"mt-4"}>Enterprising</li>
-                                                </ul>
-                                            </div>
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        </CardDeck>
-                </div>
-
-               <div className={"w-full flex justify-center"}>
-                    <div className={"w-4/5 lg:w-3/5 flex flex-col lg:flex-row lg:justify-between"}>
-                       <div className={"bg-[#333] w-[500px] h-[400px] flex flex-col justify-center items-center rounded-sm shadow-2xl shadow-black"}>
-                          <div className={"bg-[#008b8b] p-3 w-11/12 whitespace-nowrap text-lg rounded-sm"}>
+               <div className={"w-full my-24 flex justify-center"}>
+                    <div className={"w-4/5 lg:w-4/5 flex flex-col lg:flex-row lg:justify-center"}>
+                       <div className={"bg-[#333] w-full lg:w-[500px] h-max lg:h-[400px] overflow-scroll mb-[30px] lg:mb-0 lg:mr-[50px] flex flex-col justify-around items-center rounded-md shadow-2xl shadow-black"}>
+                          <div className={"bg-[#008b8b] mt-4 p-3 w-11/12 whitespace-nowrap text-lg rounded-sm"}>
                               Some of my programming skills
                               <a href="https://github.com/Corentin648" target={"_blank"}
                                  rel={"noopener noreferrer"}><i
@@ -104,7 +44,7 @@ class Home extends Component {
                               </a>
                           </div>
 
-                           <div className={"text-white text-left p-3"}>
+                           <div className={"text-white text-justify px-3 pb-8"}>
                                <ul>
                                    <li className={"my-4"}>Web Front-End : Javascript (React.js), HTML,
                                        CSS
@@ -122,10 +62,10 @@ class Home extends Component {
                            </div>
 
                        </div>
-                        <div className={"bg-[#333] w-[500px] h-[400px] flex flex-col justify-center items-center rounded-sm shadow-2xl shadow-black"}>
-                            <div className={"bg-[#008b8b] p-3 w-11/12 whitespace-nowrap text-lg rounded-sm"}>My personality</div>
+                        <div className={"bg-[#333] w-full lg:w-[500px] h-max lg:h-[400px] overflow-scroll mt-[30px] lg:mt-0 lg:ml-[50px] flex flex-col justify-around items-center rounded-md shadow-2xl shadow-black"}>
+                            <div className={"bg-[#008b8b] mt-4 p-3 w-11/12 whitespace-nowrap text-lg rounded-sm"}>My personality</div>
 
-                            <div className={"text-white text-left p-3"}>
+                            <div className={"text-white text-justify px-3 pb-8"}>
                                 <ul>
                                     <li className={"my-4"}>Good communication skills</li>
                                     <li className={"my-4"}>Team spirit</li>
