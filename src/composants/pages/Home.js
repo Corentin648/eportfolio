@@ -34,7 +34,7 @@ class Home extends Component {
                 </div>
 
 
-                <div className={"mb-12 w-full"}>
+                <div className={"pb-12 w-full"}>
                         <CardDeck className={"cardDeck"}>
                             <div id={"card1"}>
                                 <Card className={"bg-dark text-white"}>
