@@ -60,7 +60,6 @@ class Home extends Component {
                                    </li>
                                </ul>
                            </div>
-
                        </div>
                         <div className={"bg-[#333] w-full lg:w-[500px] h-max lg:h-[400px] overflow-scroll mt-[30px] lg:mt-0 lg:ml-[50px] flex flex-col justify-around items-center rounded-md shadow-2xl shadow-black"}>
                             <div className={"bg-[#008b8b] mt-4 p-3 w-11/12 whitespace-nowrap text-lg rounded-sm"}>My personality</div>
