@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import '../styles/Menu.css';
-import Image from "react-bootstrap/cjs/Image";
 import {Link} from "react-router-dom";
 import { faPhone, faEnvelope, faEarthAmericas, faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -39,7 +38,7 @@ class Menu extends Component {
                     height: "150px"
                 }}>
 
-                    <Image id={"brand-n7"} style={{marginLeft: "5vw"}} src={require("../../assets/logo_n7_v3.png")} width={"200px"} height={"104px"}/>
+                    <img id={"brand-n7"} style={{marginLeft: "5vw"}} src={require("../../assets/logo_n7_v3.png")} width={"200px"} height={"104px"} alt=""/>
 
                     <h1 id={"home-link"} style={{width: "100%", textAlign: "center"}}><Link to={"/"}>Eportfolio Corentin Dominguez</Link></h1>
 

@@ -11,7 +11,7 @@ class Home extends Component {
 
                 <div className={"w-full flex justify-center"}>
                     <div className={"w-3/5 mt-8 flex justify-between items-center"}>
-                       <div className={"flex flex-column items-left"}>
+                       <div className={"flex flex-col items-left"}>
                             <h1 className={"text-3xl md:text-5xl md:leading-normal text-left"}>
                                 Hi there, I'm Corentin Dominguez, a software programming student
                             </h1>
