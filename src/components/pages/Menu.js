@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../styles/Menu.css';
-import {Link} from "react-router-dom";
+import {Link, withRouter} from "react-router-dom";
 import { faPhone, faEnvelope, faEarthAmericas, faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -54,7 +54,7 @@ class Menu extends Component {
                     </div>
                 </div>
                 <div className="topnav" id="myTopnav">
-                    <Link  activeStyle={{color : "darkcyan"}} to="/" className="active">Home</Link>
+                    <Link to="/" className="active">Home</Link>
                     <Link to={"/spanish"}>Spanish</Link>
                     <Link to="#sport">Sport</Link>
                     <div className="dropdown">
@@ -72,8 +72,8 @@ class Menu extends Component {
                     <Link to="/personalprojects">Personal Projects</Link>
 
                     {/* eslint-disable-next-line no-script-url,jsx-a11y/anchor-is-valid */}
-                    <a href="javascript:void(0);" className="icon" style={{fontSize: "15px"}}
-                       onClick={() => onClickToggle()}>&#9776;</a>
+                    <Link to={this.props.location.pathname} className="icon" style={{fontSize: "15px"}}
+                       onClick={() => onClickToggle()}>&#9776;</Link>
                 </div>
             </div>
 
@@ -106,4 +106,4 @@ class Menu extends Component {
 
 }
 
-export default Menu;
+export default withRouter(Menu);

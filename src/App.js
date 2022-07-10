@@ -13,26 +13,24 @@ import PPP from "./components/pages/PPP";
 
 function App() {
   return (
-      <body>
       <HashRouter forceRefresh={"true"}>
-        <div className="App">
+        <div id="App">
 
             <Menu/>
 
             <Switch>
-                <Route exact path={"/"} component={Home}/>
-                <Route path={"/leadership"} component={LeadershipManagement} />
-                <Route path={"/spanish"} component={Spanish} />
-                <Route path={"/civicengagement"} component={CivicEngagement} />
-                <Route path={"/personalprojects"} component={PersonalProjects} />
-                <Route path={"/ppp"} component={PPP} />
+                <Route exact path={"/"} component={() => <Home/>}/>
+                <Route path={"/leadership"} component={() => <LeadershipManagement/>} />
+                <Route path={"/spanish"} component={() => <Spanish/>} />
+                <Route path={"/civicengagement"} component={() => <CivicEngagement/>} />
+                <Route path={"/personalprojects"} component={() => <PersonalProjects/>} />
+                <Route path={"/ppp"} component={() => <PPP/>} />
                 <Route path={"/"} component={() => <div>The page doesn't exist</div>}/>
             </Switch>
 
             <Footer/>
         </div>
       </HashRouter>
-      </body>
   );
 }
 

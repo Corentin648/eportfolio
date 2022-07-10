@@ -8,7 +8,7 @@ class PersonalProjects extends Component{
 
             <div id = {"card1"} className={"h-full"} style={{width: "100%", marginTop: "50px", display: "flex", justifyContent: "center"}}>
                 <div className={"bg-[#333] w-full lg:w-4/5 h-max mb-[30px] lg:mb-0 lg:mr-[50px] flex flex-col justify-around items-center rounded-md shadow-2xl shadow-black"}>
-                    <div className={"bg-[#008b8b] mt-4 p-3 w-11/12 whitespace-nowrap text-lg rounded-sm"}>
+                    <div className={"bg-[#008b8b] mt-4 p-3 w-11/12 whitespace-nowrap text-lg text-center rounded-sm"}>
                         Personal projects
                         <a href="https://github.com/Corentin648" target={"_blank"}
                            rel={"noopener noreferrer"}><i
