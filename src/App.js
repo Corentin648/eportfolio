@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashRouter, Route, Switch} from "react-router-dom";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 import './App.css';
 import Footer from "./components/pages/Footer";
 
@@ -13,7 +13,7 @@ import PPP from "./components/pages/PPP";
 
 function App() {
   return (
-      <HashRouter forceRefresh={"true"}>
+      <BrowserRouter>
         <div id="App">
 
             <Menu/>
@@ -30,7 +30,7 @@ function App() {
 
             <Footer/>
         </div>
-      </HashRouter>
+      </BrowserRouter>
   );
 }
 
