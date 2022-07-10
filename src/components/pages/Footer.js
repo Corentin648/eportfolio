@@ -7,7 +7,6 @@ class Footer extends Component {
     constructor(props) {
             super(props);
             this.state = {
-                appHeightMemory: 0,
                 footerMarginTop: 0
             }
         }
@@ -21,19 +20,20 @@ class Footer extends Component {
             this.setFooterMarginTop();
         });
 
-        this.setState({
-            appHeightMemory: document.getElementById("App").offsetHeight
-        })
         this.handleResize();
         window.addEventListener('resize', () => this.handleResize());
     }
 
     setFooterMarginTop = () => {
-        console.log(this.state.appHeightMemory);
-        if (this.state.appHeightMemory < window.visualViewport.height){
+        const footerHeight = document.getElementById("footer").offsetHeight;
+        const cloneApp = document.getElementById("App").cloneNode(true);
+        cloneApp.removeChild(cloneApp.lastChild);
+        document.body.appendChild(cloneApp);
+        const appHeight = cloneApp.offsetHeight;
+        document.body.removeChild(cloneApp);
+        if (appHeight + (footerHeight + 100) < window.visualViewport.height){
             this.setState({
-                appHeightMemory: document.getElementById("App").offsetHeight,
-                footerMarginTop: window.visualViewport.height - document.getElementById("App").offsetHeight
+                footerMarginTop: window.visualViewport.height - (appHeight + footerHeight)
             })
         } else {
             this.setState({

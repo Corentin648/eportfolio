@@ -7,7 +7,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div>
+            <section>
 
                 <div className={"w-full flex justify-center"}>
                     <div className={"w-3/5 mt-8 flex justify-between items-center"}>
@@ -77,7 +77,7 @@ class Home extends Component {
                         </div>
                     </div>
                </div>
-            </div>
+            </section>
 
         )
     }
