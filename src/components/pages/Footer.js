@@ -44,25 +44,22 @@ class Footer extends Component {
 
     render() {
         return (
-            <section id={"footer"} className={"w-full flex justify-center bg-[#333]"} style={{marginTop: this.state.footerMarginTop}}>
-                    <div className={"footer-item w-2/5 flex justify-between py-4"} id={"networks-item"}>
+            <section id={"footer"} className={"w-full flex flex-col items-center justify-center"} style={{marginTop: this.state.footerMarginTop}}>
+                    <div className={"w-2/5 flex justify-between py-4"} id={"networks-item"}>
                         <a className="network-icon" id="fb-icon" href={"https://www.facebook.com/corentin.dmz.9"}
                            target={"_blank"}
                            rel={"noopener noreferrer"}>
-                            <i style={{color: "white"}}
-                               className="fa fa-facebook-square fa-3x"/>
+                            <i className="fa fa-facebook-square fa-3x text-[#333]"/>
                         </a>
                         <a className="network-icon" id="fb-icon" href={"https://www.linkedin.com/in/corentin-dominguez-545b5a1a8/"}
                            target={"_blank"}
                            rel={"noopener noreferrer"}>
-                            <i style={{color: "white"}}
-                               className="fa fa-linkedin-square fa-3x"/>
+                            <i className="fa fa-linkedin-square fa-3x text-[#333]"/>
                         </a>
                         <a className="network-icon" id="fb-icon" href={"https://www.github.com/Corentin648"}
                            target={"_blank"}
                            rel={"noopener noreferrer"}>
-                            <i style={{color: "white"}}
-                               className="fa fa-github-square fa-3x"/>
+                            <i className="fa fa-github-square fa-3x text-[#333]"/>
                         </a>
                     </div>
             </section>
