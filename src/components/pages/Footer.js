@@ -49,17 +49,17 @@ class Footer extends Component {
                         <a className="network-icon" id="fb-icon" href={"https://www.facebook.com/corentin.dmz.9"}
                            target={"_blank"}
                            rel={"noopener noreferrer"}>
-                            <i className="fa fa-facebook-square fa-3x text-[#333]"/>
+                            <i className="fa fa-facebook-square fa-3x text-[#333] hover:text-[#008b8b]"/>
                         </a>
                         <a className="network-icon" id="fb-icon" href={"https://www.linkedin.com/in/corentin-dominguez-545b5a1a8/"}
                            target={"_blank"}
                            rel={"noopener noreferrer"}>
-                            <i className="fa fa-linkedin-square fa-3x text-[#333]"/>
+                            <i className="fa fa-linkedin-square fa-3x text-[#333] hover:text-[#008b8b]"/>
                         </a>
                         <a className="network-icon" id="fb-icon" href={"https://www.github.com/Corentin648"}
                            target={"_blank"}
                            rel={"noopener noreferrer"}>
-                            <i className="fa fa-github-square fa-3x text-[#333]"/>
+                            <i className="fa fa-github-square fa-3x text-[#333] hover:text-[#008b8b]"/>
                         </a>
                     </div>
             </section>
