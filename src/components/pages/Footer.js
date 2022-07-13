@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
 import {withRouter} from "react-router-dom";
 import '../styles/Footer.css';
+import {Theme} from "../../theme";
 
 class Footer extends Component {
+
+    static iconClass = `fa-3x ${Theme.textPrimaryColor} hover:text-[#008b8b]`
 
     constructor(props) {
             super(props);
@@ -18,17 +21,17 @@ class Footer extends Component {
                         <a className="network-icon" id="fb-icon" href={"https://www.facebook.com/corentin.dmz.9"}
                            target={"_blank"}
                            rel={"noopener noreferrer"}>
-                            <i className="fa fa-facebook-square fa-3x text-[#333] hover:text-[#008b8b]"/>
+                            <i className={"fa fa-facebook-square " + Footer.iconClass}/>
                         </a>
                         <a className="network-icon" id="fb-icon" href={"https://www.linkedin.com/in/corentin-dominguez-545b5a1a8/"}
                            target={"_blank"}
                            rel={"noopener noreferrer"}>
-                            <i className="fa fa-linkedin-square fa-3x text-[#333] hover:text-[#008b8b]"/>
+                            <i className={"fa fa-linkedin-square " + Footer.iconClass }/>
                         </a>
                         <a className="network-icon" id="fb-icon" href={"https://www.github.com/Corentin648"}
                            target={"_blank"}
                            rel={"noopener noreferrer"}>
-                            <i className="fa fa-github-square fa-3x text-[#333] hover:text-[#008b8b]"/>
+                            <i className={"fa fa-github-square " + Footer.iconClass}/>
                         </a>
                     </div>
             </section>
