@@ -53,7 +53,7 @@ class Menu extends Component {
                         </li>
                     </div>
                 </div>
-                <div className="topnav" id="myTopnav">
+                <div className="topnav flex justify-center bg-zinc-200 text-[#333]" id="myTopnav">
                     <Link to="/" className="active">Home</Link>
                     <Link to={"/spanish"}>Spanish</Link>
                     <Link to="#sport">Sport</Link>
