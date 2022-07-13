@@ -6,7 +6,6 @@
 
 @media screen and (min-width: 750px){
     .topnav {
-        height: 55px;
         overflow: visible;
     }
 }

@@ -28,21 +28,16 @@ class Menu extends Component {
         const appNavbar = (
 
             <div>
-                <div style={{
-                    color: "#333",
-                    background: "darkcyan",
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "space-around",
-                    alignItems: "center",
-                    height: "150px"
-                }}>
+                <div className="topnav relative h-[104px] flex justify-center items-center bg-zinc-200 text-[#333]" id="myTopnav">
+                    <img
+                        id={"brand-n7"}
+                        className={"absolute left-0 top-0"}
+                        style={{marginLeft: "5vw"}}
+                        src={require("../../assets/logo_n7_v3.png")}
+                        width={"200px"}
+                        height={"104px"}
+                        alt=""/>
 
-                    <img id={"brand-n7"} style={{marginLeft: "5vw"}} src={require("../../assets/logo_n7_v3.png")} width={"200px"} height={"104px"} alt=""/>
-
-                    <h1 id={"home-link"} style={{width: "100%", textAlign: "center"}}><Link to={"/"}>Eportfolio Corentin Dominguez</Link></h1>
-                </div>
-                <div className="topnav flex justify-center bg-zinc-200 text-[#333]" id="myTopnav">
                     <Link to="/" className="active">Home</Link>
                     <Link to={"/spanish"}>Spanish</Link>
                     <Link to="#sport">Sport</Link>
