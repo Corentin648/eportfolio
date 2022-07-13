@@ -3,6 +3,7 @@ import '../styles/Menu.css';
 import {Link, withRouter} from "react-router-dom";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {Theme} from '../../theme';
 
 class Menu extends Component {
 
@@ -26,9 +27,8 @@ class Menu extends Component {
 
     render() {
         const appNavbar = (
-
             <div>
-                <div className="topnav relative h-[104px] flex justify-center items-center bg-zinc-200 text-[#333]" id="myTopnav">
+                <div className={`topnav relative h-[104px] flex justify-center items-center ${Theme.bgColor} text-[#333]`} id="myTopnav">
                     <img
                         id={"brand-n7"}
                         className={"absolute left-0 top-0"}

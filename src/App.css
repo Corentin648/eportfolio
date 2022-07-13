@@ -36,8 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-body {
-  width: 100%;
-  background-color: rgb(228, 228, 231); /* zinc-200 for tailwind */
-}

@@ -10,11 +10,12 @@ import LeadershipManagement from "./components/pages/leadership-management/Leade
 import CivicEngagement from "./components/pages/leadership-management/CivicEngagement";
 import PersonalProjects from "./components/pages/PersonalProjects";
 import PPP from "./components/pages/PPP";
+import {Theme} from "./theme";
 
 function App() {
   return (
       <BrowserRouter>
-        <div id="App">
+        <div id="App" className={`w-full min-h-screen ${Theme.bgColor}`}>
 
             <Menu/>
 

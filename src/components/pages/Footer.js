@@ -11,40 +11,9 @@ class Footer extends Component {
             }
         }
 
-    handleResize = () => {
-        this.setFooterMarginTop();
-    }
-
-    componentDidMount() {
-        this.props.history.listen(() => {
-            this.setFooterMarginTop();
-        });
-
-        this.handleResize();
-        window.addEventListener('resize', () => this.handleResize());
-    }
-
-    setFooterMarginTop = () => {
-        const footerHeight = document.getElementById("footer").offsetHeight;
-        const cloneApp = document.getElementById("App").cloneNode(true);
-        cloneApp.removeChild(cloneApp.lastChild);
-        document.body.appendChild(cloneApp);
-        const appHeight = cloneApp.offsetHeight;
-        document.body.removeChild(cloneApp);
-        if (appHeight + (footerHeight + 100) < window.visualViewport.height){
-            this.setState({
-                footerMarginTop: window.visualViewport.height - (appHeight + footerHeight)
-            })
-        } else {
-            this.setState({
-                footerMarginTop: 100
-            })
-        }
-    }
-
     render() {
         return (
-            <section id={"footer"} className={"w-full flex flex-col items-center justify-center"} style={{marginTop: this.state.footerMarginTop}}>
+            <section id={"footer"} className={"w-full mt-[50px] flex flex-col items-center justify-center"}>
                     <div className={"w-2/5 flex justify-between py-4"} id={"networks-item"}>
                         <a className="network-icon" id="fb-icon" href={"https://www.facebook.com/corentin.dmz.9"}
                            target={"_blank"}
