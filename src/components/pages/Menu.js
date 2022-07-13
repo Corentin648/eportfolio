@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../styles/Menu.css';
 import {Link, withRouter} from "react-router-dom";
-import { faPhone, faEnvelope, faEarthAmericas, faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 class Menu extends Component {
@@ -41,17 +41,6 @@ class Menu extends Component {
                     <img id={"brand-n7"} style={{marginLeft: "5vw"}} src={require("../../assets/logo_n7_v3.png")} width={"200px"} height={"104px"} alt=""/>
 
                     <h1 id={"home-link"} style={{width: "100%", textAlign: "center"}}><Link to={"/"}>Eportfolio Corentin Dominguez</Link></h1>
-
-                    <div className="contactBar">
-                        <li><i style={{paddingRight: "15px"}} className="fa fa-home"/>33 Rue Rempart Matabiau</li>
-                        <li style={{paddingLeft: "40px", paddingBottom: "10px"}}>Toulouse (31000)</li>
-                        <li><FontAwesomeIcon style={{paddingRight: "15px"}} icon={faPhone}/>06 77 65 24 94</li>
-                        <li><FontAwesomeIcon style={{paddingRight: "15px"}} icon={faEnvelope}/>corentin.dmz@live.fr</li>
-                        <li><FontAwesomeIcon style={{paddingRight: "15px"}} icon={faEarthAmericas}/>
-                            <a style={{paddingRight: "10px"}} href="https://www.facebook.com/corentin.dmz.9" target={"_blank"} rel={"noopener noreferrer"}>Facebook</a>
-                            <a href="https://github.com/Corentin648" target={"_blank"} rel={"noopener noreferrer"}>Github</a>
-                        </li>
-                    </div>
                 </div>
                 <div className="topnav flex justify-center bg-zinc-200 text-[#333]" id="myTopnav">
                     <Link to="/" className="active">Home</Link>
