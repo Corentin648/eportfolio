@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../styles/PersonalProjects.css';
+import {Theme} from "../../theme";
 
 class PersonalProjects extends Component{
 
@@ -7,8 +8,8 @@ class PersonalProjects extends Component{
         return(
 
             <section className={"flex w-full justify-center"}>
-                <div className={"bg-[#333] w-full lg:w-4/5 h-max mt-[50px] mb-[30px] lg:mb-0 flex flex-col justify-around items-center rounded-md shadow-2xl shadow-black"}>
-                    <div className={"bg-[#008b8b] mt-4 p-3 w-11/12 whitespace-nowrap text-lg text-center rounded-sm"}>
+                <div className={"w-full lg:w-4/5 h-max mt-[50px] mb-[30px] lg:mb-0 " + Theme.cardClass}>
+                    <div className={Theme.cardHeaderClass}>
                         Personal projects
                         <a href="https://github.com/Corentin648" target={"_blank"}
                            rel={"noopener noreferrer"}><i

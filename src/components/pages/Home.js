@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import '../styles/Home.css';
 import {Link} from "react-router-dom";
+import {Theme} from "../../theme";
 
 
 class Home extends Component {
@@ -34,8 +35,8 @@ class Home extends Component {
 
                <div className={"w-full my-24 flex justify-center"}>
                     <div className={"w-4/5 lg:w-4/5 flex flex-col lg:flex-row lg:justify-center"}>
-                       <div className={"bg-[#333] w-full lg:w-[500px] h-max lg:h-[400px] overflow-scroll mb-[30px] lg:mb-0 lg:mr-[50px] flex flex-col justify-around items-center rounded-md shadow-2xl shadow-black"}>
-                          <div className={"bg-[#008b8b] mt-4 p-3 w-11/12 whitespace-nowrap text-lg text-center rounded-sm"}>
+                       <div className={"w-full lg:w-[500px] h-max lg:h-[400px] overflow-scroll mb-[30px] lg:mb-0 lg:mr-[50px] " + Theme.cardClass}>
+                          <div className={Theme.cardHeaderClass}>
                               Some of my programming skills
                               <a href="https://github.com/Corentin648" target={"_blank"}
                                  rel={"noopener noreferrer"}><i
@@ -61,9 +62,8 @@ class Home extends Component {
                                </ul>
                            </div>
                        </div>
-                        <div className={"bg-[#333] w-full lg:w-[500px] h-max lg:h-[400px] overflow-scroll mt-[30px] lg:mt-0 lg:ml-[50px] flex flex-col justify-around items-center rounded-md shadow-2xl shadow-black"}>
-                            <div className={"bg-[#008b8b] mt-4 p-3 w-11/12 whitespace-nowrap text-lg text-center rounded-sm"}>My personality</div>
-
+                        <div className={"w-full lg:w-[500px] h-max lg:h-[400px] overflow-scroll mt-[30px] lg:mt-0 lg:ml-[50px] " + Theme.cardClass}>
+                            <div className={Theme.cardHeaderClass}>My personality and hobbies</div>
                             <div className={"text-white text-justify px-3 pb-8"}>
                                 <ul>
                                     <li className={"my-4"}>Good communication skills</li>
