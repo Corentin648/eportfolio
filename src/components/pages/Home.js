@@ -13,14 +13,14 @@ class Home extends Component {
                 <div className={"w-full flex justify-center"}>
                     <div className={"w-3/5 mt-8 flex justify-between items-center"}>
                        <div className={"flex flex-col items-left"}>
-                            <h1 className={"text-3xl md:text-5xl md:leading-normal text-left"}>
+                            <h1 className={`${Theme.textPrimaryColor} text-3xl md:text-5xl md:leading-normal text-left`}>
                                 Hi there, I'm Corentin Dominguez, a software programming student
                             </h1>
-                           <h3 className={"mt-3 mb-4 text-xl text-left text-gray-600"}>
+                           <h3 className={`mt-3 mb-4 ${Theme.textSoftPrimaryColor} text-xl text-left`}>
                                Currently studying at ENSEEIHT, an engineering school in Toulouse
                            </h3>
                             <Link
-                                className={"bg-[#008b8b] hover:bg-[#56c1c0] mt-4 rounded-sm p-3 w-min whitespace-nowrap hover:no-underline text-gray-800 hover:text-gray-800"}
+                                className={`${Theme.bgSecondaryColor} ${Theme.bgHoverSecondaryColor} mt-4 rounded-sm p-3 w-min whitespace-nowrap hover:no-underline ${Theme.textPrimaryColor}`}
                                 to={"/personalprojects"}>
                                 Browse my projects
                             </Link>

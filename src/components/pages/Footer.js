@@ -5,7 +5,7 @@ import {Theme} from "../../theme";
 
 class Footer extends Component {
 
-    static iconClass = `fa-3x ${Theme.textPrimaryColor} hover:text-[#008b8b]`
+    static iconClass = `fa-3x ${Theme.textPrimaryColor} ${Theme.textHoverPrimaryColor}`
 
     constructor(props) {
             super(props);
