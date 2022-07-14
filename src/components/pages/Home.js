@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import '../styles/Home.css';
 import {Link} from "react-router-dom";
 import {Theme} from "../../theme";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faGithub} from "@fortawesome/free-brands-svg-icons";
 
 
 class Home extends Component {
@@ -38,10 +40,10 @@ class Home extends Component {
                        <div className={"w-full lg:w-[500px] h-max lg:h-[400px] overflow-scroll mb-[30px] lg:mb-0 lg:mr-[50px] " + Theme.cardClass}>
                           <div className={Theme.cardHeaderClass}>
                               Some of my programming skills
-                              <a href="https://github.com/Corentin648" target={"_blank"}
-                                 rel={"noopener noreferrer"}><i
-                                  style={{marginLeft: "15px", color: "#333"}}
-                                  className="fa fa-github"/>
+                              <a href="https://github.com/Corentin648"
+                                 target={"_blank"}
+                                 rel={"noopener noreferrer"}>
+                                  <FontAwesomeIcon className={`ml-2 ${Theme.textPrimaryColor}`} icon={faGithub}/>
                               </a>
                           </div>
 

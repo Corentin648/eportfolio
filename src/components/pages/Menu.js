@@ -28,7 +28,7 @@ class Menu extends Component {
     render() {
         const appNavbar = (
             <div>
-                <div className={`topnav relative h-[104px] flex justify-center items-center ${Theme.bgColor} text-[#333]`} id="myTopnav">
+                <div className={`topnav relative h-[104px] flex justify-center items-center ${Theme.bgColor} ${Theme.textPrimaryColor}`} id="myTopnav">
                     <img
                         id={"brand-n7"}
                         className={"absolute left-0 top-0"}

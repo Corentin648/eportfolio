@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import '../styles/PersonalProjects.css';
 import {Theme} from "../../theme";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faGithub} from "@fortawesome/free-brands-svg-icons";
 
 class PersonalProjects extends Component{
 
@@ -11,10 +13,10 @@ class PersonalProjects extends Component{
                 <div className={"w-full lg:w-4/5 h-max mt-[50px] mb-[30px] lg:mb-0 " + Theme.cardClass}>
                     <div className={Theme.cardHeaderClass}>
                         Personal projects
-                        <a href="https://github.com/Corentin648" target={"_blank"}
-                           rel={"noopener noreferrer"}><i
-                            style={{marginLeft: "15px", color: "#333"}}
-                            className="fa fa-github"/>
+                        <a href="https://github.com/Corentin648"
+                           target={"_blank"}
+                           rel={"noopener noreferrer"}>
+                            <FontAwesomeIcon className={`ml-2 ${Theme.textPrimaryColor}`} icon={faGithub}/>
                         </a>
                     </div>
 
