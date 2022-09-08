@@ -5,6 +5,7 @@ import Footer from "./components/pages/Footer";
 
 import Home from './components/pages/Home';
 import Spanish from "./components/pages/Spanish";
+import Mobility from "./components/pages/Mobility";
 import Menu from './components/pages/Menu';
 import LeadershipManagement from "./components/pages/leadership-management/LeadershipManagement";
 import CivicEngagement from "./components/pages/leadership-management/CivicEngagement";
@@ -23,6 +24,7 @@ function App() {
                 <Route exact path={"/"} component={() => <Home/>}/>
                 <Route path={"/leadership"} component={() => <LeadershipManagement/>} />
                 <Route path={"/spanish"} component={() => <Spanish/>} />
+                <Route path={"/mobility"} component={() => <Mobility/>} />
                 <Route path={"/civicengagement"} component={() => <CivicEngagement/>} />
                 <Route path={"/personalprojects"} component={() => <PersonalProjects/>} />
                 <Route path={"/ppp"} component={() => <PPP/>} />
