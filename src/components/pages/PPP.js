@@ -10,9 +10,10 @@ class PPP extends Component{
         return(
 
             <section className={"w-full flex flex-col justify-center items-center"}>
+
                 <h1 className={"mt-[50px] text-center text-3xl"}>Welcome to my PPP page</h1>
 
-               <div className={"w-min mt-16 flex flex-col items-left"}>
+                <div className={"w-min mt-16 flex flex-col items-left"}>
                     <h3 className={"link py-4 w-min whitespace-nowrap"}>
                         <a href = {job_ad} target = "_blank" rel=" noopener noreferrer">Here is the job ad I have chosen</a>
                     </h3>
@@ -22,7 +23,7 @@ class PPP extends Component{
                     <h3 className={"link py-4 w-min whitespace-nowrap"}>
                         <a href = {ppt} target = "_blank" rel="noopener noreferrer">Here is my presentation's PPT</a>
                     </h3>
-               </div>
+                </div>
 
             </section>
 
