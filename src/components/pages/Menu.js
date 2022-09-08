@@ -7,29 +7,12 @@ import {Theme} from '../../theme';
 
 class Menu extends Component {
 
-    componentDidMount() {
-        window.onscroll = function () {
-            //onScrollDown()
-        };
-
-        //let header = document.getElementById("myTopnav");
-        //let sticky = header.offsetTop;
-
-        /* Permet de laisser la TopNav toujours visible en haut *//*
-        function onScrollDown() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }*/
-    }
 
     onClickDropdown() {
-        /*let dropdown_content = document.getElementsByClassName("dropdown-content");
-        for (let element of dropdown_content) {
+        let dropdownContent = document.getElementsByClassName("dropdown-content");
+        for (let element of dropdownContent) {
             element.style.display = "none"
-        }*/
+        }
     }
 
 
@@ -57,11 +40,11 @@ class Menu extends Component {
                         height={"104px"}
                         alt=""/>
 
-                    <Link to="/" className="active">Home</Link>
-                    <Link to={"/spanish"}>Spanish</Link>
-                    <Link to="#sport">Sport</Link>
+                    <Link to="/" className="active rounded-md">Home</Link>
+                    <Link to="/spanish" className={"rounded-md"}>Spanish</Link>
+                    <Link to="#sport" className={"rounded-md"}>Sport</Link>
                     <div className="dropdown">
-                        <button className="dropbtn" onClick={() => this.onClickDropdown()}>Leadership & Management
+                        <button className="dropbtn rounded-md" onClick={() => this.onClickDropdown()}>Leadership & Management
                             <FontAwesomeIcon style={{paddingLeft: "15px"}} icon={faCaretDown}/>
                         </button>
                         <div className="dropdown-content">
@@ -71,8 +54,8 @@ class Menu extends Component {
                             <Link to="#">SWOT</Link>
                         </div>
                     </div>
-                    <Link to="/ppp">PPP</Link>
-                    <Link to="/personalprojects">Personal Projects</Link>
+                    <Link to="/ppp" className={"rounded-md"}>PPP</Link>
+                    <Link to="/personalprojects" className={"rounded-md"}>Personal Projects</Link>
 
                     {/* eslint-disable-next-line no-script-url,jsx-a11y/anchor-is-valid */}
                     <Link to={this.props.location.pathname} className="icon" style={{fontSize: "15px"}}

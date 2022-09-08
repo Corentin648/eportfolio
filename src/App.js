@@ -18,7 +18,7 @@ function App() {
         <div id="App" className={`w-full min-h-screen ${Theme.bgColor}`}>
 
             <Menu/>
-
+            <div className={"mt-[104px]"}></div>
             <Switch>
                 <Route exact path={"/"} component={() => <Home/>}/>
                 <Route path={"/leadership"} component={() => <LeadershipManagement/>} />
