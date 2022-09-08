@@ -9,26 +9,45 @@ class Menu extends Component {
 
     componentDidMount() {
         window.onscroll = function () {
-            onScrollDown()
+            //onScrollDown()
         };
 
-        let header = document.getElementById("myTopnav");
-        let sticky = header.offsetTop;
+        //let header = document.getElementById("myTopnav");
+        //let sticky = header.offsetTop;
 
-        /* Permet de laisser la TopNav toujours visible en haut */
+        /* Permet de laisser la TopNav toujours visible en haut *//*
         function onScrollDown() {
             if (window.pageYOffset > sticky) {
                 header.classList.add("sticky");
             } else {
                 header.classList.remove("sticky");
             }
+        }*/
+    }
+
+    onClickDropdown() {
+        /*let dropdown_content = document.getElementsByClassName("dropdown-content");
+        for (let element of dropdown_content) {
+            element.style.display = "none"
+        }*/
+    }
+
+
+    onClickToggle() {
+        let x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
         }
     }
 
+
     render() {
-        const appNavbar = (
-            <div>
-                <div className={`topnav relative h-[104px] flex justify-center items-center ${Theme.bgColor} ${Theme.textPrimaryColor}`} id="myTopnav">
+        return (
+                <section
+                    className={`topnav relative h-[104px] flex justify-center items-center sticky ${Theme.bgColor} ${Theme.textPrimaryColor}`}
+                    id="myTopnav">
                     <img
                         id={"brand-n7"}
                         className={"absolute left-0 top-0"}
@@ -42,7 +61,7 @@ class Menu extends Component {
                     <Link to={"/spanish"}>Spanish</Link>
                     <Link to="#sport">Sport</Link>
                     <div className="dropdown">
-                        <button className="dropbtn" onClick={() => onClickDropdown()}>Leadership & Management
+                        <button className="dropbtn" onClick={() => this.onClickDropdown()}>Leadership & Management
                             <FontAwesomeIcon style={{paddingLeft: "15px"}} icon={faCaretDown}/>
                         </button>
                         <div className="dropdown-content">
@@ -57,35 +76,11 @@ class Menu extends Component {
 
                     {/* eslint-disable-next-line no-script-url,jsx-a11y/anchor-is-valid */}
                     <Link to={this.props.location.pathname} className="icon" style={{fontSize: "15px"}}
-                       onClick={() => onClickToggle()}>&#9776;</Link>
-                </div>
-            </div>
-
-
-        );
-
-        function onClickDropdown() {
-            /*let dropdown_content = document.getElementsByClassName("dropdown-content");
-            for (let element of dropdown_content) {
-                element.style.display = "none"
-            }*/
-        }
-
-        function onClickToggle() {
-            let x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-
-        return (
-            <div>
-                {appNavbar}
-            </div>
+                          onClick={() => this.onClickToggle()}>&#9776;</Link>
+                </section>
         );
     }
+
 
 
 }
