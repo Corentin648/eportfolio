@@ -1,19 +1,30 @@
 import React, {Component} from 'react';
 import '../../styles/leadership-management/CivicEngagement.css';
+import spreading_sciences from "../../../assets/poster_shs.png";
+import {Theme} from "../../../theme";
 
 
 class CivicEngagement extends Component{
 
     render() {
         return(
-            <div>
-                <h1 className={"mt-5"}><u>Civic Engagement</u></h1>
-                <div style={{display: "flex", flexDirection: "column", marginTop: "50px", marginLeft: "10%"}}>
-                    <h3 style={{textAlign: "left"}}> Project 1 -- Spreading Sciences</h3>
-                    <img className={"imgPoster"} style={{paddingTop: "20px"}} src={require("../../../assets/poster_shs.png")} alt=""/>
-                    {/*width={"50%"} height={"35.6%"}/>*/}
+            <section className={"w-full flex flex-col justify-center items-center"}>
+                <h1 className={"mt-[50px] text-center text-3xl"}>Civic Engagement</h1>
+                <div className={"mt-16 flex flex-col items-left"}>
+                    <h3 className={"mb-4 text-left text-xl"}>Spreading Sciences</h3>
+                    <div className={"img-wrapper"}>
+                        <img className={"img"} src={spreading_sciences} alt=""/>
+                    </div>
+                    <a id={"inscription-form-button"}
+                       className={`mt-2 ${Theme.textHoverPrimaryColor}`}
+                       href={spreading_sciences}
+                       target="_blank"
+                       rel="noreferrer" download>
+                        Télécharger le PDF
+                    </a>
                 </div>
-            </div>
+            </section>
+
         )
     }
 

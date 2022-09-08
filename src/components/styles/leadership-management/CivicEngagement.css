@@ -1,13 +1,31 @@
 @media screen and (min-width: 1200px) {
-    .imgPoster {
-        width: 50%;
-        height: 35.6%;
+    .img-wrapper {
+        position: relative;
+
+        /* original image ratio */
+        width: 40vw;
+        height: 28.48vw;
+    }
+
+    .img {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .imgPoster {
-        width: 80%;
-        height: 57.0%;
+    .img-wrapper {
+        position: relative;
+
+        /* original image ratio */
+        width: 70vw;
+        height: 49.84vw;
+    }
+
+    .img {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
