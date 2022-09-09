@@ -6,14 +6,14 @@
 
 * [x] revoir la height de l'App (min-h-full)
 * [x] ajuster le positionnement du footer
-* [ ] vérifier et ajuster le responsive de toutes les pages
+* [x] vérifier et ajuster le responsive de toutes les pages
 * [ ] refaire la navbar en responsive (revoir le toggle)
 
 ### Priorité 2
 
+* [ ] revoir les cards de la homepage (ajouter les hobbies, changer design)
 * [ ] ajouter un bouton vers page mobilité sur homepage
 * [ ] refaire la page des projets persos
-* [ ] revoir les cards de la homepage (ajouter les hobbies, ...)
 
 ## Questionnements
 

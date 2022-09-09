@@ -7,6 +7,55 @@ import {Theme} from '../../theme';
 
 class Menu extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            toggleClick: ""
+        }
+    }
+
+    /* Hide or show all content except TopBar */
+    hideShowAll = (hide) => {
+        const elements = document.body.querySelectorAll("#App > *");
+        console.log(elements);
+        const inputList = Array.prototype.slice.call(elements);
+        for (let i = 0; i < inputList.length; i++) {
+            if (!(inputList[i].id === "myTopNav")) {
+                hide ? inputList[i].style.display = "none" : inputList[i].style.display = "block";
+            }
+        }
+    }
+
+    /* Allows displaying everything back if screen is resized over 750px and toggle is still open */
+    handleResize = () => {
+        let x = document.getElementById("myTopNav");
+        const expandTabs = x.className.includes("expand-tabs");
+        if (window.screen.width > 750 && expandTabs) {
+            this.hideShowAll(!expandTabs);
+        }
+    }
+
+    handleOnClickToggle = () => {
+        if (window.screen.width < 750) {
+            let x = document.getElementById("myTopNav");
+            const expandTabs = x.className.includes("expand-tabs");
+
+            this.hideShowAll(!expandTabs); // avoid unwanted background scrolling when tabs expanded
+
+            this.setState({
+                toggleClick: expandTabs ? "" : "expand-tabs"
+            });
+        }
+
+    }
+
+    toggleIcon = () => {
+        return this.state.toggleClick.includes("expand-tabs") ? "fa fa-times" : "fa fa-bars";
+    }
+
+    componentDidMount() {
+        window.addEventListener('resize', () => this.handleResize());
+    }
 
     onClickDropdown() {
         let dropdownContent = document.getElementsByClassName("dropdown-content");
@@ -15,22 +64,11 @@ class Menu extends Component {
         }
     }
 
-
-    onClickToggle() {
-        let x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-
-
     render() {
         return (
                 <section
-                    className={`topnav relative h-[104px] flex justify-center items-center sticky ${Theme.bgColor} ${Theme.textPrimaryColor}`}
-                    id="myTopnav">
+                    className={`navbar ${this.state.toggleClick} relative h-[104px] flex justify-center items-center sticky ${Theme.bgColor} ${Theme.textPrimaryColor}`}
+                    id="myTopNav">
                     <img
                         id={"brand-n7"}
                         className={"absolute left-0 top-0"}
@@ -57,9 +95,12 @@ class Menu extends Component {
                     <Link to="/ppp" className={"rounded-md"}>PPP</Link>
                     <Link to="/personalprojects" className={"rounded-md"}>Personal Projects</Link>
 
-                    {/* eslint-disable-next-line no-script-url,jsx-a11y/anchor-is-valid */}
-                    <Link to={this.props.location.pathname} className="icon" style={{fontSize: "15px"}}
-                          onClick={() => this.onClickToggle()}>&#9776;</Link>
+                    <div id={"navbar-header"}>
+                        <Link to={this.props.location.pathname} id={"toggle"}
+                              onClick={() => this.handleOnClickToggle()}>
+                            <i className={this.toggleIcon()}/>
+                        </Link>
+                    </div>
                 </section>
         );
     }

@@ -8,6 +8,11 @@
     .topnav {
         overflow: visible;
     }
+
+    /* On cache le toggleButton par défaut */
+    #toggle {
+        display: none;
+    }
 }
 
 
@@ -34,18 +39,6 @@
     text-decoration: none;
     font-size: 20px;
     height: 55px;
-}
-
-/* Add an active class to highlight the current page
-.active {
-    background-color: darkcyan;
-    color: white;
-}
- */
-
-/* On cache le toggleButton par défaut */
-.topnav .icon {
-    display: none;
 }
 
 /* Dropdown container - needed to position the dropdown content */
