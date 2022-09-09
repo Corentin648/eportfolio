@@ -67,11 +67,11 @@ class Menu extends Component {
     render() {
         return (
                 <section
-                    className={`navbar ${this.state.toggleClick} relative h-[104px] flex justify-center items-center sticky ${Theme.bgColor} ${Theme.textPrimaryColor}`}
+                    className={`topnav ${this.state.toggleClick} ${Theme.bgColor} ${Theme.textPrimaryColor}`}
                     id="myTopNav">
                     <img
                         id={"brand-n7"}
-                        className={"absolute left-0 top-0"}
+                        className={"invisible lg:visible absolute left-0 top-0"}
                         style={{marginLeft: "5vw"}}
                         src={require("../../assets/logo_n7_v3.png")}
                         width={"200px"}
@@ -95,7 +95,7 @@ class Menu extends Component {
                     <Link to="/ppp" className={"rounded-md"}>PPP</Link>
                     <Link to="/personalprojects" className={"rounded-md"}>Personal Projects</Link>
 
-                    <div id={"navbar-header"}>
+                    <div id={"topnav-header"} className={"absolute top-0 right-0"}>
                         <Link to={this.props.location.pathname} id={"toggle"}
                               onClick={() => this.handleOnClickToggle()}>
                             <i className={this.toggleIcon()}/>

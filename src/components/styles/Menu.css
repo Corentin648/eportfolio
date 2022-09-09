@@ -1,44 +1,67 @@
-@media screen and (max-width: 1200px){
-    #brand-n7 {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 750px){
-    .topnav {
-        overflow: visible;
-    }
-
-    /* On cache le toggleButton par défaut */
-    #toggle {
-        display: none;
-    }
-}
-
-
-@media screen and (max-width: 750px){
-    .topnav {
-        overflow: hidden;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
-    }
-}
-
-.sticky {
+.topnav {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
 }
 
-/* Style des onglets de la TopNav */
-.topnav a {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    height: 55px;
+@media screen and (min-width: 750px){
+    /* On cache le toggleButton par défaut */
+    #toggle {
+        display: none;
+    }
+
+    .topnav {
+        height: 104px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Style des onglets de la TopNav */
+    .topnav a {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        height: 55px;
+    }
+}
+
+/* When topnav is not expanded */
+@media screen and (max-width: 750px){
+    .topnav {
+        display: block;
+    }
+
+    .topnav a:not(#toggle), .topnav .dropdown {
+        display: none;
+    }
+
+
+}
+
+/* When topnav is expanded */
+@media screen and (max-width: 750px){
+    .topnav.expand-tabs {
+        position: relative;
+        height: 100vh;
+        /* 80px mb equal to the pb-20 property of the App component */
+        margin-bottom: -80px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* All tabs are displayed */
+    .topnav.expand-tabs a:not(#toggle), .topnav.expand-tabs .dropdown {
+       display: block;
+       width: 100%;
+       height: auto;
+       border-radius: 0;
+    }
 }
 
 /* Dropdown container - needed to position the dropdown content */
@@ -97,11 +120,7 @@
     display: block;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 750px) {
-    .topnav a, .dropdown .dropbtn {
-        display: none;
-    }
     .topnav a.icon {
         float: right;
         display: block;
