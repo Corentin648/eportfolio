@@ -10,9 +10,9 @@ class Home extends Component {
 
     render() {
         return (
-            <section>
+            <section id={"home-page"} className={"mb-16"}>
 
-                <div className={"w-full flex justify-center"}>
+                <div id={"intro-section"} className={"w-full flex justify-center"}>
                     <div className={"w-3/5 mt-8 flex justify-between items-center"}>
                        <div className={"flex flex-col items-left"}>
                             <h1 className={`${Theme.textPrimaryColor} text-3xl md:text-5xl md:leading-normal text-left`}>
@@ -35,7 +35,7 @@ class Home extends Component {
                     </div>
                 </div>
 
-               <div className={"w-full my-24 flex justify-center"}>
+               <div id={"cards-section"} className={"w-full mt-24 flex justify-center"}>
                     <div className={"w-4/5 lg:w-4/5 flex flex-col lg:flex-row lg:justify-center"}>
                        <div className={"w-full lg:w-[500px] h-max lg:h-[400px] overflow-scroll mb-[30px] lg:mb-0 lg:mr-[50px] " + Theme.cardClass}>
                           <div className={Theme.cardHeaderClass}>

@@ -18,7 +18,7 @@ class Footer extends Component {
 
     render() {
         return (
-            <section id={"footer"} className={"w-full mt-[50px] flex flex-col items-center justify-center"}>
+            <section id={"footer"} className={"absolute bottom-0 w-full flex flex-col items-center justify-center"}>
                     <div className={"w-2/5 flex justify-between py-4"} id={"networks-item"}>
                         <a href={"https://www.facebook.com/corentin.dmz.9"}
                            target={"_blank"}

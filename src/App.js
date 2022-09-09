@@ -16,10 +16,10 @@ import {Theme} from "./theme";
 function App() {
   return (
       <BrowserRouter>
-        <div id="App" className={`w-full min-h-screen ${Theme.bgColor}`}>
+        <div id="App" className={`relative w-full min-h-screen pb-20 ${Theme.bgColor}`}>
 
             <Menu/>
-            <div className={"mt-[104px]"}></div>
+            <div className={"pt-[104px]"}></div>
             <Switch>
                 <Route exact path={"/"} component={() => <Home/>}/>
                 <Route path={"/leadership"} component={() => <LeadershipManagement/>} />
