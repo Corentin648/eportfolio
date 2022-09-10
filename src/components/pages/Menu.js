@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../styles/Menu.css';
 import {Link, withRouter} from "react-router-dom";
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import {faBars, faCaretDown, faTimes,} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Theme} from '../../theme';
 
@@ -29,8 +29,11 @@ class Menu extends Component {
     render() {
         return (
                 <section id={"topbar-section"} className={`${this.state.toggleClick}`}>
-                    <button id={"little-screens-toggle"} className={"md:hidden block fixed top-0 right-0 p-4"} onClick={() => this.handleOnClickToggle()}>
-                        <i className={"fa fa-bars"}/>
+                    <button
+                        id={"little-screens-toggle"}
+                        className={"md:hidden block fixed top-0 right-0 p-4"}
+                        onClick={() => this.handleOnClickToggle()}>
+                        <FontAwesomeIcon className={"h-5 w-5"} icon={faBars}/>
                     </button>
                     <div
                         className={`topnav ${this.state.toggleClick} ${Theme.bgColor} ${Theme.textPrimaryColor}`}
@@ -46,7 +49,7 @@ class Menu extends Component {
 
                         <div id={"topnav-header"} className={"md:hidden flex w-full justify-end"}>
                             <button id={"toggle"} className={"p-4"} onClick={() => this.handleOnClickToggle()}>
-                                <i className={"fa fa-times"}/>
+                                <FontAwesomeIcon className={"h-5 w-5"} icon={faTimes}/>
                             </button>
                         </div>
 

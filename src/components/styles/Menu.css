@@ -105,6 +105,7 @@
         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
     .topnav.expand-tabs {
+        animation: slide-topnav-to-center 0.5s forwards;
         position: fixed;
         right: 0;
         height: 100vh;
@@ -195,4 +196,13 @@
 #home-link a:hover {
     color: white;
     text-decoration: none;
+}
+
+@keyframes slide-topnav-to-center {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
