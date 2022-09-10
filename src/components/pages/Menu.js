@@ -50,20 +50,22 @@ class Menu extends Component {
                             </button>
                         </div>
 
-                        <Link to="/" className="active rounded-md">Home</Link>
-                        <Link to="/spanish" className={"rounded-md"}>Spanish</Link>
-                        <Link to="/mobility" className={"rounded-md"}>Mobility</Link>
+                        <Link to="/" className="active rounded-md">Home<hr className={"md:hidden"}/></Link>
+                        <Link to="/spanish" className={"rounded-md"}>Spanish<hr className={"md:hidden"}/></Link>
+                        <Link to="/mobility" className={"rounded-md"}>Mobility<hr className={"md:hidden"}/></Link>
                         <div className="dropdown">
                             <button className="dropbtn rounded-md">Soft & Human Skills
                                 <FontAwesomeIcon className={"caret-down pl-4"} icon={faCaretDown}/>
+                                <hr className={"md:hidden"}/>
+
                             </button>
                             <div className="dropdown-content">
                                 <Link to="/leadership">Leadership & Management</Link>
                                 <Link to="/civicengagement">Civic Engagement</Link>
                             </div>
                         </div>
-                        <Link to="/ppp" className={"rounded-md"}>PPP</Link>
-                        <Link to="/personalprojects" className={"rounded-md"}>Personal Projects</Link>
+                        <Link to="/ppp" className={"rounded-md"}>PPP<hr className={"md:hidden"}/></Link>
+                        <Link to="/personalprojects" className={"rounded-md"}>Personal Projects<hr className={"md:hidden"}/></Link>
                     </div>
                 </section>
         );

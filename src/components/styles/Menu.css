@@ -119,8 +119,8 @@
     /* All tabs are displayed */
     .topnav.expand-tabs a:not(#toggle), .topnav.expand-tabs .dropdown {
        display: block;
-       width: 100%;
-        padding-left: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     /* Adding space between each tab */
@@ -129,12 +129,18 @@
         padding-bottom: 15px;
     }
 
-    /* Hiding the down icon*/
+    /* Hiding the caret-down icon*/
+    .topnav.expand-tabs .dropdown .dropbtn {
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Hiding the caret-down icon*/
     .topnav.expand-tabs .dropdown .dropbtn .caret-down{
         display: none;
     }
 
-    /* Tabbing the dropdown content */
+    /* Padding the dropdown content */
     .topnav.expand-tabs .dropdown .dropdown-content {
         padding-left: 20px;
     }
