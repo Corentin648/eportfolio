@@ -7,7 +7,11 @@
 * [x] revoir la height de l'App (min-h-full)
 * [x] ajuster le positionnement du footer
 * [x] vérifier et ajuster le responsive de toutes les pages
-* [ ] refaire la navbar en responsive (revoir le toggle)
+* [x] refaire la navbar en responsive (revoir le toggle)
+
+    #### NavBar
+    * [ ] amélioration le dropdown pour grands écrans
+    * [ ] clean le CSS et le JS
 
 ### Priorité 2
 
