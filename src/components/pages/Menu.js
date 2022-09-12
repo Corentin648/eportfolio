@@ -10,7 +10,8 @@ class Menu extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            toggleClick: ""
+            toggleClick: "",
+            dropButtonClick: ""
         }
     }
 
@@ -24,6 +25,25 @@ class Menu extends Component {
             });
         }
 
+    }
+
+    handleOnClickDropButton = () => {
+        if (window.screen.width >= 750) {
+            let x = document.getElementById("dropdown");
+            const expandContent = x.className.includes("expand-content");
+
+            this.setState({
+                dropButtonClick: expandContent ? "" : "expand-content"
+            });
+        }
+    }
+
+    handleOnBlurDropdownContent = () => {
+        if (window.screen.width >= 750) {
+            this.setState({
+                dropButtonClick: ""
+            });
+        }
     }
 
     render() {
@@ -40,7 +60,7 @@ class Menu extends Component {
                         id="myTopNav">
                         <img
                             id={"brand-n7"}
-                            className={"hidden lg:block absolute left-0 top-0"}
+                            className={"hidden absolute left-0 top-0"}
                             style={{marginLeft: "5vw"}}
                             src={require("../../assets/logo_n7_v3.png")}
                             width={"200px"}
@@ -53,22 +73,29 @@ class Menu extends Component {
                             </button>
                         </div>
 
-                        <Link to="/" className="active rounded-md">Home<hr className={"md:hidden"}/></Link>
-                        <Link to="/spanish" className={"rounded-md"}>Spanish<hr className={"md:hidden"}/></Link>
-                        <Link to="/mobility" className={"rounded-md"}>Mobility<hr className={"md:hidden"}/></Link>
-                        <div className="dropdown">
-                            <button className="dropbtn rounded-md">Soft & Human Skills
+                        <Link to="/" className="topnav-item rounded-md">Home<hr className={"md:hidden"}/></Link>
+                        <Link to="/spanish" className={"topnav-item rounded-md"}>Spanish<hr className={"md:hidden"}/></Link>
+                        <Link to="/mobility" className={"topnav-item rounded-md"}>Mobility<hr className={"md:hidden"}/></Link>
+                        <div
+                            id="dropdown"
+                            className={`${this.state.dropButtonClick}`}
+                            onClick={() => this.handleOnClickDropButton()}
+                        >
+                            <button className="topnav-item dropbtn rounded-md">Soft & Human Skills
                                 <FontAwesomeIcon className={"caret-down pl-4"} icon={faCaretDown}/>
                                 <hr className={"md:hidden"}/>
 
                             </button>
-                            <div className="dropdown-content">
+                            <div
+                                id={"dropdown-content"}
+                                className="dropdown-content md:rounded-md  md:mt-2"
+                                onMouseLeave={() => this.handleOnBlurDropdownContent()}>
                                 <Link to="/leadership">Leadership & Management</Link>
                                 <Link to="/civicengagement">Civic Engagement</Link>
                             </div>
                         </div>
-                        <Link to="/ppp" className={"rounded-md"}>PPP<hr className={"md:hidden"}/></Link>
-                        <Link to="/personalprojects" className={"rounded-md"}>Personal Projects<hr className={"md:hidden"}/></Link>
+                        <Link to="/ppp" className={"topnav-item rounded-md"}>PPP<hr className={"md:hidden"}/></Link>
+                        <Link to="/personalprojects" className={"topnav-item rounded-md"}>Personal Projects<hr className={"md:hidden"}/></Link>
                     </div>
                 </section>
         );
