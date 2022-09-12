@@ -17,7 +17,7 @@ class Menu extends Component {
 
     handleOnClickToggle = () => {
         if (window.screen.width < 768) {
-            let x = document.getElementById("myTopNav");
+            let x = document.getElementById("topnav");
             const expandTabs = x.className.includes("expand-tabs");
 
             this.setState({
@@ -56,16 +56,8 @@ class Menu extends Component {
                         <FontAwesomeIcon className={"h-5 w-5"} icon={faBars}/>
                     </button>
                     <div
-                        className={`topnav ${this.state.toggleClick} ${Theme.bgColor} ${Theme.textPrimaryColor}`}
-                        id="myTopNav">
-                        <img
-                            id={"brand-n7"}
-                            className={"hidden absolute left-0 top-0"}
-                            style={{marginLeft: "5vw"}}
-                            src={require("../../assets/logo_n7_v3.png")}
-                            width={"200px"}
-                            height={"104px"}
-                            alt=""/>
+                        className={`${this.state.toggleClick} ${Theme.bgColor} ${Theme.textPrimaryColor}`}
+                        id="topnav">
 
                         <div id={"topnav-header"} className={"md:hidden flex w-full justify-end"}>
                             <button id={"toggle"} className={"p-4"} onClick={() => this.handleOnClickToggle()}>
@@ -77,18 +69,18 @@ class Menu extends Component {
                         <Link to="/spanish" className={"topnav-item rounded-md"}>Spanish<hr className={"md:hidden"}/></Link>
                         <Link to="/mobility" className={"topnav-item rounded-md"}>Mobility<hr className={"md:hidden"}/></Link>
                         <div
-                            id="dropdown"
+                            id={"dropdown"}
                             className={`${this.state.dropButtonClick}`}
                             onClick={() => this.handleOnClickDropButton()}
                         >
-                            <button className="topnav-item dropbtn rounded-md">Soft & Human Skills
-                                <FontAwesomeIcon className={"caret-down pl-4"} icon={faCaretDown}/>
+                            <button id={"dropbutton"} className="topnav-item rounded-md">Soft & Human Skills
+                                <FontAwesomeIcon id={"caret-down"} className={"pl-4"} icon={faCaretDown}/>
                                 <hr className={"md:hidden"}/>
 
                             </button>
                             <div
                                 id={"dropdown-content"}
-                                className="dropdown-content md:rounded-md  md:mt-2"
+                                className="md:rounded-md  md:mt-2"
                                 onMouseLeave={() => this.handleOnBlurDropdownContent()}>
                                 <Link to="/leadership" className={"md:rounded-t-md"}>Leadership & Management</Link>
                                 <Link to="/civicengagement" className={"md:rounded-b-md"}>Civic Engagement</Link>

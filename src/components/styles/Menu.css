@@ -1,4 +1,4 @@
-.topnav {
+#topnav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -6,12 +6,7 @@
 }
 
 @media screen and (min-width: 768px){
-    /* On cache le toggleButton par défaut */
-    #toggle {
-        display: none;
-    }
-
-    .topnav {
+    #topnav {
         height: 104px;
         display: flex;
         flex-direction: row;
@@ -70,7 +65,7 @@
 
 /* When topnav is not expanded */
 @media screen and (max-width: 767px){
-    .topnav {
+    #topnav {
         display: none;
     }
 }
@@ -85,7 +80,7 @@
         background-color: rgb(0,0,0); /* Fallback color */
         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
-    .topnav.expand-tabs {
+    #topnav.expand-tabs {
         animation: slide-topnav-to-center 0.5s forwards;
         position: fixed;
         right: 0;
@@ -99,37 +94,31 @@
     }
 
     /* All tabs are displayed */
-    .topnav.expand-tabs a:not(#toggle), .topnav.expand-tabs #dropdown {
+    #topnav.expand-tabs a:not(#toggle), #topnav.expand-tabs #dropdown {
        display: block;
         padding-left: 20px;
         padding-right: 20px;
     }
 
     /* Adding space between each tab */
-    .topnav.expand-tabs a:not(#toggle), .topnav.expand-tabs #dropdown .dropbtn {
+    #topnav.expand-tabs a:not(#toggle), #topnav.expand-tabs #dropdown #dropbutton {
         padding-top: 15px;
         padding-bottom: 15px;
     }
 
-    /* Hiding the caret-down icon*/
-    .topnav.expand-tabs #dropdown .dropbtn {
+    #topnav.expand-tabs #dropdown #dropbutton {
         width: 100%;
         text-align: left;
     }
 
-    /* Hiding the caret-down icon*/
-    .topnav.expand-tabs #dropdown .dropbtn .caret-down{
-        display: none;
-    }
-
     /* Padding the dropdown content */
-    .topnav.expand-tabs #dropdown .dropdown-content {
+    #topnav.expand-tabs #dropdown #dropdown-content {
         padding-left: 20px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .topnav a.icon {
+    #topnav a.icon {
         float: right;
         display: block;
         height: 54px;
