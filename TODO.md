@@ -10,7 +10,7 @@
 * [x] refaire la navbar en responsive (revoir le toggle)
 
     #### NavBar
-    * [ ] amélioration le dropdown pour grands écrans
+    * [x] améliorer le dropdown pour grands écrans
     * [ ] clean le CSS et le JS
 
 ### Priorité 2

@@ -16,7 +16,7 @@ class Menu extends Component {
     }
 
     handleOnClickToggle = () => {
-        if (window.screen.width < 750) {
+        if (window.screen.width < 768) {
             let x = document.getElementById("myTopNav");
             const expandTabs = x.className.includes("expand-tabs");
 
@@ -28,7 +28,7 @@ class Menu extends Component {
     }
 
     handleOnClickDropButton = () => {
-        if (window.screen.width >= 750) {
+        if (window.screen.width >= 768) {
             let x = document.getElementById("dropdown");
             const expandContent = x.className.includes("expand-content");
 
@@ -39,7 +39,7 @@ class Menu extends Component {
     }
 
     handleOnBlurDropdownContent = () => {
-        if (window.screen.width >= 750) {
+        if (window.screen.width >= 768) {
             this.setState({
                 dropButtonClick: ""
             });
@@ -90,8 +90,8 @@ class Menu extends Component {
                                 id={"dropdown-content"}
                                 className="dropdown-content md:rounded-md  md:mt-2"
                                 onMouseLeave={() => this.handleOnBlurDropdownContent()}>
-                                <Link to="/leadership">Leadership & Management</Link>
-                                <Link to="/civicengagement">Civic Engagement</Link>
+                                <Link to="/leadership" className={"md:rounded-t-md"}>Leadership & Management</Link>
+                                <Link to="/civicengagement" className={"md:rounded-b-md"}>Civic Engagement</Link>
                             </div>
                         </div>
                         <Link to="/ppp" className={"topnav-item rounded-md"}>PPP<hr className={"md:hidden"}/></Link>
