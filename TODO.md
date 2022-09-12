@@ -11,7 +11,7 @@
 
     #### NavBar
     * [x] améliorer le dropdown pour grands écrans
-    * [ ] clean le CSS et le JS
+    * [x] clean le CSS et le JS
 
 ### Priorité 2
 
