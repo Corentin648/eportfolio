@@ -20,7 +20,7 @@
 ### Priorité 2
 
 * [ ] revoir les cards de la homepage (ajouter les hobbies, changer design)
-* [ ] ajouter un bouton vers page mobilité sur homepage
+* [x] ajouter un bouton vers page mobilité sur homepage
 * [ ] refaire la page des projets persos
 
 ## Questionnements
