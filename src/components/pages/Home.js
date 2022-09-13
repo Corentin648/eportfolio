@@ -3,7 +3,16 @@ import '../styles/Home.css';
 import {Link} from "react-router-dom";
 import {Theme} from "../../theme";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithub} from "@fortawesome/free-brands-svg-icons";
+import {
+    faAngular,
+    faCss3, faDocker,
+    faGithub,
+    faJava,
+    faPhoenixFramework, faPython,
+    faReact,
+    faSass
+} from "@fortawesome/free-brands-svg-icons";
+import {faC, faDatabase} from "@fortawesome/free-solid-svg-icons";
 
 
 class Home extends Component {
@@ -40,7 +49,9 @@ class Home extends Component {
                             alt={""}/>
                         <h2
                             className={`md:ml-4 text-2xl md:text-4xl md:leading-normal text-center lg:text-left ${Theme.textPrimaryColor}`}>
-                            Go and look at <Link className={`underline ${Theme.textSecondaryColor}`} to={"/mobility"}>my international mobility project</Link> page
+                            Go and look at <Link
+                                className={`underline ${Theme.textSecondaryColor} ${Theme.textHoverSecondaryColor}`}
+                                to={"/mobility"}>my international mobility project</Link> page
                         </h2>
                     </div>
                 </div>
@@ -59,28 +70,48 @@ class Home extends Component {
                           </div>
 
                            <div className={"text-white text-justify px-3 pb-8"}>
-                               <ul>
-                                   <li className={"my-4"}>Web Front-End : Javascript (React.js), HTML,
-                                       CSS
-                                   </li>
-                                   <li className={"my-4"}>Game development : Godot Engine (GDScript &
-                                       C#), LibGDX (Java)
-                                   </li>
-                                   <li className={"my-4"}>Android applications : Java/XML, Firebase
-                                       (Data Base)
-                                   </li>
-                                   <li className={"my-4"}>Programming in general : Java, C, Python,
-                                       Ada
-                                   </li>
-                               </ul>
+                               <div className={"flex flex-col outline outline-2 rounded-md"}>
+                                   <div className={"my-2"}>
+                                       <h5 className={"p-2"}>Frontend</h5>
+                                       <div className={"p-2 flex"}>
+                                           <div className={`py-1 px-2 bg-white ${Theme.textPrimaryColor}`}><FontAwesomeIcon className={"pr-2"} icon={faReact} />React.js</div>
+                                           <div className={"py-1 px-2 border"}><FontAwesomeIcon className={"pr-2"} icon={faAngular} />Angular</div>
+                                           <div className={`py-1 px-2 bg-white ${Theme.textPrimaryColor}`}><FontAwesomeIcon className={"pr-2"} icon={faCss3} />TailwindCSS</div>
+                                           <div className={"py-1 px-2 border"}><FontAwesomeIcon className={"pr-2"} icon={faSass} />Sass</div>
+                                       </div>
+                                   </div>
+                                   <div className={"my-2"}>
+                                       <h5 className={"p-2"}>Backend</h5>
+                                       <div className={"p-2 flex"}>
+                                           <div className={`py-1 px-2 bg-white ${Theme.textPrimaryColor}`}><FontAwesomeIcon className={"pr-2"} icon={faPhoenixFramework} />Elixir (Phoenix)</div>
+                                           <div className={"py-1 px-2 border"}><FontAwesomeIcon className={"pr-2"} icon={faDatabase} />PostgreSQL</div>
+                                       </div>
+                                   </div>
+                                   <div className={"my-2"}>
+                                       <h5 className={"p-2"}>Other programming languages</h5>
+                                       <div className={"p-2 flex"}>
+                                           <div className={`py-1 px-2 bg-white ${Theme.textPrimaryColor}`}><FontAwesomeIcon className={"pr-2"} icon={faJava} />Java</div>
+                                           <div className={"py-1 px-2 border"}><FontAwesomeIcon className={"pr-2"} icon={faC} /></div>
+                                           <div className={`py-1 px-2 bg-white ${Theme.textPrimaryColor}`}><FontAwesomeIcon className={"pr-2"} icon={faPython} />Python</div>
+                                           <div className={"py-1 px-2 border"}>Ada</div>
+                                       </div>
+                                   </div>
+                                   <div className={"my-2"}>
+                                       <h5 className={"p-2"}>Tools</h5>
+                                       <div className={"p-2 flex"}>
+                                           <div className={`py-1 px-2 bg-white ${Theme.textPrimaryColor}`}><FontAwesomeIcon className={"pr-2"} icon={faGithub} />Github</div>
+                                           <div className={"py-1 px-2 border"}>Semaphore CI</div>
+                                           <div className={`py-1 px-2 bg-white ${Theme.textPrimaryColor}`}><FontAwesomeIcon className={"pr-2"} icon={faDocker} />Docker</div>
+                                       </div>
+                                   </div>
+                               </div>
                            </div>
                        </div>
                         <div className={"w-full lg:w-[500px] h-max lg:h-[400px] overflow-scroll mt-[30px] lg:mt-0 lg:ml-[50px] " + Theme.cardClass}>
                             <div className={Theme.cardHeaderClass}>My personality and hobbies</div>
                             <div className={"text-white text-justify px-3 pb-8"}>
                                 <ul>
-                                    <li className={"my-4"}>Good communication skills</li>
-                                    <li className={"my-4"}>Team spirit</li>
+                                    <li className={"my-4"}>Communication</li>
                                     <li className={"my-4"}>Autonomous</li>
                                     <li className={"mt-4"}>Flexible</li>
                                     <li className={"mt-4"}>Enterprising</li>

@@ -8,6 +8,7 @@ export class Theme {
     static textSoftPrimaryColor = "text-zinc-500";
 
     static textSecondaryColor = "text-[#008b8b]";
+    static textHoverSecondaryColor = "hover:text-[#56c1c0]";
     static bgSecondaryColor = "bg-[#008b8b]";
     static bgHoverSecondaryColor = "hover:bg-[#56c1c0]";
 
