@@ -35,6 +35,14 @@ class Home extends Component {
                     </div>
                 </div>
 
+{/*               <div id={"mobility-section"}>
+                   <Link
+                       className={`${Theme.bgSecondaryColor} ${Theme.bgHoverSecondaryColor} mt-4 rounded-sm p-3 w-min whitespace-nowrap hover:no-underline ${Theme.textPrimaryColor}`}
+                       to={"/mobility"}>
+                       International Mobility
+                   </Link>
+               </div>*/}
+
                <div id={"cards-section"} className={"w-full mt-24 flex justify-center"}>
                     <div className={"w-4/5 lg:w-4/5 flex flex-col lg:flex-row lg:justify-center"}>
                        <div className={"w-full lg:w-[500px] h-max lg:h-[400px] overflow-scroll mb-[30px] lg:mb-0 lg:mr-[50px] " + Theme.cardClass}>

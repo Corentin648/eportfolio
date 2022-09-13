@@ -12,6 +12,10 @@
     #### NavBar
     * [x] améliorer le dropdown pour grands écrans
     * [x] clean le CSS et le JS
+    * [x] fermer sidebar quand on clique sur item
+    * [ ] voir le dépassement de hauteur pour dropdown
+
+* [ ] voir le favicon, nom du site et logo
 
 ### Priorité 2
 
