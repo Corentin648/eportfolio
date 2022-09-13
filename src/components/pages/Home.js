@@ -12,7 +12,7 @@ class Home extends Component {
         return (
             <section id={"home-page"} className={"mb-16"}>
 
-                <div id={"intro-section"} className={"w-full flex justify-center"}>
+                <div id={"intro-section"} className={"w-full flex flex-col justify-center items-center"}>
                     <div className={"w-3/5 mt-8 flex justify-between items-center"}>
                        <div className={"flex flex-col items-left"}>
                             <h1 className={`${Theme.textPrimaryColor} text-3xl md:text-5xl md:leading-normal text-left`}>
@@ -33,15 +33,18 @@ class Home extends Component {
                             src={require("../../assets/photo_corentin_carree.jpg")}
                             alt={""}/>
                     </div>
+                    <div className={"w-3/5 mt-16 flex flex-col md:flex-row items-center"}>
+                        <img
+                            className={"md:hidden lg:block  md:w-1/3 w-4/5 md:mr-4"}
+                            src={require("../../assets/workaway_logo.png")}
+                            alt={""}/>
+                        <h2
+                            className={`md:ml-4 text-2xl md:text-4xl md:leading-normal text-center lg:text-left ${Theme.textPrimaryColor}`}>
+                            Go and look at <Link className={`underline ${Theme.textSecondaryColor}`} to={"/mobility"}>my international mobility project</Link> page
+                        </h2>
+                    </div>
                 </div>
 
-{/*               <div id={"mobility-section"}>
-                   <Link
-                       className={`${Theme.bgSecondaryColor} ${Theme.bgHoverSecondaryColor} mt-4 rounded-sm p-3 w-min whitespace-nowrap hover:no-underline ${Theme.textPrimaryColor}`}
-                       to={"/mobility"}>
-                       International Mobility
-                   </Link>
-               </div>*/}
 
                <div id={"cards-section"} className={"w-full mt-24 flex justify-center"}>
                     <div className={"w-4/5 lg:w-4/5 flex flex-col lg:flex-row lg:justify-center"}>
