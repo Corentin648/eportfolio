@@ -23,13 +23,13 @@ class Home extends Component {
                                Currently studying at ENSEEIHT, an engineering school in Toulouse
                            </h3>
                            <div className={"mt-4 flex flex-col sm:flex-row"}>
-                               <Link
-                                   className={`hover:bg-[#008b8b] mb-4 sm:mb-0 sm:mr-2 border-2 border-[#333] rounded-md p-3 w-min whitespace-nowrap hover:no-underline ${Theme.textPrimaryColor} transition ease-in-out duration-300`}
+                               <Link id={"aboutme-button"}
+                                   className={`slide-button mb-4 sm:mb-0 sm:mr-2 border-2 border-[#333] rounded-md p-3 w-min whitespace-nowrap hover:no-underline ${Theme.textPrimaryColor}`}
                                    to={"/aboutme"}>
                                    <FontAwesomeIcon className={"pr-2"} icon={faUser}/>More about me
                                </Link>
-                               <Link
-                                    className={`sm:ml-2 hover:bg-[#008b8b] bg-[#333] rounded-md p-3 w-min whitespace-nowrap hover:no-underline text-white transition ease-in-out duration-300`}
+                               <Link id={"projects-button"}
+                                    className={`slide-button sm:ml-2 rounded-md p-3 w-min whitespace-nowrap hover:no-underline text-white`}
                                     to={"/personalprojects"}>
                                     Browse my projects<FontAwesomeIcon className={"pl-2"} icon={faArrowUpRightFromSquare}/>
                                </Link>
