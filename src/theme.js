@@ -13,5 +13,5 @@ export class Theme {
     static bgHoverSecondaryColor = "hover:bg-[#56c1c0]";
 
     static cardClass = `${Theme.bgPrimaryColor} flex flex-col justify-around items-center rounded-md shadow-2xl shadow-black`;
-    static cardHeaderClass = `${Theme.bgSecondaryColor} mt-4 p-3 w-11/12 whitespace-nowrap text-lg text-center rounded-sm`;
+    static cardHeaderClass = `${Theme.textPrimaryColor} my-4 p-3 w-max whitespace-nowrap text-2xl text-center`;
 }
