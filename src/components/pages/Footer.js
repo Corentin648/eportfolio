@@ -7,7 +7,7 @@ import {Theme} from "../../theme";
 
 class Footer extends Component {
 
-    static iconClass = `fa-3x ${Theme.textPrimaryColor} ${Theme.textHoverPrimaryColor}`
+    static iconClass = `fa-3x ${Theme.textPrimaryColor} ${Theme.textHoverPrimaryColor} transition ease-in-out duration-300`
 
     constructor(props) {
             super(props);
