@@ -12,6 +12,7 @@ import CivicEngagement from "./components/pages/leadership-management/CivicEngag
 import PersonalProjects from "./components/pages/PersonalProjects";
 import PPP from "./components/pages/PPP";
 import {Theme} from "./theme";
+import AboutMe from "./components/pages/AboutMe";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
                 <Route path={"/civicengagement"} component={() => <CivicEngagement/>} />
                 <Route path={"/personalprojects"} component={() => <PersonalProjects/>} />
                 <Route path={"/ppp"} component={() => <PPP/>} />
+                <Route path={"/aboutme"} component={() => <AboutMe/>} />
                 <Route path={"/"} component={() => <div>The page doesn't exist</div>}/>
             </Switch>
 
