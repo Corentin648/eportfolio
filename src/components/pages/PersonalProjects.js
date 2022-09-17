@@ -9,7 +9,29 @@ class PersonalProjects extends Component{
     render() {
         return(
 
-            <section className={"flex w-full justify-center"}>
+            <section className={"flex flex-col w-full justify-center"}>
+                <div className={"w-3/5 mt-8 flex justify-between items-center"}>
+                    <div className={"flex flex-col items-left"}>
+                        <h1 className={`${Theme.textPrimaryColor} text-3xl md:text-5xl md:leading-normal text-left`}>
+                            You can look at my github here
+                        </h1>
+                    </div>
+                </div>
+                <div className={"w-full lg:w-[500px] mb-[30px] lg:mb-0 lg:mr-[50px] flex flex-col items-center"}>
+                    <div className={Theme.cardHeaderClass}>
+                        Some of my programming skills
+                        <a href="https://github.com/Corentin648"
+                           target={"_blank"}
+                           rel={"noopener noreferrer"}>
+                            <FontAwesomeIcon className={`ml-2 ${Theme.textPrimaryColor}`} icon={faGithub}/>
+                        </a>
+                    </div>
+
+                    <div className={`w-full flex flex-col rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
+                        I have recently worked on a website for my father's association. They present every year a main event to show many military vehicles.
+                        So, they needed a site for participants to subscribe and people to see the last year event photos !
+                    </div>
+                </div>
                 <div className={"w-full lg:w-4/5 h-max mt-[50px] mb-[30px] lg:mb-0 " + Theme.cardClass}>
                     <div className={Theme.cardHeaderClass}>
                         Personal projects
