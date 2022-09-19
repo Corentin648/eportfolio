@@ -31,5 +31,5 @@
 
 * ### Ajout de tout le contenu à propos de la mobilité
 
-[ ] faire un plan des différentes parties
+[x] faire un plan des différentes parties
 [ ] trouver un design pour cette page
