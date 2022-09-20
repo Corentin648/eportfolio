@@ -56,7 +56,7 @@ class Mobility extends Component{
                     <FontAwesomeIcon className={"pr-2"} icon={faBriefcase}/> Mes différents Workaway</h1>
                 <div id={"trip-experiences"} className={"w-3/5"}>
                     <div className={"mb-16"}>
-                        <h2 className={"mb-4 text-left text-2xl"}>1ère expérience : Turin (mettre les dates exactes)</h2>
+                        <h2 className={"mb-4 text-left text-2xl"}>Turin, Italie : 22/11/2021 - 20/12/2021</h2>
                         <div className={"text-justify"}>
                             Chez Eliana, le projet consistait en la rénovation d’une partie de sa maison. En effet, nous avions pour objectif de remettre à neuf la chambre de sa fille qui étudie à l’étranger et qui devait rentrer pour Noël. Eliana venait de revenir habiter dans cette maison qu’elle avait déserté pendant la période du Covid.
                             Tout avait été laissé en bazar, nous avons donc passé presque les deux premières semaines à tout remettre en ordre et à déplacer de nombreux meubles (rip mon dos). Ensuite, nous avons pu entrer dans le vif du sujet, rénover la chambre.
@@ -66,7 +66,7 @@ class Mobility extends Component{
                         </div>
                     </div>
                     <div className={"mb-16"}>
-                        <h2 className={"mb-4 text-left text-2xl"}>2ème expérience : Piano di Sorrento</h2>
+                        <h2 className={"mb-4 text-left text-2xl"}>Piano di Sorrento, Italie : 26/12/2021 - 10/01/2022</h2>
                         <div className={"text-justify"}>
                             Cette fois, un projet de workaway un peu plus classique. Nos hôtes, Marta et Michele, venaient de commencer il y a quelques semaines un projet de permaculture dans leur immense domaine.
                             Étant des novices, ils voulaient expérimenter de nombreuses nouvelles méthodes afin de trouver celles qui correspondaient le mieux à leur terre.
@@ -82,7 +82,7 @@ class Mobility extends Component{
                     </div>
 
                     <div className={"mb-16"}>
-                        <h2 className={"mb-4 text-left text-2xl"}>3ème expérience : Agio Nikolaos</h2>
+                        <h2 className={"mb-4 text-left text-2xl"}>Agio Nikolaos, Grèce : 30/01/2022 - 14/02/2022</h2>
                         <div className={"text-justify"}>
                             Direction le sud de la Grèce  De loin la plus difficile, j’ai passé deux semaines chez mon hôte Pavlos pour la récolte manuelle des olives.
                             Il n’y a pas grand chose à raconter professionnellement de cette expérience, si ce n’est que c’est un travail physiquement très fatiguant de part la longueur et l’intensité des journées. Mais malgré tout cela, c’était par de nombreux aspects une très belle expérience durant laquelle j’ai pu rencontrer pleins d’autres workawayers !
@@ -90,7 +90,7 @@ class Mobility extends Component{
                     </div>
 
                     <div className={"mb-16"}>
-                        <h2 className={"mb-4 text-left text-2xl"}>4ème expérience : Königsdorf</h2>
+                        <h2 className={"mb-4 text-left text-2xl"}>Königsdorf, Autriche : 04/03/2022 - 30/03/2022</h2>
                         <div className={"text-justify"}>
                             Pour la fin du voyage, j’ai passé un mois chez Gabriele qui possède une ferme dont l’objectif est l’autosuffisance. En effet, Gabriele possède à la fois des animaux (vaches, moutons, chèvres, poules) mais aussi de nombreuses cultures de légumes, ce qui lui permet pendant une partie de l’année d’être autosuffisante en termes de nourriture.
                             J’y étais pendant la fin de la période hivernale, une grosse partie du travail, pas la plus amusante, a été de nettoyer ses nombreux hectares de terre.
