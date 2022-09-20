@@ -18,7 +18,7 @@ class Mobility extends Component{
                 <h1 className={"mt-[50px] mb-16 text-center text-3xl"}>
                     <FontAwesomeIcon className={"pr-2"} icon={faEarthEurope}/> Mobilité internationnale N7</h1>
                 <div id={"trip-introduction"} className={"w-3/5"}>
-                    <div className={"mb-16 text-justify"}>
+                    <div className={"mb-16 text-justify leading-8"}>
                         Je présente ici mon projet de mobilité internationale dans le cadre de mes études à l'N7.
                         J'ai eu la chance de réaliser durant une IVE, un tour d'Europe en voiture, voyage durant lequel j'ai à la fois travaillé à l'aide de la plateforme Workaway mais aussi visité de nombreux pays !
                         Ainsi, je vais pouvoir ici parler plus en détail des expériences de Workaway que j'ai pu avoir. Si vous
@@ -27,7 +27,7 @@ class Mobility extends Component{
                     <div className={"mb-16"}>
                         <h2 className={"mb-4 text-left text-2xl"}>
                             <FontAwesomeIcon className={"pr-2"} icon={faNetworkWired}/> Workaway, qu'est ce que c'est ?</h2>
-                        <div className={"text-justify"}>
+                        <div className={"text-justify leading-8"}>
                             Workaway est une plateforme web mondiale qui met en relation des "hosts" et des "travelers" (moi).
                             Les hosts proposent aux travelers un travail, souvent agricole, non rémunéré mais en l'échange d'un lit et de nourriture.
                         </div>
@@ -36,7 +36,7 @@ class Mobility extends Component{
                     <div className={"mb-16"}>
                         <h2 className={"mb-4 text-left text-2xl"}>
                             <FontAwesomeIcon className={"pr-2"} icon={faMoneyBill}/> Financement du voyage</h2>
-                        <div className={"text-justify"}>
+                        <div className={"text-justify leading-8"}>
                             Voyager c’est très bien mais il faut des fonds. J’ai donc travaillé de Septembre à Novembre, avant de partir, dans l’entreprise, PhoenixDigital,
                             dans laquelle j’ai fait mon stage de 2A, en tant que freelance (merci à eux de m’avoir repris ;) ) En revenant, j’ai encore travaillé chez eux durant les mois de Mai et Juin pour compléter le financement .
                         </div>
@@ -45,7 +45,7 @@ class Mobility extends Component{
                     <div className={"mb-16"}>
                         <h2 className={"mb-4 text-left text-2xl"}>
                             <FontAwesomeIcon className={"pr-2"} icon={faScroll}/> Quelles expériences ai-je pu avoir ?</h2>
-                        <div className={"text-justify"}>
+                        <div className={"text-justify leading-8"}>
                             Durant mon voyage, j’ai d’abord eu l’occasion de passer un workaway d’1 mois chez Eliana, une italienne vivant à Turin.J’ai ensuite passé deux semaines dans workaway près de Naples chez Marta et  Michele.
                             Après cela, direction la Grèce où j’ai eu une autre expérience chez Pavlos dans le Péloponnèse.
                             J’ai fini mon voyage en Autriche en passant un mois chez Gabriele près de Graz.
@@ -57,10 +57,10 @@ class Mobility extends Component{
                 <div id={"trip-experiences"} className={"w-3/5"}>
                     <div className={"mb-16"}>
                         <h2 className={"mb-4 text-left text-2xl"}>Turin, Italie : 22/11/2021 - 20/12/2021</h2>
-                        <div className={"text-justify"}>
+                        <div className={"text-justify leading-8"}>
                             Chez Eliana, le projet consistait en la rénovation d’une partie de sa maison. En effet, nous avions pour objectif de remettre à neuf la chambre de sa fille qui étudie à l’étranger et qui devait rentrer pour Noël. Eliana venait de revenir habiter dans cette maison qu’elle avait déserté pendant la période du Covid.
-                            Tout avait été laissé en bazar, nous avons donc passé presque les deux premières semaines à tout remettre en ordre et à déplacer de nombreux meubles (rip mon dos). Ensuite, nous avons pu entrer dans le vif du sujet, rénover la chambre.
-                            La chambre étant petite, Eliana voulait construire une estrade sous laquelle il y aurait du rangement.
+                            Tout avait été laissé en bazar, nous avons donc passé presque les deux premières semaines à tout remettre en ordre et à déplacer de nombreux meubles.<br/>
+                            Ensuite, nous avons pu entrer dans le vif du sujet, rénover la chambre. La chambre étant petite, Eliana voulait construire une estrade sous laquelle il y aurait du rangement.
                             Nous avons donc construit cela et en parallèle nous avons installé sur les murs des plaques isolantes (il fait froid à Turin) et nous avons tout repeint.
                             Le projet fut terminé à temps, sa fille était très contente de son cadeau de Noël !
                         </div>
@@ -95,19 +95,20 @@ class Mobility extends Component{
 
                     <div className={"mb-16"}>
                         <h2 className={"mb-4 text-left text-2xl"}>Königsdorf, Autriche : 04/03/2022 - 30/03/2022</h2>
-                        <div className={"text-justify"}>
-                            Pour la fin du voyage, j’ai passé un mois chez Gabriele qui possède une ferme dont l’objectif est l’autosuffisance. En effet, Gabriele possède à la fois des animaux (vaches, moutons, chèvres, poules) mais aussi de nombreuses cultures de légumes, ce qui lui permet pendant une partie de l’année d’être autosuffisante en termes de nourriture.
-                            J’y étais pendant la fin de la période hivernale, une grosse partie du travail, pas la plus amusante, a été de nettoyer ses nombreux hectares de terre.
-                            De plus, la gestion du bois était très importante et nous devions y accorder beaucoup de temps. Effectivement, il y avait une cheminée dans la ferme, qui permettait à la fois d’alimenter toute l’eau chaude de la maison mais aussi de faire fonctionner le four et les plaques de cuisson.
-                            Durant la fin de la période, nous avons pu commencer à replanter les premiers légumes et quand nous sommes partis, Gabriele a pu lâcher les moutons dans leur champ pour la période estivale.
+                        <div className={"text-justify leading-8"}>
+                            Pour la fin du voyage, j’ai passé un mois chez Gabriele dans une ferme dont l’objectif est l’auto-suffisance. En effet, Gabriele possède à la fois des animaux (vaches, moutons, chèvres, poules) mais aussi de nombreuses cultures de légumes, ce qui lui permet pendant une partie de l’année d’être auto-suffisante en termes de nourriture.<br/>
+                            Je suis resté durant la fin de la période hivernale, ainsi, une grosse partie du travail consistait en le  nettoyage de ses nombreux hectares de terre.
+                            De plus, chaque jour nous devions passer au moins une heure à nous occuper du bois, en particulier à le couper. Effectivement, la ferme possédait une cheminée qui permettait à la fois d’alimenter toute l’eau chaude de la maison mais aussi de faire fonctionner le four et les plaques de cuisson.<br/>
+                            Pour la fin de la période, nous avons pu commencer à replanter les premiers légumes et quand nous sommes partis, Gabriele a pu lâcher les moutons dans leur champ pour la période estivale !
                         </div>
                     </div>
                 </div>
                 <h1 className={"mt-[50px] mb-16 text-center text-3xl"}>
                     <FontAwesomeIcon className={"pr-2"} icon={faUserCheck}/> Ce que j'ai retenu</h1>
-                <div id={"trip-conclusion"} className={"w-3/5 mb-16 text-justify"}>
-                    De manière globale, les workaway ont été des expériences très enrichissantes. J’ai pu, à la fois d’un point de vue humain, y faire de nombreuses rencontres mais aussi d’un point de vue technique, y apprendre beaucoup choses dans de nombreux domaines manuels en un lapse de temps réduit, ce qui était l’un des objectifs du voyage.
-                    Au-delà de tout ça, j’ai pu évidemment améliorer grandement mon anglais, surtout mon parlé du quotidien et ma compréhension des différents accents. Je suis pleinement satisfait de cela car c’était pour moi la première fois que j’avais à me confronter sur une si longue durée à mon quotidien en anglais. J’ai le sentiment d’avoir beaucoup progressé à ce sujet.
+                <div id={"trip-conclusion"} className={"w-3/5 mb-16 text-justify leading-8"}>
+                    De manière globale, les workaway ont été des expériences très enrichissantes. J’ai pu, à la fois d’un point de vue humain, y faire de nombreuses rencontres mais aussi d’un point de vue technique, y apprendre beaucoup de choses dans de nombreux domaines manuels en un lapse de temps réduit, ce qui était l’un des objectifs du voyage.<br/>
+                    Au-delà de tout ça, j’ai pu évidemment améliorer grandement mon anglais, et en particulier mon parlé du quotidien ainsi que ma compréhension des différents accents. Je suis pleinement satisfait de cela car c’était pour moi la première fois que je restais aussi longtemps à l'étranger.<br/>
+                    <br/><h5 className={"text-xl"}>En bref, ce voyage m'a surtout donné envie d'en faire d'autres de ce genre et sans doute au delà de l'Europe pour y découvrir de nouvelles cultures !</h5>
                 </div>
             </section>
         )
