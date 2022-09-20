@@ -67,14 +67,15 @@ class Mobility extends Component{
                     </div>
                     <div className={"mb-16"}>
                         <h2 className={"mb-4 text-left text-2xl"}>Piano di Sorrento, Italie : 26/12/2021 - 10/01/2022</h2>
-                        <div className={"text-justify"}>
+                        <div className={"text-justify leading-8"}>
                             Cette fois, un projet de workaway un peu plus classique. Nos hôtes, Marta et Michele, venaient de commencer il y a quelques semaines un projet de permaculture dans leur immense domaine.
                             Étant des novices, ils voulaient expérimenter de nombreuses nouvelles méthodes afin de trouver celles qui correspondaient le mieux à leur terre.
-                            En effet, l'expérimentation constitue l’essence de la permaculture, on cherche de manière empirique comment fonctionne notre sol afin d’y créer un écosystème.
-                            Ainsi, nous testé entre la mise en place de ce qu’ils appelaient “un jardin élémentaire”, c’est une portion de terrain sur laquelle on dépose une couche de foin sur toute la zone avant de planter des légumes (pour nous c’était des oignons.
-                            Ils essayaient aussi des méthodes de greffage (mettre un lien) de branche d’arbre sur un autre arbre, ce qui fonctionnait particulièrement bien. Parmi les moins fun, nous avons aussi placé du fumier au pied des jeunes arbres comme engrais organique.
-                            Nous devions aussi, tous les matins, nous occuper des animaux et aller nourrir les cochons et les poules.
-                            Ce workaway fut très enrichissant d'un point de vue technique, j’ai pu apprendre quelques notions de permaculture. C’était de plus très agréable de découvrir tout cela en même temps de Marta et Michele.
+                            En effet, l'expérimentation constitue l’essence même de la permaculture, on cherche de manière empirique comment fonctionne notre sol afin d’y créer un écosystème. <br/>
+                            Ainsi, nous avons testé entre autres la mise en place de ce qu’ils appelaient “un jardin élémentaire”, c’est une portion de terrain sur laquelle on dépose une couche de foin sur toute la zone avant de planter des légumes (pour nous c’était des oignons.)
+                            Ils essayaient aussi des <a href={"https://fr.wikipedia.org/wiki/Greffe_(botanique)"} target={"_blank"} rel={"noopener noreferrer"} className={"text-[#008b8b]"}>méthodes de greffage</a> de branche d’arbre sur un autre arbre, ce qui fonctionnait particulièrement bien.
+                            Parmi les moins fun, nous avons aussi placé du fumier comme engrais organique au pied des jeunes arbres. <br/>
+                            Nous devions aussi, tous les matins, nous occuper des animaux et aller nourrir les cochons et les poules.<br/>
+                            <br/>Ce workaway fut très enrichissant d'un point de vue technique, j’ai pu apprendre quelques notions de permaculture. C’était de plus très agréable de découvrir tout cela en même temps de Marta et Michele.
                             Un autre point très important que je dois mentionner est l’importance qu’accordent Marta et Michele aux questions écologiques et en particulier à la gestion des déchets.
                             D’une part, de par leur mode de vie, ils essaient de produire 0 déchet non recyclable et réduire au maximum ceux qui le sont. Ils ont aussi plusieurs composts qui ont chacun un usage en particulier.
                             Je tiens à soulever tout ça car cela m’a fait beaucoup réfléchir au sujet, entre autres, de la surconsommation et j’ai pu en discuter de nombreuses fois avec eux.
@@ -83,9 +84,12 @@ class Mobility extends Component{
 
                     <div className={"mb-16"}>
                         <h2 className={"mb-4 text-left text-2xl"}>Agio Nikolaos, Grèce : 30/01/2022 - 14/02/2022</h2>
-                        <div className={"text-justify"}>
-                            Direction le sud de la Grèce  De loin la plus difficile, j’ai passé deux semaines chez mon hôte Pavlos pour la récolte manuelle des olives.
-                            Il n’y a pas grand chose à raconter professionnellement de cette expérience, si ce n’est que c’est un travail physiquement très fatiguant de part la longueur et l’intensité des journées. Mais malgré tout cela, c’était par de nombreux aspects une très belle expérience durant laquelle j’ai pu rencontrer pleins d’autres workawayers !
+                        <div className={"text-justify leading-8"}>
+                            Direction le sud de la Grèce pour ce qui était de loin l'expérience la plus difficile.<br/>
+                            J’ai passé deux semaines chez mon hôte Pavlos pour la récolte manuelle des olives.
+                            Professionnellement, il n'y a pas beaucoup plus à redire de cette expérience, si ce n’est que c’est un travail physiquement très fatiguant de part la longueur et l’intensité des journées.
+                            Pavlos nous laissait tout de même autant de jours de pause que l'on voulait si nous étions trop épuissés, cela reste du volontariat !<br/>
+                            Mais malgré la difficulté, c’était par de nombreux aspects une très belle expérience durant laquelle j’ai pu rencontrer d’autres workawayers avec qui nous avons passé de très bons moments.
                         </div>
                     </div>
 
