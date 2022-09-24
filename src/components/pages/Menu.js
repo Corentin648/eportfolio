@@ -87,7 +87,7 @@ class Menu extends Component {
                             </div>
                         </div>
                         <Link to="/ppp" className={"topnav-item rounded-md"} onClick={() => this.handleOpenCloseSidebar()}>PPP<hr className={"md:hidden"}/></Link>
-                        <Link to="/personalprojects" className={"topnav-item rounded-md"} onClick={() => this.handleOpenCloseSidebar()}>Personal Projects<hr className={"md:hidden"}/></Link>
+                        <Link to="/personalprojects" className={"topnav-item rounded-md"} onClick={() => this.handleOpenCloseSidebar()}>My Projects<hr className={"md:hidden"}/></Link>
                     </div>
                 </section>
         );

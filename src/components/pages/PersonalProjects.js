@@ -3,6 +3,8 @@ import '../styles/PersonalProjects.css';
 import {Theme} from "../../theme";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
+import {Link} from "react-router-dom";
+import {faArrowUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
 
 class PersonalProjects extends Component{
 
@@ -27,14 +29,35 @@ class PersonalProjects extends Component{
                         </a>
                     </div>
 
-                    <div className={`w-full flex flex-col rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
-                        I have recently worked on a website for my father's association. They present every year a main event to show many military vehicles.
-                        So, they needed a site for participants to subscribe and people to see the last year event photos !
+
+                    <div className={`w-full flex flex-col items-center rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
+                        <div>                        <img
+                            className={""}
+                            src={"https://via.placeholder.com/300x150"}
+                            alt={""}/>
+                        </div>
+                        <h3 className={"w-full p-4 text-left text-2xl font-medium"}>Camp US website</h3>
+                        <div className={"w-full p-4 text-md text-left italic"}>React.JS, Sass</div>
+                        <span className={"w-full p-4 text-lg text-justify"}>
+                            A front-end website presenting my father's association, organising each year a military vehicles show
+                        </span>
+                        <div className={"w-full flex"}>
+                            <Link
+                                  className={"slide-button border-2 border-[#333] rounded-md p-3 w-1/2 text-center text-2xl"}
+                                  to={"/aboutme"}>
+                                Try it<FontAwesomeIcon className={"pl-4"} icon={faArrowUpRightFromSquare}/>
+                            </Link>
+                            <Link id={"projects-button"}
+                                  className={"slide-button sm:ml-2 rounded-md p-3 w-1/2 hover:no-underline text-center text-2xl text-white"}
+                                  to={"/personalprojects"}>
+                                <FontAwesomeIcon icon={faGithub}/>
+                            </Link>
+                        </div>
                     </div>
                 </div>
                 <div className={"w-full lg:w-4/5 h-max mt-[50px] mb-[30px] lg:mb-0 " + Theme.cardClass}>
                     <div className={Theme.cardHeaderClass}>
-                        Personal projects
+                        My projects
                         <a href="https://github.com/Corentin648"
                            target={"_blank"}
                            rel={"noopener noreferrer"}>
