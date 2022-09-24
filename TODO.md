@@ -31,5 +31,7 @@
 
 * ### Ajout de tout le contenu à propos de la mobilité
 
-[x] faire un plan des différentes parties
-[ ] trouver un design pour cette page
+* [x] faire un plan des différentes parties
+* [x] trouver un design pour cette page
+* [ ] ajouter une photo pour chaque workaway
+* [ ] ajouter quelques photos (dans un pdf ?) de preuves physiques 
