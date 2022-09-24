@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../styles/Mobility.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
+    faBook,
     faBriefcase,
     faEarthEurope,
     faMoneyBill,
@@ -9,6 +10,7 @@ import {
     faScroll,
     faUserCheck
 } from "@fortawesome/free-solid-svg-icons";
+import compte_workaway from "../../assets/compte_workaway.pdf";
 
 class Mobility extends Component{
 
@@ -20,15 +22,16 @@ class Mobility extends Component{
                 <div id={"trip-introduction"} className={"w-3/5"}>
                     <div className={"mb-16 text-justify leading-8"}>
                         Je présente ici mon projet de mobilité internationale dans le cadre de mes études à l'N7.
-                        J'ai eu la chance de réaliser durant une IVE, un tour d'Europe en voiture, voyage durant lequel j'ai à la fois travaillé à l'aide de la plateforme Workaway mais aussi visité de nombreux pays !
+                        J'ai eu la chance de réaliser au cours une IVE, un tour d'Europe en voiture avec ma copine, voyage durant lequel j'ai à la fois travaillé à l'aide de la plateforme Workaway mais aussi visité de nombreux pays !
                         Ainsi, je vais pouvoir ici parler plus en détail des expériences de Workaway que j'ai pu avoir. Si vous
-                        voulez consulter la partie roadtrip de mon voyage, vous pouvez aller jeter un oeil à mon Polarsteps.
+                        voulez consulter la partie plus roadtrip de mon voyage, vous pouvez aller jeter un oeil à <a href={"https://www.polarsteps.com/Caradin/4635804-roadtrip-en-europe"} target={"_blank"} rel={"noopener noreferrer"} className={"text-[#008b8b]"}>mon Polarsteps</a>
+                        , que j'ai commencé à partir de la Grèce.
                     </div>
                     <div className={"mb-16"}>
                         <h2 className={"mb-4 text-left text-2xl"}>
                             <FontAwesomeIcon className={"pr-2"} icon={faNetworkWired}/> Workaway, qu'est ce que c'est ?</h2>
                         <div className={"text-justify leading-8"}>
-                            Workaway est une plateforme web mondiale qui met en relation des "hosts" et des "travelers" (moi).
+                            Workaway est une plateforme web qui met en relation des "hosts" et des "travelers".
                             Les hosts proposent aux travelers un travail, souvent agricole, non rémunéré mais en l'échange d'un lit et de nourriture.
                         </div>
                     </div>
@@ -37,8 +40,8 @@ class Mobility extends Component{
                         <h2 className={"mb-4 text-left text-2xl"}>
                             <FontAwesomeIcon className={"pr-2"} icon={faMoneyBill}/> Financement du voyage</h2>
                         <div className={"text-justify leading-8"}>
-                            Voyager c’est très bien mais il faut des fonds. J’ai donc travaillé de Septembre à Novembre, avant de partir, dans l’entreprise, PhoenixDigital,
-                            dans laquelle j’ai fait mon stage de 2A, en tant que freelance (merci à eux de m’avoir repris ;) ) En revenant, j’ai encore travaillé chez eux durant les mois de Mai et Juin pour compléter le financement .
+                            Voyager c’est très bien, mais il faut des fonds. J’ai donc travaillé en tant que freelance de Septembre à Novembre, avant de partir, dans l’entreprise <a href={"https://www.phenixgroupe.com/"} target={"_blank"} rel={"noopener noreferrer"} className={"text-[#008b8b]"}>Phenix Groupe</a>,
+                            pour laquelle j’avait déjà fait mon stage de 2A, merci à eux de m’avoir repris ! En revenant, j’ai encore travaillé chez eux en Mai et Juin pour compléter le financement.
                         </div>
                     </div>
 
@@ -46,7 +49,7 @@ class Mobility extends Component{
                         <h2 className={"mb-4 text-left text-2xl"}>
                             <FontAwesomeIcon className={"pr-2"} icon={faScroll}/> Quelles expériences ai-je pu avoir ?</h2>
                         <div className={"text-justify leading-8"}>
-                            Durant mon voyage, j’ai d’abord eu l’occasion de passer un workaway d’1 mois chez Eliana, une italienne vivant à Turin.J’ai ensuite passé deux semaines dans workaway près de Naples chez Marta et  Michele.
+                            Durant mon voyage, j’ai d’abord eu l’occasion de faire un workaway d’1 mois chez Eliana, une italienne vivant à Turin. J’ai ensuite passé deux semaines dans workaway près de Naples chez Marta et  Michele.
                             Après cela, direction la Grèce où j’ai eu une autre expérience chez Pavlos dans le Péloponnèse.
                             J’ai fini mon voyage en Autriche en passant un mois chez Gabriele près de Graz.
                         </div>
@@ -109,6 +112,17 @@ class Mobility extends Component{
                     De manière globale, les workaway ont été des expériences très enrichissantes. J’ai pu, à la fois d’un point de vue humain, y faire de nombreuses rencontres mais aussi d’un point de vue technique, y apprendre beaucoup de choses dans de nombreux domaines manuels en un lapse de temps réduit, ce qui était l’un des objectifs du voyage.<br/>
                     Au-delà de tout ça, j’ai pu évidemment améliorer grandement mon anglais, et en particulier mon parlé du quotidien ainsi que ma compréhension des différents accents. Je suis pleinement satisfait de cela car c’était pour moi la première fois que je restais aussi longtemps à l'étranger.<br/>
                     <br/><h5 className={"text-xl"}>En bref, ce voyage m'a surtout donné envie d'en faire d'autres de ce genre et sans doute au delà de l'Europe pour y découvrir de nouvelles cultures !</h5>
+                </div>
+                <h1 className={"mt-[50px] mb-16 text-center text-3xl"}>
+                    <FontAwesomeIcon className={"pr-2"} icon={faBook}/>Annexes</h1>
+                <div id={"trip-conclusion"} className={"w-3/5 mb-16 text-justify leading-8"}>
+                    Le lien de mon Polarsteps, pour la partie roadtrip de mon voyage : <a href={"https://www.polarsteps.com/Caradin/4635804-roadtrip-en-europe"} target={"_blank"} rel={"noopener noreferrer"} className={"text-[#008b8b]"}>https://www.polarsteps.com/Caradin/4635804-roadtrip-en-europe</a><br/>
+
+                    <br/>Je n'ai pas renouvelé mon abonnement à Workaway (60 euros), il est donc impossible de le voir depuis l'extérieur.<br/>
+                    Voici donc <a href={compte_workaway} target={"_blank"} rel={"noopener noreferrer"} className={"text-[#008b8b]"} download>la page web de mon compte</a> imprimée en pdf, je fais au mieux, preuve de son existence !<br/>
+
+                    <br/>Quelques preuves papier de mon voyage
+
                 </div>
             </section>
         )
