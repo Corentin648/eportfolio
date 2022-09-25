@@ -4,6 +4,7 @@ import {Theme} from "../../theme";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import {Link} from "react-router-dom";
+import home_site_campus from "../../assets/home_site_camp_us.png";
 
 class PersonalProjects extends Component{
 
@@ -19,33 +20,26 @@ class PersonalProjects extends Component{
                     </div>
                 </div>
                 <div className={"w-full lg:w-[500px] mb-[30px] lg:mb-0 lg:mr-[50px] flex flex-col items-center"}>
-                    <div className={Theme.cardHeaderClass}>
-                        Some of my programming skills
-                        <a href="https://github.com/Corentin648"
-                           target={"_blank"}
-                           rel={"noopener noreferrer"}>
-                            <FontAwesomeIcon className={`ml-2 ${Theme.textPrimaryColor}`} icon={faGithub}/>
-                        </a>
-                    </div>
-
-
                     <div className={`w-full flex flex-col items-center rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
-                        <div>                        <img
+                        <div className={"w-4/5 p-4"}>
+                            <img
                             className={""}
-                            src={"https://via.placeholder.com/300x150"}
+                            src={home_site_campus}
                             alt={""}/>
                         </div>
                         <h3 className={"w-full p-4 text-left text-2xl font-medium"}>Camp US website</h3>
-                        <div className={"w-full p-4 text-md text-left italic"}>React.JS, Sass</div>
+                        <div className={"w-full p-4 text-md text-[#008b8b] text-left italic"}>React.JS, Sass</div>
                         <span className={"w-full p-4 text-lg text-justify"}>
                             A front-end website presenting my father's association, organising each year a military vehicles show
                         </span>
                         <div className={"w-full mt-4 flex"}>
-                            <Link
+                            <a
                                   className={"bg-[#444] border-r border-[#333] rounded-bl-md p-3 w-1/2 text-center text-2xl"}
-                                  to={"/aboutme"}>
+                                  href={"https://camp-us-casson44.fr/#/"}
+                                  target={"_blank"} rel={"noopener noreferrer"}
+                            >
                                 Try it
-                            </Link>
+                            </a>
                             <Link
                                   className={"bg-[#444] border-l border-[#333] rounded-br-md p-3 w-1/2 text-center text-3xl"}
                                   to={"/personalprojects"}>
