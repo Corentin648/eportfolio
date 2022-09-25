@@ -4,7 +4,6 @@ import {Theme} from "../../theme";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import {Link} from "react-router-dom";
-import {faArrowUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
 
 class PersonalProjects extends Component{
 
@@ -41,14 +40,14 @@ class PersonalProjects extends Component{
                         <span className={"w-full p-4 text-lg text-justify"}>
                             A front-end website presenting my father's association, organising each year a military vehicles show
                         </span>
-                        <div className={"w-full flex"}>
+                        <div className={"w-full mt-4 flex"}>
                             <Link
-                                  className={"slide-button border-2 border-[#333] rounded-md p-3 w-1/2 text-center text-2xl"}
+                                  className={"bg-[#444] border-r border-[#333] rounded-bl-md p-3 w-1/2 text-center text-2xl"}
                                   to={"/aboutme"}>
-                                Try it<FontAwesomeIcon className={"pl-4"} icon={faArrowUpRightFromSquare}/>
+                                Try it
                             </Link>
-                            <Link id={"projects-button"}
-                                  className={"slide-button sm:ml-2 rounded-md p-3 w-1/2 hover:no-underline text-center text-2xl text-white"}
+                            <Link
+                                  className={"bg-[#444] border-l border-[#333] rounded-br-md p-3 w-1/2 text-center text-3xl"}
                                   to={"/personalprojects"}>
                                 <FontAwesomeIcon icon={faGithub}/>
                             </Link>
