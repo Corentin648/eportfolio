@@ -47,6 +47,33 @@ class PersonalProjects extends Component{
                             </Link>
                         </div>
                     </div>
+                    <div className={`w-full flex flex-col items-center rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
+                        <div className={"w-4/5 p-4"}>
+                            <img
+                                className={""}
+                                src={home_site_campus}
+                                alt={""}/>
+                        </div>
+                        <h3 className={"w-full p-4 text-left text-2xl font-medium"}>Eportfolio</h3>
+                        <div className={"w-full p-4 text-md text-[#008b8b] text-left italic"}>React.JS, Tailwind CSS</div>
+                        <span className={"w-full p-4 text-lg text-justify"}>
+                            The website you're currently browsing, presenting me and my projects
+                        </span>
+                        <div className={"w-full mt-4 flex"}>
+                            <a
+                                className={"bg-[#444] border-r border-[#333] rounded-bl-md p-3 w-1/2 text-center text-2xl"}
+                                href={"https://corentin648.github.io/"}
+                                target={"_blank"} rel={"noopener noreferrer"}
+                            >
+                                Try it
+                            </a>
+                            <Link
+                                className={"bg-[#444] border-l border-[#333] rounded-br-md p-3 w-1/2 text-center text-3xl"}
+                                to={"/personalprojects"}>
+                                <FontAwesomeIcon icon={faGithub}/>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
                 <div className={"w-full lg:w-4/5 h-max mt-[50px] mb-[30px] lg:mb-0 " + Theme.cardClass}>
                     <div className={Theme.cardHeaderClass}>
