@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import {Link} from "react-router-dom";
 import home_site_campus from "../../assets/home_site_camp_us.png";
+import home_eportfolio from "../../assets/home_eportfolio.png";
 
 class PersonalProjects extends Component{
 
@@ -27,8 +28,8 @@ class PersonalProjects extends Component{
                             src={home_site_campus}
                             alt={""}/>
                         </div>
-                        <h3 className={"w-full p-4 text-left text-2xl font-medium"}>Camp US website</h3>
-                        <div className={"w-full p-4 text-md text-[#008b8b] text-left italic"}>React.JS, Sass</div>
+                        <h3 className={"w-full p-3 text-left text-2xl font-medium"}>Camp US website</h3>
+                        <div className={"w-full pl-4 pb-2 text-md text-[#008b8b] text-left italic"}>React.JS, Sass</div>
                         <span className={"w-full p-4 text-lg text-justify"}>
                             A front-end website presenting my father's association, organising each year a military vehicles show
                         </span>
@@ -51,7 +52,7 @@ class PersonalProjects extends Component{
                         <div className={"w-4/5 p-4"}>
                             <img
                                 className={""}
-                                src={home_site_campus}
+                                src={home_eportfolio}
                                 alt={""}/>
                         </div>
                         <h3 className={"w-full p-4 text-left text-2xl font-medium"}>Eportfolio</h3>
