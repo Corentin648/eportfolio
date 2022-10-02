@@ -16,8 +16,8 @@ class PersonalProjects extends Component{
                 <h1 className={`w-full mt-[50px] text-3xl text-center`}>
                     My projects
                 </h1>
-                <div className={"w-full lg:w-4/5 my-[80px] flex flex-col md:flex-row justify-center items-center"}>
-                    <div className={`relative w-full lg:w-[400px] lg:h-[450px] lg:mr-[50px] flex flex-col items-center rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
+                <div className={"w-4/5 my-[80px] flex flex-col lg:flex-row justify-center items-center"}>
+                    <div className={`lg:relative w-full md:w-3/5 h-max lg:w-[400px] lg:h-[450px] lg:mr-[50px] mb-[100px] lg:mb-0 flex flex-col items-center rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
                         <div className={"w-full rounded-t-md"}>
                             <img
                             className={"rounded-t-md"}
@@ -29,7 +29,7 @@ class PersonalProjects extends Component{
                         <span className={"w-full p-4 text-lg text-justify"}>
                             A front-end website presenting my father's association, organising each year a military vehicles show
                         </span>
-                        <div className={"absolute bottom-0 w-full mt-4 flex"}>
+                        <div className={"lg:absolute lg:bottom-0 w-full mt-4 flex"}>
                             <a
                               className={"bg-[#444] border-r border-[#333] rounded-bl-md p-1 w-1/2 text-center text-2xl"}
                                   href={"https://camp-us-casson44.fr/#/"}
@@ -44,7 +44,7 @@ class PersonalProjects extends Component{
                             </Link>
                         </div>
                     </div>
-                    <div className={`relative w-full lg:w-[400px] lg:h-[450px] flex flex-col items-center rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
+                    <div className={`lg:relative w-full md:w-3/5 lg:w-[400px] lg:h-[450px] flex flex-col items-center rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
                         <div className={"w-full rounded-t-md"}>
                             <img
                                 className={"rounded-t-md"}
@@ -56,7 +56,7 @@ class PersonalProjects extends Component{
                         <span className={"w-full p-4 text-lg text-justify"}>
                             The website you're currently browsing, presenting me and my projects
                         </span>
-                        <div className={"absolute bottom-0 w-full mt-4 flex"}>
+                        <div className={"lg:absolute lg:bottom-0 w-full mt-4 flex"}>
                             <Link
                                 className={"bg-[#444] border-r border-[#333] rounded-bl-md p-1 w-1/2 text-center text-2xl"}
                                 to={"/"}>
