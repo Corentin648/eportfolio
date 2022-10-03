@@ -17,7 +17,16 @@ class AboutMe extends Component{
 
     render() {
         return(
-            <div id={"cards-section"} className={"w-full mt-24 flex justify-center"}>
+            <div id={"about-section"} className={"w-full mt-24 flex flex-col justify-center"}>
+                <h1>About me (à souligner)</h1>
+                <div className={"flex flex-col lg:flex-row"}>
+                   <div>La big photo</div>
+                    <div>Le long texte + what I like to do ?</div>
+                </div>
+                <div>La partie des skills</div>
+
+
+
                 <div className={"w-4/5 lg:w-4/5 flex flex-col lg:flex-row lg:justify-center"}>
                     <div className={"w-full lg:w-[500px] mb-[30px] lg:mb-0 lg:mr-[50px] flex flex-col items-center"}>
                         <div className={Theme.cardHeaderClass}>
@@ -32,7 +41,7 @@ class AboutMe extends Component{
                         <div className={`w-full flex flex-col rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
                             <div className={"my-2"}>
                                 <h5 className={"p-2"}>Frontend</h5>
-                                <div className={"p-2 flex"}>
+                                <div className={"p-2 flex justify-center"}>
                                     <div className={"py-1 px-2 border rounded-l-xl"}><FontAwesomeIcon className={"pr-2"} icon={faReact} />React.js</div>
                                     <div className={"py-1 px-2 border"}><FontAwesomeIcon className={"pr-2"} icon={faAngular} />Angular</div>
                                     <div className={"py-1 px-2 border"}><FontAwesomeIcon className={"pr-2"} icon={faCss3} />TailwindCSS</div>
@@ -41,7 +50,7 @@ class AboutMe extends Component{
                             </div>
                             <div className={"my-2"}>
                                 <h5 className={"p-2"}>Backend</h5>
-                                <div className={"p-2 flex"}>
+                                <div className={"p-2 flex justify-center"}>
                                     <div className={"py-1 px-2 border rounded-l-xl"}><FontAwesomeIcon className={"pr-2"} icon={faPhoenixFramework} />Elixir (Phoenix)</div>
                                     <div className={"py-1 px-2 border rounded-r-xl"}><FontAwesomeIcon className={"pr-2"} icon={faDatabase} />PostgreSQL</div>
                                 </div>
