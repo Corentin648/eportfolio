@@ -15,7 +15,7 @@
     * [x] fermer sidebar quand on clique sur item
     * [x] voir le dépassement de hauteur pour dropdown
 
-* [ ] voir le favicon, nom du site et logo
+* [x] voir le favicon, nom du site et logo
 
 ### Priorité 2
 
