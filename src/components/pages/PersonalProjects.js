@@ -17,8 +17,8 @@ class PersonalProjects extends Component{
                 <h1 className={`w-full mt-[50px] text-3xl text-center`}>
                     My projects
                 </h1>
-                <div className={"w-4/5 my-[80px] flex flex-col lg:flex-row justify-center items-center"}>
-                    <div className={`lg:relative w-full md:w-3/5 h-max lg:w-[400px] lg:h-[450px] lg:mr-[50px] mb-[100px] lg:mb-0 flex flex-col items-center rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
+                <div className={"w-4/5 my-[80px] grid lg:grid-cols-2 2xl:grid-cols-3 gap-8 place-items-center"}>
+                    <div className={`lg:relative w-full sm:w-4/5 md:w-3/5 h-max lg:w-[400px] lg:h-[450px] lg:mb-0 flex flex-col items-center rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
                         <div className={"w-full rounded-t-md"}>
                             <img
                             className={"rounded-t-md"}
@@ -45,7 +45,7 @@ class PersonalProjects extends Component{
                             </Link>
                         </div>
                     </div>
-                    <div className={`lg:relative w-full md:w-3/5 lg:w-[400px] lg:h-[450px] flex flex-col items-center rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
+                    <div className={`lg:relative w-full sm:w-4/5 md:w-3/5 lg:w-[400px] lg:h-[450px] flex flex-col items-center rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
                         <div className={"w-full rounded-t-md"}>
                             <img
                                 className={"rounded-t-md"}
@@ -71,7 +71,7 @@ class PersonalProjects extends Component{
                             </a>
                         </div>
                     </div>
-                    <div className={`lg:relative w-full md:w-3/5 lg:w-[400px] lg:h-[450px] flex flex-col items-center rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
+                    <div className={`lg:relative w-full sm:w-4/5 md:w-3/5 lg:w-[400px] lg:h-[450px] lg:col-span-2 2xl:col-span-1 flex flex-col items-center rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
                         <div className={"w-full rounded-t-md"}>
                             <img
                                 className={"rounded-t-md"}
