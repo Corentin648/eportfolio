@@ -22,7 +22,7 @@
 * [x] revoir les cards de la homepage (ajouter les hobbies, changer design)
 * [x] ajouter un bouton vers page mobilité sur homepage
 * [x] refaire la page des projets persos
-* [ ] ajouter d'autres projets persos
+* [x] ajouter d'autres projets persos
 * [ ] revoir la page About me
 
 ## Questionnements
