@@ -37,7 +37,7 @@ class Home extends Component {
                        </div>
 
                         <img
-                            className={"w-52 h-52 hidden lg:flex rounded-full shadow-black/50"}
+                            className={"w-60 h-60 hidden lg:flex rounded-full shadow-black/50"}
                             src={require("../../assets/photo_corentin_carree.jpg")}
                             alt={""}/>
                     </div>
