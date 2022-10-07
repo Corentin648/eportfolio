@@ -14,10 +14,10 @@ class Home extends Component {
     render() {
         return (
             <section id={"home-page"} className={"mb-16 w-full flex flex-col justify-center items-center"}>
-                    <div className={"w-3/5 mt-8 flex justify-between items-center"}>
+                    <div className={"w-3/5 mt-24 flex justify-between items-center"}>
                        <div className={"flex flex-col items-left"}>
                             <h1 className={`${Theme.textPrimaryColor} text-3xl md:text-5xl md:leading-normal text-left`}>
-                                Hi there, I'm Corentin Dominguez, a software programming student
+                                Hi there ! I'm Corentin Dominguez, a software programming student
                             </h1>
                            <h3 className={`mt-3 mb-4 ${Theme.textSoftPrimaryColor} text-xl text-left`}>
                                Currently studying at ENSEEIHT, an engineering school in Toulouse
