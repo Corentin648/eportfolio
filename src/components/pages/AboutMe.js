@@ -21,13 +21,26 @@ class AboutMe extends Component{
                 <div className={"w-3/5"}>
                     <h1 className={"text-2xl underline underline-offset-4"}>About me</h1>
                     <div className={"flex flex-col lg:flex-row"}>
-                       <div>
+                       <div className={"w-1/2"}>
                            <img
                            className={"h-[600px] rounded-md shadow-black/50"}
                            src={require("../../assets/big_photo_corentin.jpeg")}
                            alt={""}/>
                        </div>
-                        <div>Le long texte + what I like to do ?</div>
+                        <div className={"w-1/2"}>Hi ! I'm Corentin Dominguez, I will be soon (I hope) a software engineer. I currently study
+                            at ENSEEIHT in Toulouse and yes, this is my last year ! I started programming no that long ago,
+                            when I started school actually, but I loved it immediately. At high school, I was a maths lover,
+                            but during my prep's school I became a little bit to theoretical for me and that's why I strongly believe
+                            that computing is for me the best alternative between theory and practice.<br/>
+
+                            <br/>Now I really like developing softwares and in particular web sites. I started from scratch in my room
+                            by myself I have the feeling I always acquire new competences. My studies also helped me a lot
+                            to understand many theoretical and underlying concepts of web development. In parallel, I had the
+                            chance to freelance at Phenix Digital as fullstack developer. I learned there professionalism.<br/>
+
+                            <br/>
+
+                        </div>
                     </div>
                     <div>La partie des skills</div>
                 </div>
