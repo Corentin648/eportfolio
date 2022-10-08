@@ -11,7 +11,7 @@ import {
     faReact,
     faSass
 } from "@fortawesome/free-brands-svg-icons";
-import {faC, faChess, faDatabase, faFilm, faMountain, faPersonRunning} from "@fortawesome/free-solid-svg-icons";
+import {faC, faDatabase} from "@fortawesome/free-solid-svg-icons";
 
 class AboutMe extends Component{
 
@@ -23,7 +23,7 @@ class AboutMe extends Component{
                     <div className={"flex flex-col lg:flex-row"}>
                        <div className={"w-2/5"}>
                            <img
-                           className={"h-[600px] rounded-md shadow-black/50"}
+                           className={"h-[600px] rounded-3xl shadow-black/50"}
                            src={require("../../assets/big_photo_corentin.jpeg")}
                            alt={""}/>
                        </div>
@@ -50,7 +50,6 @@ class AboutMe extends Component{
 
                         </div>
                     </div>
-                    <div>La partie des skills</div>
                 </div>
 
 
@@ -98,32 +97,6 @@ class AboutMe extends Component{
                                     <div className={"py-1 px-2 border rounded-l-xl"}><FontAwesomeIcon className={"pr-2"} icon={faGithub} />Github</div>
                                     <div className={"py-1 px-2 border"}>Semaphore CI</div>
                                     <div className={"py-1 px-2 border rounded-r-xl"}><FontAwesomeIcon className={"pr-2"} icon={faDocker} />Docker</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={"w-full lg:w-[500px] mb-[30px] lg:mb-0 lg:ml-[50px] flex flex-col items-center"}>
-                        <div className={Theme.cardHeaderClass}>
-                            My personality and hobbies
-                        </div>
-
-                        <div className={`w-full flex flex-col rounded-md text-white ${Theme.bgPrimaryColor} shadow-2xl shadow-black`}>
-                            <div className={"my-2"}>
-                                <h5 className={"p-2"}>My personality</h5>
-                                <div className={"p-2 flex"}>
-                                    <div className={"py-1 px-2 border rounded-l-xl"}>Communicating</div>
-                                    <div className={"py-1 px-2 border"}>Autonomous</div>
-                                    <div className={"py-1 px-2 border"}>Flexible</div>
-                                    <div className={"py-1 px-2 border rounded-r-xl"}>Enterprising</div>
-                                </div>
-                            </div>
-                            <div className={"my-2"}>
-                                <h5 className={"p-2"}>My hobbies</h5>
-                                <div className={"p-2 flex"}>
-                                    <div className={"py-1 px-2 border rounded-l-xl"}><FontAwesomeIcon className={"pr-2"} icon={faPersonRunning} />Running</div>
-                                    <div className={"py-1 px-2 border"}><FontAwesomeIcon className={"pr-2"} icon={faMountain} />Trekking</div>
-                                    <div className={"py-1 px-2 border"}><FontAwesomeIcon className={"pr-2"} icon={faChess} />Playing chess</div>
-                                    <div className={"py-1 px-2 border rounded-r-xl"}><FontAwesomeIcon className={"pr-2"} icon={faFilm} />Watching movies</div>
                                 </div>
                             </div>
                         </div>
