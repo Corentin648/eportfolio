@@ -21,24 +21,27 @@ class AboutMe extends Component{
                 <div className={"w-3/5"}>
                     <h1 className={"text-2xl underline underline-offset-4"}>About me</h1>
                     <div className={"flex flex-col lg:flex-row"}>
-                       <div className={"w-1/2"}>
+                       <div className={"w-2/5"}>
                            <img
                            className={"h-[600px] rounded-md shadow-black/50"}
                            src={require("../../assets/big_photo_corentin.jpeg")}
                            alt={""}/>
                        </div>
-                        <div className={"w-1/2"}>Hi ! I'm Corentin Dominguez, I will be soon (I hope) a software engineer. I currently study
-                            at ENSEEIHT in Toulouse and yes, this is my last year ! I started programming no that long ago,
-                            when I started school actually, but I loved it immediately. At high school, I was a maths lover,
-                            but during my prep's school I became a little bit to theoretical for me and that's why I strongly believe
-                            that computing is for me the best alternative between theory and practice.<br/>
+                        <div className={"w-3/5 px-8 text-lg leading-7 text-justify"}>
+                            Hi ! I'm Corentin Dominguez, I will be soon (I hope) a software engineer. I currently study
+                            at ENSEEIHT in Toulouse and yes, this is my last year !<br/>
 
-                            <br/>Now I really like developing softwares and in particular web sites. I started from scratch in my room
-                            by myself I have the feeling I always acquire new competences. My studies also helped me a lot
-                            to understand many theoretical and underlying concepts of web development. In parallel, I had the
-                            chance to freelance at Phenix Digital as fullstack developer. I learned there professionalism.<br/>
+                            <br/>During high school, I was a maths lover, but in prep's school I became a little bit to theoretical for me and I started developing.<br/>
+                            Today, I strongly believe that computing is the best alternative between theory and practice and it's perfect for me !<br/>
 
-                            <br/>
+                            <br/>Now I really like developing softwares and in particular web sites. I started in my room learning
+                            by myself. My studies also help me to understand many underlying concepts of web development.<br/>
+                            As professional experience, I had the chance to freelance at Phenix Digital as fullstack developer.<br/>
+
+                            <br/>Beyond this part of my life, sport is very important. I run several times peer week and I always like
+                            to learn and practice any kind of sport. I'm also a fanatic of hiking and mountain trekking.<br/>
+                            Aside from physical sport, I'm a chess player from many years, you can by the way challenge me
+                            on chess.com (mettre le lien) ! And when I want to put my brain down, I love to watch and discover new movies.
 
                         </div>
                     </div>
