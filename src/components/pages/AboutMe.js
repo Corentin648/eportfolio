@@ -28,20 +28,25 @@ class AboutMe extends Component{
                            alt={""}/>
                        </div>
                         <div className={"w-3/5 px-8 text-lg leading-7 text-justify"}>
-                            Hi ! I'm Corentin Dominguez, I will be soon (I hope) a software engineer. I currently study
-                            at ENSEEIHT in Toulouse and yes, this is my last year !<br/>
+                            Hi ! I'm Corentin Dominguez, I'm currently <b>last year student</b> at ENSEEIHT in Toulouse and and I hope, I will be soon <b>a software engineer</b> !<br/>
 
-                            <br/>During high school, I was a maths lover, but in prep's school I became a little bit to theoretical for me and I started developing.<br/>
-                            Today, I strongly believe that computing is the best alternative between theory and practice and it's perfect for me !<br/>
+                            <br/>During high school, <b>I was a maths lover</b>, but in prep's school I became a little bit to theoretical for me and I started developing.<br/>
 
-                            <br/>Now I really like developing softwares and in particular web sites. I started in my room learning
+                            <br/>Today, I strongly believe that <b>computing is the best alternative between theory and practice</b> and it's perfect for me !<br/>
+
+                            <br/>
+
+                            <br/>Now <b>I really like developing softwares and in particular web sites</b>. I started in my room learning
                             by myself. My studies also help me to understand many underlying concepts of web development.<br/>
-                            As professional experience, I had the chance to freelance at Phenix Digital as fullstack developer.<br/>
 
-                            <br/>Beyond this part of my life, sport is very important. I run several times peer week and I always like
-                            to learn and practice any kind of sport. I'm also a fanatic of hiking and mountain trekking.<br/>
-                            Aside from physical sport, I'm a chess player from many years, you can by the way challenge me
-                            on chess.com (mettre le lien) ! And when I want to put my brain down, I love to watch and discover new movies.
+                            <br/>As a professional experience, I had the chance to <b>freelance</b> at Phenix Digital as <b>fullstack developer</b>.<br/>
+
+                            <br/>
+
+                            <br/>Beyond this part of my life, <b>sport is very important</b>. I run several times peer week and I always like
+                            to learn and practice any kind of sport. I'm also a fanatic of <b>hiking and mountain trekking</b>.<br/>
+                            <br/>Aside from physical sport, I'm a <b>chess player</b> from many years, you can by the way challenge me
+                            on chess.com (mettre le lien) ! And when I want to put my brain down, I love to <b>watch and discover new movies</b>.
 
                         </div>
                     </div>
