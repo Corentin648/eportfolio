@@ -17,13 +17,13 @@ class AboutMe extends Component{
 
     render() {
         return(
-            <div id={"about-section"} className={"w-full mt-24 flex flex-col items-center"}>
-                <div className={"w-3/5 mb-32"}>
+            <div id={"about-section"} className={"w-full flex flex-col items-center"}>
+                <div className={"w-3/5 mt-24 mb-32"}>
                     <h1 className={"mb-8 text-2xl underline underline-offset-4"}>About me</h1>
                     <div className={"flex flex-col lg:flex-row"}>
-                       <div className={"w-2/5"}>
+                       <div className={"image-wrapper rounded-3xl"}>
                            <img
-                           className={"h-[600px] rounded-3xl shadow-black/50"}
+                           className={"image rounded-3xl"}
                            src={require("../../assets/big_photo_corentin.jpeg")}
                            alt={""}/>
                        </div>

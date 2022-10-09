@@ -24,6 +24,7 @@
 * [x] refaire la page des projets persos
 * [x] ajouter d'autres projets persos
 * [ ] revoir la page About me
+* [ ] changer le hover de la navbar grands écrans
 
 ## Questionnements
 
@@ -36,4 +37,4 @@
 * [x] faire un plan des différentes parties
 * [x] trouver un design pour cette page
 * [ ] ajouter une photo pour chaque workaway
-* [ ] ajouter quelques photos (dans un pdf ?) de preuves physiques 
+* [ ] ajouter quelques photos (dans un pdf ?) de preuves physiques
