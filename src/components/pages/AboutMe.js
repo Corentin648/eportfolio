@@ -20,14 +20,14 @@ class AboutMe extends Component{
             <div id={"about-section"} className={"w-full flex flex-col items-center"}>
                 <div className={"w-3/5 mt-24 mb-32"}>
                     <h1 className={"mb-8 text-2xl underline underline-offset-4"}>About me</h1>
-                    <div className={"flex flex-col lg:flex-row"}>
-                       <div className={"image-wrapper rounded-3xl"}>
+                    <div className={""}>
+                       <div className={"image-wrapper my-4 mx-6 rounded-3xl float-left"}>
                            <img
                            className={"image rounded-3xl"}
                            src={require("../../assets/big_photo_corentin.jpeg")}
                            alt={""}/>
                        </div>
-                        <div className={"w-3/5 px-8 text-lg leading-7 text-justify"}>
+                        <div className={"w-full text-lg leading-7 text-justify"}>
                             Hi ! I'm Corentin Dominguez, I'm currently <b>last year student</b> at ENSEEIHT in Toulouse and and I hope, I will be soon <b>a software engineer</b> !<br/>
 
                             <br/>During high school, <b>I was a maths lover</b>, but in prep's school I became a little bit to theoretical for me and I started developing.<br/>

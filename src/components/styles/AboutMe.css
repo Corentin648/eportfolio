@@ -1,9 +1,9 @@
 .image-wrapper {
     position: relative;
     height: 0;
-    width: 40%;
-    /* ratio : 40% * 1600px / 1201px (logo size) */
-    padding-bottom: 53.33%;
+    width: 45%;
+    /* ratio : 45% * 1600px / 1201px (logo size) */
+    padding-bottom: 60%;
 }
 
 .image {
