@@ -26,8 +26,8 @@
     }
 
     .topnav-item:hover {
-        color: #333;
-        background-color: #008b8b;
+        text-decoration-line: underline;
+        text-underline-offset: 4px;
     }
 
     #dropdown {

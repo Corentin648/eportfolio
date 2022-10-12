@@ -24,7 +24,7 @@
 * [x] refaire la page des projets persos
 * [x] ajouter d'autres projets persos
 * [ ] revoir la page About me
-* [ ] changer le hover de la navbar grands écrans
+* [x] changer le hover de la navbar grands écrans
 
 ## Questionnements
 
