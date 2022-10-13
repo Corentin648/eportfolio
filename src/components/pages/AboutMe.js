@@ -21,22 +21,18 @@ class AboutMe extends Component{
                 <div className={"w-3/5 mt-24 mb-32"}>
                     <h1 className={"mb-8 text-2xl underline underline-offset-4"}>About me</h1>
                     <div className={""}>
-                       <div className={"image-wrapper my-4 mx-6 rounded-3xl float-left"}>
+                       <div className={"image-wrapper hidden lg:block mr-16 rounded-3xl lg:float-left"}>
                            <img
                            className={"image rounded-3xl"}
                            src={require("../../assets/big_photo_corentin.jpeg")}
                            alt={""}/>
                        </div>
-                        <div className={"w-full text-lg leading-7 text-justify"}>
+                        <div className={"w-full text-lg lg:text-xl leading-7 text-justify"}>
                             Hi ! I'm Corentin Dominguez, I'm currently <b>last year student</b> at ENSEEIHT in Toulouse and and I hope, I will be soon <b>a software engineer</b> !<br/>
-
-                            <br/>During high school, <b>I was a maths lover</b>, but in prep's school I became a little bit to theoretical for me and I started developing.<br/>
-
-                            <br/>Today, I strongly believe that <b>computing is the best alternative between theory and practice</b> and it's perfect for me !<br/>
 
                             <br/>
 
-                            <br/>Now <b>I really like developing softwares and in particular web sites</b>. I started in my room learning
+                            <br/><b>I really like developing softwares and in particular web sites</b>. I started in my room learning
                             by myself. My studies also help me to understand many underlying concepts of web development.<br/>
 
                             <br/>As a professional experience, I had the chance to <b>freelance</b> at Phenix Digital as <b>fullstack developer</b>.<br/>
