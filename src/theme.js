@@ -1,5 +1,5 @@
 export class Theme {
-    static bgColor = "bg-zinc-200";
+    static bgColor = "bg-zinc-100";
 
     static textPrimaryColor = "text-[#333]";
     static textHoverPrimaryColor = "hover:text-[#008b8b]";
