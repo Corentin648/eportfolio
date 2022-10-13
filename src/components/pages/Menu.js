@@ -66,14 +66,15 @@ class Menu extends Component {
                         </div>
 
                         <Link to="/" className="topnav-item rounded-md" onClick={() => this.handleOpenCloseSidebar()}>Home<hr className={"md:hidden"}/></Link>
-                        <Link to="/spanish" className={"topnav-item rounded-md"} onClick={() => this.handleOpenCloseSidebar()}>Spanish<hr className={"md:hidden"}/></Link>
+                        <Link to="/aboutme" className="topnav-item rounded-md" onClick={() => this.handleOpenCloseSidebar()}>About me<hr className={"md:hidden"}/></Link>
                         <Link to="/mobility" className={"topnav-item rounded-md"} onClick={() => this.handleOpenCloseSidebar()}>Mobility<hr className={"md:hidden"}/></Link>
+                        <Link to="/personalprojects" className={"topnav-item rounded-md"} onClick={() => this.handleOpenCloseSidebar()}>My Projects<hr className={"md:hidden"}/></Link>
                         <div
                             id={"dropdown"}
                             className={`${this.state.dropButtonClick}`}
                             onClick={() => this.handleOnClickDropButton()}
                         >
-                            <button id={"dropbutton"} className="topnav-item rounded-md">Soft & Human Skills
+                            <button id={"dropbutton"} className="topnav-item rounded-md">ENSEEIHT
                                 <FontAwesomeIcon id={"caret-down"} className={"pl-4"} icon={faCaretDown}/>
                                 <hr className={"md:hidden"}/>
 
@@ -84,10 +85,10 @@ class Menu extends Component {
                                 onMouseLeave={() => this.handleOnBlurDropdownContent()}>
                                 <Link to="/leadership" className={"md:rounded-t-md"} onClick={() => this.handleOpenCloseSidebar()}>Leadership & Management</Link>
                                 <Link to="/civicengagement" className={"md:rounded-b-md"} onClick={() => this.handleOpenCloseSidebar()}>Civic Engagement</Link>
+                                <Link to="/spanish" className={"md:rounded-t-md"} onClick={() => this.handleOpenCloseSidebar()}>Spanish</Link>
+                                <Link to="/ppp" className={"md:rounded-b-md"} onClick={() => this.handleOpenCloseSidebar()}>PPP</Link>
                             </div>
                         </div>
-                        <Link to="/ppp" className={"topnav-item rounded-md"} onClick={() => this.handleOpenCloseSidebar()}>PPP<hr className={"md:hidden"}/></Link>
-                        <Link to="/personalprojects" className={"topnav-item rounded-md"} onClick={() => this.handleOpenCloseSidebar()}>My Projects<hr className={"md:hidden"}/></Link>
                     </div>
                 </section>
         );
