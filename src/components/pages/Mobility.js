@@ -116,7 +116,7 @@ class Mobility extends Component{
                 <h1 className={"mt-[50px] mb-16 text-center text-3xl"}>
                     <FontAwesomeIcon className={"pr-2"} icon={faBook}/>Annexes</h1>
                 <div id={"trip-conclusion"} className={"w-3/5 mb-16 text-justify leading-8"}>
-                    Le lien de mon Polarsteps, pour la partie roadtrip de mon voyage : <a href={"https://www.polarsteps.com/Caradin/4635804-roadtrip-en-europe"} target={"_blank"} rel={"noopener noreferrer"} className={"text-[#008b8b]"}>https://www.polarsteps.com/Caradin/4635804-roadtrip-en-europe</a><br/>
+                    Le lien de mon Polarsteps, pour la partie roadtrip de mon voyage : <a href={"https://www.polarsteps.com/Caradin/4635804-roadtrip-en-europe"} target={"_blank"} rel={"noopener noreferrer"} className={"text-[#008b8b] break-words"}>https://www.polarsteps.com/Caradin/4635804-roadtrip-en-europe</a><br/>
 
                     <br/>Je n'ai pas renouvelé mon abonnement à Workaway (60 euros), il est donc impossible de le voir depuis l'extérieur.<br/>
                     Voici donc <a href={compte_workaway} target={"_blank"} rel={"noopener noreferrer"} className={"text-[#008b8b]"} download>la page web de mon compte</a> imprimée en pdf, je fais au mieux, preuve de son existence !<br/>
