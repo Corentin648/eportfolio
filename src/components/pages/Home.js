@@ -41,7 +41,7 @@ class Home extends Component {
                                    alt={""}/>
                                <h2
                                    className={`lg:ml-4 text-lg lg:text-2xl md:leading-normal text-center lg:text-left ${Theme.textPrimaryColor}`}>
-                                   I just wrote an article about my international mobility at enseeiht, <Link
+                                   I just wrote an article about my international mobility at ENSEEIHT, <Link
                                    className={`underline ${Theme.textSecondaryColor} ${Theme.textHoverSecondaryColor}`}
                                    to={"/mobility"}>look at it !</Link>
                                </h2>

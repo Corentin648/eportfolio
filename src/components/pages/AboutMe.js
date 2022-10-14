@@ -27,7 +27,7 @@ class AboutMe extends Component{
 
                             <br/>
 
-                            <br/>Beyond this part of my life, <b>sport is very important</b>. I run several times peer week and I always like
+                            <br/>Beyond this part of my life, <b>sport is very important</b>. I run several times per week and I always like
                             to learn and practice any kind of sport. I'm also a fanatic of <b>hiking and mountain trekking</b>.<br/>
 
                             <br/>
