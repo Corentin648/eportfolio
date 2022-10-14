@@ -25,6 +25,7 @@
 * [x] ajouter d'autres projets persos
 * [x] revoir la page About me
 * [x] changer le hover de la navbar grands écrans
+* [ ] fix bug mobility petits écrans overflow horizontal
 
 ## Questionnements
 
