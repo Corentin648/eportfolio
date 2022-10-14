@@ -8,6 +8,7 @@
 @media screen and (min-width: 768px){
     #topnav {
         height: 104px;
+        background-color: white;
         display: flex;
         flex-direction: row;
         justify-content: center;

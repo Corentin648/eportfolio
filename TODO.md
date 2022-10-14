@@ -23,7 +23,7 @@
 * [x] ajouter un bouton vers page mobilité sur homepage
 * [x] refaire la page des projets persos
 * [x] ajouter d'autres projets persos
-* [ ] revoir la page About me
+* [x] revoir la page About me
 * [x] changer le hover de la navbar grands écrans
 
 ## Questionnements
