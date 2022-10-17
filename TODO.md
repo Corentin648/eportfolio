@@ -16,7 +16,7 @@
     * [x] voir le dépassement de hauteur pour dropdown
 
 * [x] voir le favicon, nom du site et logo
-* [ ] voir le copyright
+* [x] voir le copyright
 * [ ] ajouter une page/un élément de contact pour envoyer mail
 * [ ] ajouter le CV
 
