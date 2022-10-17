@@ -16,6 +16,11 @@ class Footer extends Component {
             }
         }
 
+        getCurrentYear = () => {
+            let d = new Date();
+            return d.getFullYear();
+        }
+
     render() {
         return (
             <section id={"footer"} className={"absolute bottom-0 w-full flex flex-col items-center justify-center"}>
@@ -36,6 +41,7 @@ class Footer extends Component {
                             <FontAwesomeIcon className={Footer.iconClass} icon={faGithub}/>
                         </a>
                     </div>
+                    <div className={"py-2 px-8 text-xs text-gray-400"}>Copyright &copy; {this.getCurrentYear()} Corentin Dominguez. All Rights Reserved</div>
             </section>
         )
             ;
