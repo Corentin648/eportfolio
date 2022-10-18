@@ -13,7 +13,7 @@ class Home extends Component {
 
     render() {
         return (
-            <section id={"home-page"} className={"mb-16 w-full flex flex-col justify-center items-center"}>
+            <section id={"home-page"} className={"mb-16 w-full flex justify-center"}>
                     <div className={"w-4/5 lg:w-3/5 mt-16 lg:mt-32 flex justify-between items-start"}>
                        <div className={"flex flex-col items-left"}>
                             <h1 className={`${Theme.textPrimaryColor} text-3xl md:text-5xl md:leading-normal text-left`}>
@@ -47,11 +47,13 @@ class Home extends Component {
                                </h2>
                            </div>
                        </div>
-
-                        <img
-                            className={"w-60 h-60 hidden mt-16 lg:flex rounded-full shadow-black/50"}
-                            src={require("../../assets/photo_corentin_carree.jpg")}
-                            alt={""}/>
+                        <div className={"w-96 h-96 mt-16 flex flex-col items-center"}>
+                            <img
+                                className={"hidden lg:flex rounded-full shadow-black/50"}
+                                src={require("../../assets/photo_corentin_carree.jpg")}
+                                alt={""}/>
+                            <div className={`py-4 text-xl ${Theme.textPrimaryColor} underline`}>My resume</div>
+                        </div>
                     </div>
             </section>
 
