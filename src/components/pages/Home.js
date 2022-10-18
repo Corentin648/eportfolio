@@ -47,12 +47,12 @@ class Home extends Component {
                                </h2>
                            </div>
                        </div>
-                        <div className={"w-96 h-96 mt-16 flex flex-col items-center"}>
+                        <div className={"w-max h-max flex flex-col items-center"}>
                             <img
-                                className={"hidden lg:flex rounded-full shadow-black/50"}
+                                className={"w-60 h-60 max-w-none hidden lg:flex rounded-full"}
                                 src={require("../../assets/photo_corentin_carree.jpg")}
                                 alt={""}/>
-                            <div className={`py-4 text-xl ${Theme.textPrimaryColor} underline`}>My resume</div>
+                            <div className={`py-4 text-sm ${Theme.textSoftPrimaryColor} font-medium hover:underline`}>Download my resume</div>
                         </div>
                     </div>
             </section>
