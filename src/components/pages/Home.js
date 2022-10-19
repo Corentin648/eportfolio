@@ -3,6 +3,7 @@ import '../styles/Home.css';
 import {Link} from "react-router-dom";
 import {Theme} from "../../theme";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import cv_francais from "../../assets/CV_français.pdf";
 import {
     faArrowUpRightFromSquare,
     faUser
@@ -52,7 +53,13 @@ class Home extends Component {
                                 className={"w-60 h-60 max-w-none hidden lg:flex rounded-full"}
                                 src={require("../../assets/photo_corentin_carree.jpg")}
                                 alt={""}/>
-                            <div className={`py-4 text-sm ${Theme.textSoftPrimaryColor} font-medium hover:underline`}>Download my resume</div>
+                            <a id={"inscription-form-button"}
+                               className={`py-4 text-sm ${Theme.textSoftPrimaryColor} font-medium hover:underline`}
+                               href={cv_francais}
+                               target="_blank"
+                               rel="noreferrer" download>
+                                Download my resume
+                            </a>
                         </div>
                     </div>
             </section>

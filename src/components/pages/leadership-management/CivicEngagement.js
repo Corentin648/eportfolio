@@ -20,7 +20,7 @@ class CivicEngagement extends Component{
                        href={spreading_sciences}
                        target="_blank"
                        rel="noreferrer" download>
-                        Télécharger le PDF
+                        Download PDF
                     </a>
                 </div>
             </section>
