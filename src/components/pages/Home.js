@@ -15,7 +15,7 @@ class Home extends Component {
     render() {
         return (
             <section id={"home-page"} className={"mb-16 w-full flex justify-center"}>
-                    <div className={"w-4/5 lg:w-3/5 mt-16 lg:mt-32 flex justify-between items-start"}>
+                    <div className={"w-4/5 lg:w-3/5 mt-16 lg:mt-32 flex flex-col lg:flex-row justify-between items-start"}>
                        <div className={"flex flex-col items-left"}>
                             <h1 className={`${Theme.textPrimaryColor} text-3xl md:text-5xl md:leading-normal text-left`}>
                                 Hi there ! I'm Corentin Dominguez, a software programming student
