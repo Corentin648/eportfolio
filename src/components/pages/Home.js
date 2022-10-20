@@ -17,7 +17,7 @@ class Home extends Component {
             <section id={"home-page"} className={"mb-16 w-full flex justify-center"}>
                     <div className={"w-4/5 lg:w-3/5 mt-16 lg:mt-32 flex flex-col lg:flex-row justify-between items-start"}>
                        <div className={"flex flex-col items-left"}>
-                            <h1 className={`${Theme.textPrimaryColor} text-3xl md:text-5xl md:leading-normal text-left`}>
+                            <h1 className={`${Theme.textPrimaryColor} text-3xl xl:text-5xl md:leading-normal text-left`}>
                                 Hi there ! I'm Corentin Dominguez, a software programming student
                             </h1>
                            <h3 className={`mt-8 mb-4 ${Theme.textSoftPrimaryColor} text-xl text-left`}>
@@ -41,7 +41,7 @@ class Home extends Component {
                                    src={require("../../assets/workaway_logo.png")}
                                    alt={""}/>
                                <h2
-                                   className={`lg:ml-4 text-lg lg:text-2xl md:leading-normal text-center lg:text-left ${Theme.textPrimaryColor}`}>
+                                   className={`lg:ml-4 text-lg xl:text-2xl md:leading-normal text-center lg:text-left ${Theme.textPrimaryColor}`}>
                                    I just wrote an article about my international mobility at ENSEEIHT, <Link
                                    className={`underline ${Theme.textSecondaryColor} ${Theme.textHoverSecondaryColor}`}
                                    to={"/mobility"}>look at it !</Link>

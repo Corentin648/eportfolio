@@ -18,7 +18,7 @@
 * [x] voir le favicon, nom du site et logo
 * [x] voir le copyright
 * [ ] ajouter une page/un élément de contact pour envoyer mail
-* [ ] ajouter le CV
+* [x] ajouter le CV
 
 ### Priorité 2
 
