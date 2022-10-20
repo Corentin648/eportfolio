@@ -18,7 +18,7 @@ class Mobility extends Component{
         return(
             <section className={"w-full flex flex-col justify-center items-center"}>
                 <h1 className={"mt-[50px] mb-16 text-center text-3xl"}>
-                    <FontAwesomeIcon className={"pr-2"} icon={faEarthEurope}/> Mobilité internationnale N7</h1>
+                    <FontAwesomeIcon className={"pr-2"} icon={faEarthEurope}/> Mobilité internationale N7</h1>
                 <div id={"trip-introduction"} className={"w-3/5"}>
                     <div className={"mb-16 text-justify leading-8"}>
                         Je présente ici mon projet de mobilité internationale dans le cadre de mes études à l'N7.
@@ -56,7 +56,7 @@ class Mobility extends Component{
                     </div>
                 </div>
                 <h1 className={"mt-[50px] mb-16 text-center text-3xl"}>
-                    <FontAwesomeIcon className={"pr-2"} icon={faBriefcase}/> Mes différents Workaway</h1>
+                    <FontAwesomeIcon className={"pr-2"} icon={faBriefcase}/> Mes différents workaway</h1>
                 <div id={"trip-experiences"} className={"w-3/5"}>
                     <div className={"mb-16"}>
                         <h2 className={"mb-4 text-left text-2xl"}>Turin, Italie : 22/11/2021 - 20/12/2021</h2>
@@ -91,7 +91,7 @@ class Mobility extends Component{
                             Direction le sud de la Grèce pour ce qui était de loin l'expérience la plus difficile.<br/>
                             J’ai passé deux semaines chez mon hôte Pavlos pour la récolte manuelle des olives.
                             Professionnellement, il n'y a pas beaucoup plus à redire de cette expérience, si ce n’est que c’est un travail physiquement très fatiguant de part la longueur et l’intensité des journées.
-                            Pavlos nous laissait tout de même autant de jours de pause que l'on voulait si nous étions trop épuissés, cela reste du volontariat !<br/>
+                            Pavlos nous laissait tout de même autant de jours de pause que l'on voulait si nous étions trop épuisés, cela reste du volontariat !<br/>
                             Mais malgré la difficulté, c’était par de nombreux aspects une très belle expérience durant laquelle j’ai pu rencontrer d’autres workawayers avec qui nous avons passé de très bons moments.
                         </div>
                     </div>
