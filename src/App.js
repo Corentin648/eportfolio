@@ -16,7 +16,7 @@ import AboutMe from "./components/pages/AboutMe";
 
 function App() {
   return (
-      <BrowserRouter>
+      <BrowserRouter basename={"/"}>
         <div id="App" className={`relative w-full min-h-screen pb-20 ${Theme.bgColor}`}>
 
             <Menu/>
