@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../../styles/leadership-management/CivicEngagement.css';
-import spreading_sciences from "../../../assets/poster_shs.png";
+import spreading_sciences from "../../../assets/poster_shs.webp";
 import {Theme} from "../../../theme";
 
 

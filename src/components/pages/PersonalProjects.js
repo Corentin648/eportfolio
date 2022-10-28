@@ -4,9 +4,9 @@ import {Theme} from "../../theme";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import {Link} from "react-router-dom";
-import home_site_campus from "../../assets/home_site_camp_us.png";
-import home_eportfolio from "../../assets/home_eportfolio.png";
-import home_jeu_de_la_vie from "../../assets/home_jeu_de_la_vie.png"
+import home_site_campus from "../../assets/home_site_camp_us.webp";
+import home_eportfolio from "../../assets/home_eportfolio.webp";
+import home_jeu_de_la_vie from "../../assets/home_jeu_de_la_vie.webp"
 
 class PersonalProjects extends Component{
 

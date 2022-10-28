@@ -19,6 +19,7 @@
 * [x] voir le copyright
 * [ ] ajouter une page/un élément de contact pour envoyer mail
 * [x] ajouter le CV
+* [x] remplacer les images par des .webp
 
 ### Priorité 2
 

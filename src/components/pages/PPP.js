@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../styles/PPP.css';
 import resume from '../../assets/Resume_Corentin_Dominguez.pdf';
-import job_ad from '../../assets/job_ad_PPP.png';
+import job_ad from '../../assets/job_ad_PPP.webp';
 import ppt from '../../assets/presentation_PPP.pdf';
 
 class PPP extends Component{

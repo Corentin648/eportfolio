@@ -38,7 +38,7 @@ class Home extends Component {
                            <div className={"my-16 flex flex-col md:flex-row items-center"}>
                                <img
                                    className={"hidden lg:block md:w-1/3 w-4/5 md:mr-4"}
-                                   src={require("../../assets/workaway_logo.png")}
+                                   src={require("../../assets/workaway_logo.webp")}
                                    alt={""}/>
                                <h2
                                    className={`lg:ml-4 text-lg xl:text-2xl md:leading-normal text-center lg:text-left ${Theme.textPrimaryColor}`}>
@@ -51,7 +51,7 @@ class Home extends Component {
                         <div className={"w-max h-max flex flex-col items-center"}>
                             <img
                                 className={"w-60 h-60 max-w-none hidden lg:flex rounded-full"}
-                                src={require("../../assets/photo_corentin_carree.jpg")}
+                                src={require("../../assets/photo_corentin_carree.webp")}
                                 alt={""}/>
                             <a id={"inscription-form-button"}
                                className={`py-4 text-sm ${Theme.textSoftPrimaryColor} font-medium hover:underline`}
