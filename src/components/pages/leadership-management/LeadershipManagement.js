@@ -1,12 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReactPlayer from "react-player";
 import "../../styles/leadership-management/LeadershipManagement.css";
 
 
-class LeadershipManagement extends Component{
-
-    render() {
-        return(
+const LeadershipManagement = () => {
+    return(
         <section className={"w-full flex flex-col justify-center items-center"}>
             <h1 className={"mt-[50px] text-center text-3xl"}>Leadership & Management</h1>
             <div className={"mt-16 flex flex-col items-left"}>
@@ -16,9 +14,7 @@ class LeadershipManagement extends Component{
                 </div>
             </div>
         </section>
-        )
-    }
-
+    )
 }
 
 export default LeadershipManagement;

@@ -14,7 +14,7 @@ import PPP from "./components/pages/PPP";
 import {Theme} from "./theme";
 import AboutMe from "./components/pages/AboutMe";
 
-function App() {
+const App = () => {
   return (
       <BrowserRouter basename={"/"}>
         <div id="App" className={`relative w-full min-h-screen pb-20 ${Theme.bgColor}`}>

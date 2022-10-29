@@ -33,7 +33,7 @@
 
 ## Questionnements
 
-* [ ] ajouter une active tab dans la navbar ? -> OUI
+* [x] ajouter une active tab dans la navbar ? -> NON
 
 ## Prochaines features
 
@@ -41,5 +41,6 @@
 
 * [x] faire un plan des différentes parties
 * [x] trouver un design pour cette page
+* [ ] relire tout le texte et déposer sur Moodle
 * [ ] ajouter une photo pour chaque workaway
 * [ ] ajouter quelques photos (dans un pdf ?) de preuves physiques
