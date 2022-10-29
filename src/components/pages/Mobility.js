@@ -14,13 +14,17 @@ import compte_workaway from "../../assets/compte_workaway.pdf";
 
 class Mobility extends Component{
 
+    static sectionClass  = "w-4/5 lg:w-3/5 text-justify leading-8";
+    static titleClass = "w-4/5 lg:w-3/5 mt-12 mb-16 text-center text-3xl";
+    static subTitleClass = "mb-4 text-left text-2xl";
+
     render() {
         return(
             <section className={"w-full flex flex-col justify-center items-center"}>
-                <h1 className={"mt-[50px] mb-16 text-center text-3xl"}>
+                <h1 className={Mobility.titleClass}>
                     <FontAwesomeIcon className={"pr-2"} icon={faEarthEurope}/> Mobilité internationale N7</h1>
-                <div id={"trip-introduction"} className={"w-3/5"}>
-                    <div className={"mb-16 text-justify leading-8"}>
+                <div id={"trip-introduction"} className={Mobility.sectionClass}>
+                    <div className={"mb-16"}>
                         Je présente ici mon projet de mobilité internationale dans le cadre de mes études à l'N7.
                         J'ai eu la chance de réaliser au cours une IVE, un tour d'Europe en voiture avec ma copine, voyage durant lequel j'ai à la fois travaillé à l'aide de la plateforme Workaway mais aussi visité de nombreux pays !
                         Ainsi, je vais pouvoir ici parler plus en détail des expériences de Workaway que j'ai pu avoir. Si vous
@@ -28,39 +32,39 @@ class Mobility extends Component{
                         , que j'ai commencé à partir de la Grèce.
                     </div>
                     <div className={"mb-16"}>
-                        <h2 className={"mb-4 text-left text-2xl"}>
+                        <h2 className={Mobility.subTitleClass}>
                             <FontAwesomeIcon className={"pr-2"} icon={faNetworkWired}/> Workaway, qu'est ce que c'est ?</h2>
-                        <div className={"text-justify leading-8"}>
+                        <div>
                             Workaway est une plateforme web qui met en relation des "hosts" et des "travelers".
                             Les hosts proposent aux travelers un travail, souvent agricole, non rémunéré mais en l'échange d'un lit et de nourriture.
                         </div>
                     </div>
 
                     <div className={"mb-16"}>
-                        <h2 className={"mb-4 text-left text-2xl"}>
+                        <h2 className={Mobility.subTitleClass}>
                             <FontAwesomeIcon className={"pr-2"} icon={faMoneyBill}/> Financement du voyage</h2>
-                        <div className={"text-justify leading-8"}>
+                        <div>
                             Voyager c’est très bien, mais il faut des fonds. J’ai donc travaillé en tant que freelance de Septembre à Novembre, avant de partir, dans l’entreprise <a href={"https://www.phenixgroupe.com/"} target={"_blank"} rel={"noopener noreferrer"} className={"text-[#008b8b]"}>Phenix Groupe</a>,
                             pour laquelle j’avait déjà fait mon stage de 2A, merci à eux de m’avoir repris ! En revenant, j’ai encore travaillé chez eux en Mai et Juin pour compléter le financement.
                         </div>
                     </div>
 
                     <div className={"mb-16"}>
-                        <h2 className={"mb-4 text-left text-2xl"}>
+                        <h2 className={Mobility.subTitleClass}>
                             <FontAwesomeIcon className={"pr-2"} icon={faScroll}/> Quelles expériences ai-je pu avoir ?</h2>
-                        <div className={"text-justify leading-8"}>
+                        <div>
                             Durant mon voyage, j’ai d’abord eu l’occasion de faire un workaway d’1 mois chez Eliana, une italienne vivant à Turin. J’ai ensuite passé deux semaines dans workaway près de Naples chez Marta et  Michele.
                             Après cela, direction la Grèce où j’ai eu une autre expérience chez Pavlos dans le Péloponnèse.
                             J’ai fini mon voyage en Autriche en passant un mois chez Gabriele près de Graz.
                         </div>
                     </div>
                 </div>
-                <h1 className={"mt-[50px] mb-16 text-center text-3xl"}>
+                <h1 className={Mobility.titleClass}>
                     <FontAwesomeIcon className={"pr-2"} icon={faBriefcase}/> Mes différents workaway</h1>
-                <div id={"trip-experiences"} className={"w-3/5"}>
+                <div id={"trip-experiences"} className={Mobility.sectionClass}>
                     <div className={"mb-16"}>
-                        <h2 className={"mb-4 text-left text-2xl"}>Turin, Italie : 22/11/2021 - 20/12/2021</h2>
-                        <div className={"text-justify leading-8"}>
+                        <h2 className={Mobility.subTitleClass}>Turin, Italie : 22/11/2021 - 20/12/2021</h2>
+                        <div>
                             Chez Eliana, le projet consistait en la rénovation d’une partie de sa maison. En effet, nous avions pour objectif de remettre à neuf la chambre de sa fille qui étudie à l’étranger et qui devait rentrer pour Noël. Eliana venait de revenir habiter dans cette maison qu’elle avait déserté pendant la période du Covid.
                             Tout avait été laissé en bazar, nous avons donc passé presque les deux premières semaines à tout remettre en ordre et à déplacer de nombreux meubles.<br/>
                             Ensuite, nous avons pu entrer dans le vif du sujet, rénover la chambre. La chambre étant petite, Eliana voulait construire une estrade sous laquelle il y aurait du rangement.
@@ -69,8 +73,8 @@ class Mobility extends Component{
                         </div>
                     </div>
                     <div className={"mb-16"}>
-                        <h2 className={"mb-4 text-left text-2xl"}>Piano di Sorrento, Italie : 26/12/2021 - 10/01/2022</h2>
-                        <div className={"text-justify leading-8"}>
+                        <h2 className={Mobility.subTitleClass}>Piano di Sorrento, Italie : 26/12/2021 - 10/01/2022</h2>
+                        <div>
                             Cette fois, un projet de workaway un peu plus classique. Nos hôtes, Marta et Michele, venaient de commencer il y a quelques semaines un projet de permaculture dans leur immense domaine.
                             Étant des novices, ils voulaient expérimenter de nombreuses nouvelles méthodes afin de trouver celles qui correspondaient le mieux à leur terre.
                             En effet, l'expérimentation constitue l’essence même de la permaculture, on cherche de manière empirique comment fonctionne notre sol afin d’y créer un écosystème. <br/>
@@ -86,8 +90,8 @@ class Mobility extends Component{
                     </div>
 
                     <div className={"mb-16"}>
-                        <h2 className={"mb-4 text-left text-2xl"}>Agio Nikolaos, Grèce : 30/01/2022 - 14/02/2022</h2>
-                        <div className={"text-justify leading-8"}>
+                        <h2 className={Mobility.subTitleClass}>Agio Nikolaos, Grèce : 30/01/2022 - 14/02/2022</h2>
+                        <div>
                             Direction le sud de la Grèce pour ce qui était de loin l'expérience la plus difficile.<br/>
                             J’ai passé deux semaines chez mon hôte Pavlos pour la récolte manuelle des olives.
                             Professionnellement, il n'y a pas beaucoup plus à redire de cette expérience, si ce n’est que c’est un travail physiquement très fatiguant de part la longueur et l’intensité des journées.
@@ -97,8 +101,8 @@ class Mobility extends Component{
                     </div>
 
                     <div className={"mb-16"}>
-                        <h2 className={"mb-4 text-left text-2xl"}>Königsdorf, Autriche : 04/03/2022 - 30/03/2022</h2>
-                        <div className={"text-justify leading-8"}>
+                        <h2 className={Mobility.subTitleClass}>Königsdorf, Autriche : 04/03/2022 - 30/03/2022</h2>
+                        <div>
                             Pour la fin du voyage, j’ai passé un mois chez Gabriele dans une ferme dont l’objectif est l’auto-suffisance. En effet, Gabriele possède à la fois des animaux (vaches, moutons, chèvres, poules) mais aussi de nombreuses cultures de légumes, ce qui lui permet pendant une partie de l’année d’être auto-suffisante en termes de nourriture.<br/>
                             Je suis resté durant la fin de la période hivernale, ainsi, une grosse partie du travail consistait en le  nettoyage de ses nombreux hectares de terre.
                             De plus, chaque jour nous devions passer au moins une heure à nous occuper du bois, en particulier à le couper. Effectivement, la ferme possédait une cheminée qui permettait à la fois d’alimenter toute l’eau chaude de la maison mais aussi de faire fonctionner le four et les plaques de cuisson.<br/>
@@ -106,16 +110,16 @@ class Mobility extends Component{
                         </div>
                     </div>
                 </div>
-                <h1 className={"mt-[50px] mb-16 text-center text-3xl"}>
+                <h1 className={Mobility.titleClass}>
                     <FontAwesomeIcon className={"pr-2"} icon={faUserCheck}/> Ce que j'ai retenu</h1>
-                <div id={"trip-conclusion"} className={"w-3/5 mb-16 text-justify leading-8"}>
+                <div id={"trip-conclusion"} className={Mobility.sectionClass + " mb-16"}>
                     De manière globale, les workaway ont été des expériences très enrichissantes. J’ai pu, à la fois d’un point de vue humain, y faire de nombreuses rencontres mais aussi d’un point de vue technique, y apprendre beaucoup de choses dans de nombreux domaines manuels en un lapse de temps réduit, ce qui était l’un des objectifs du voyage.<br/>
                     Au-delà de tout ça, j’ai pu évidemment améliorer grandement mon anglais, et en particulier mon parlé du quotidien ainsi que ma compréhension des différents accents. Je suis pleinement satisfait de cela car c’était pour moi la première fois que je restais aussi longtemps à l'étranger.<br/>
                     <br/><h5 className={"text-xl"}>En bref, ce voyage m'a surtout donné envie d'en faire d'autres de ce genre et sans doute au delà de l'Europe pour y découvrir de nouvelles cultures !</h5>
                 </div>
-                <h1 className={"mt-[50px] mb-16 text-center text-3xl"}>
+                <h1 className={Mobility.titleClass}>
                     <FontAwesomeIcon className={"pr-2"} icon={faBook}/>Annexes</h1>
-                <div id={"trip-conclusion"} className={"w-3/5 mb-16 text-justify leading-8"}>
+                <div id={"trip-conclusion"} className={Mobility.sectionClass + " mb-16"}>
                     Le lien de mon Polarsteps, pour la partie roadtrip de mon voyage : <a href={"https://www.polarsteps.com/Caradin/4635804-roadtrip-en-europe"} target={"_blank"} rel={"noopener noreferrer"} className={"text-[#008b8b] break-words"}>https://www.polarsteps.com/Caradin/4635804-roadtrip-en-europe</a><br/>
 
                     <br/>Je n'ai pas renouvelé mon abonnement à Workaway (60 euros), il est donc impossible de le voir depuis l'extérieur.<br/>
