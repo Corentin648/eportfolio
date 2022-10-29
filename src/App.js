@@ -9,7 +9,7 @@ import Mobility from "./components/pages/Mobility";
 import Menu from './components/pages/Menu';
 import LeadershipManagement from "./components/pages/leadership-management/LeadershipManagement";
 import CivicEngagement from "./components/pages/leadership-management/CivicEngagement";
-import PersonalProjects from "./components/pages/PersonalProjects";
+import MyProjects from "./components/pages/MyProjects";
 import PPP from "./components/pages/PPP";
 import {Theme} from "./theme";
 import AboutMe from "./components/pages/AboutMe";
@@ -27,7 +27,7 @@ function App() {
                 <Route path={"/spanish"} component={() => <Spanish/>} />
                 <Route path={"/mobility"} component={() => <Mobility/>} />
                 <Route path={"/civicengagement"} component={() => <CivicEngagement/>} />
-                <Route path={"/personalprojects"} component={() => <PersonalProjects/>} />
+                <Route path={"/personalprojects"} component={() => <MyProjects/>} />
                 <Route path={"/ppp"} component={() => <PPP/>} />
                 <Route path={"/aboutme"} component={() => <AboutMe/>} />
                 <Route path={"/"} component={() => <div>The page doesn't exist</div>}/>

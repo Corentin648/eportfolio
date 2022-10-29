@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../styles/PersonalProjects.css';
+import '../styles/MyProjects.css';
 import {Theme} from "../../theme";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
@@ -8,7 +8,7 @@ import home_site_campus from "../../assets/home_site_camp_us.webp";
 import home_eportfolio from "../../assets/home_eportfolio.webp";
 import home_jeu_de_la_vie from "../../assets/home_jeu_de_la_vie.webp"
 
-class PersonalProjects extends Component{
+class MyProjects extends Component{
 
     render() {
         return(
@@ -108,4 +108,4 @@ class PersonalProjects extends Component{
 
 
 
-export default PersonalProjects;
+export default MyProjects;
