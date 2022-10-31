@@ -42,11 +42,13 @@ const MyProjects = () => {
                         >
                             Try it
                         </a>
-                        <Link
+                        <a
                               className={"bg-[#444] border-l border-[#333] rounded-br-md p-1 w-1/2 text-center text-3xl"}
-                              to={"/personalprojects"}>
+                              href={"https://github.com/Corentin648/Projet8mai"}
+                              target={"_blank"} rel={"noopener noreferrer"}
+                        >
                             <FontAwesomeIcon icon={faGithub}/>
-                        </Link>
+                        </a>
                     </div>
                 </div>
                 <div className={cardClass}>
@@ -89,13 +91,7 @@ const MyProjects = () => {
                     </span>
                     <div className={cardFooterClass}>
                         <a
-                            className={"bg-[#444] border-r border-[#333] rounded-bl-md p-1 w-1/2 text-center text-2xl"}
-                            href={"https://github.com/Corentin648"}
-                            target={"_blank"} rel={"noopener noreferrer"}>
-                            Try it
-                        </a>
-                        <a
-                            className={"bg-[#444] border-l border-[#333] rounded-br-md p-1 w-1/2 text-center text-3xl"}
+                            className={"bg-[#444] border-l border-[#333] rounded-b-md p-1 w-full text-center text-3xl"}
                             href={"https://github.com/Corentin648/GameOfLifeWeb"}
                             target={"_blank"} rel={"noopener noreferrer"}>
                             <FontAwesomeIcon icon={faGithub}/>
