@@ -20,17 +20,16 @@ const AboutMe = () => {
 
                         <br/><b>I really like developing softwares and in particular web sites</b>. I started in my room learning
                         by myself. My studies also help me to understand many underlying concepts of web development.<br/>
-
-                        <br/>As a professional experience, I had the chance to <b>freelance</b> at Phenix Digital as <b>fullstack developer</b>.<br/>
+                        As a professional experience, I had the chance to <b>freelance</b> at Phenix Digital as <b>fullstack developer</b>.<br/>
 
                         <br/>
 
-                        <br/>Beyond this part of my life, <b>sport is very important</b>. I run several times per week and I always like
+                        <br/>Beyond this part of my life, <b>sport is very important</b>. I run and swim several times per week and I always like
                         to learn and practice any kind of sport. I'm also a fanatic of <b>hiking and mountain trekking</b>.<br/>
 
                         <br/>
                         <br/>Aside from physical sport, I'm a <b>chess player</b> from many years, you can by the way challenge me
-                        on chess.com (mettre le lien) ! And when I want to put my brain down, I love to <b>watch and discover new movies</b>.
+                        on <a href={"https://www.chess.com/member/cocodis"} target={"_blank"} rel={"noopener noreferrer"} className={"text-[#008b8b]"}>chess.com</a> ! And when I want to put my brain down, I love to <b>watch and discover new movies</b>.
 
                     </div>
                 </div>
