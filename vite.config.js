@@ -4,26 +4,15 @@ import svgrPlugin from 'vite-plugin-svgr';
 import * as path from "path";
 
 
-const useCredentialsPlugin = () => {
-    return {
-        name: 'html-transform',
-        transformIndexHtml(html) {
-            return html.replace(
-                'crossorigin',
-                '',
-            );
-        },
-    }
-}
-
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [react({
         jsxRuntime: 'classic',
-    }), svgrPlugin(), useCredentialsPlugin()],
+    }), svgrPlugin()],
     build: {
         outDir: 'build',
     },
+    base: '/eportfolio/',
     server: {
         port: 3000,
     },
