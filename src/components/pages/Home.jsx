@@ -8,6 +8,8 @@ import {
     faArrowUpRightFromSquare,
     faUser
 } from "@fortawesome/free-solid-svg-icons";
+import workaway_logo from "../../assets/workaway_logo.webp";
+import photo_carree_corentin from "../../assets/photo_corentin_carree.webp";
 
 
 const Home = () => {
@@ -36,7 +38,7 @@ const Home = () => {
                    <div className={"my-16 flex flex-col md:flex-row items-center"}>
                        <img
                            className={"hidden lg:block md:w-1/3 w-4/5 md:mr-4"}
-                           src={require("../../assets/workaway_logo.webp")}
+                           src={workaway_logo}
                            alt={""}/>
                        <h2
                            className={`lg:ml-4 text-lg xl:text-2xl md:leading-normal text-center lg:text-left ${Theme.textPrimaryColor}`}>
@@ -49,7 +51,7 @@ const Home = () => {
                 <div className={"w-max h-max flex flex-col items-center"}>
                     <img
                         className={"w-60 h-60 max-w-none hidden lg:flex rounded-full"}
-                        src={require("../../assets/photo_corentin_carree.webp")}
+                        src={photo_carree_corentin}
                         alt={""}/>
                     <a id={"inscription-form-button"}
                        className={`py-4 text-sm ${Theme.textSoftPrimaryColor} font-medium hover:underline`}

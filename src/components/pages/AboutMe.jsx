@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/AboutMe.css';
+import big_photo_corentin from "../../assets/big_photo_corentin.webp"
 
 const AboutMe = () => {
     return(
@@ -10,7 +11,7 @@ const AboutMe = () => {
                    <div className={"image-wrapper hidden lg:block mr-16 rounded-3xl lg:float-left"}>
                        <img
                        className={"image rounded-3xl"}
-                       src={require("../../assets/big_photo_corentin.webp")}
+                       src={big_photo_corentin}
                        alt={""}/>
                    </div>
                     <div className={"w-full text-lg lg:text-xl leading-7 text-justify"}>
