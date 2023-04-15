@@ -23,6 +23,7 @@ const App = () => {
             <div className={"hidden md:block pt-[104px]"}></div>
             <Switch>
                 <Route exact path={"/"} component={() => <Home/>}/>
+                <Route path={"/eportfolio"} component={() => <Home/>}/>
                 <Route path={"/leadership"} component={() => <LeadershipManagement/>} />
                 <Route path={"/spanish"} component={() => <Spanish/>} />
                 <Route path={"/mobility"} component={() => <Mobility/>} />
