@@ -66,7 +66,7 @@ const MyProjects = () => {
                     <div className={cardFooterClass}>
                         <Link
                             className={"bg-[#444] border-r border-[#333] rounded-bl-md p-1 w-1/2 text-center text-2xl"}
-                            to={"/"}>
+                            to={"/eportfolio"}>
                             Try it
                         </Link>
                         <a

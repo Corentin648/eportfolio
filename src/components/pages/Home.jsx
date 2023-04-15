@@ -26,12 +26,12 @@ const Home = () => {
                    <div className={"mt-16 flex flex-col sm:flex-row"}>
                        <Link id={"aboutme-button"}
                            className={`slide-button mb-4 sm:mb-0 sm:mr-2 border-2 border-[#333] rounded-md p-3 w-min whitespace-nowrap hover:no-underline ${Theme.textPrimaryColor}`}
-                           to={"/aboutme"}>
+                           to={"/eportfolio/aboutme"}>
                            <FontAwesomeIcon className={"pr-2"} icon={faUser}/>More about me
                        </Link>
                        <Link id={"projects-button"}
                             className={`slide-button sm:ml-2 rounded-md p-3 w-min whitespace-nowrap hover:no-underline text-white`}
-                            to={"/personalprojects"}>
+                            to={"/eportfolio/personalprojects"}>
                             Browse my projects<FontAwesomeIcon className={"pl-2"} icon={faArrowUpRightFromSquare}/>
                        </Link>
                    </div>
@@ -44,7 +44,7 @@ const Home = () => {
                            className={`lg:ml-4 text-lg xl:text-2xl md:leading-normal text-center lg:text-left ${Theme.textPrimaryColor}`}>
                            I just wrote an article about my international mobility at ENSEEIHT, <Link
                            className={`underline ${Theme.textSecondaryColor} ${Theme.textHoverSecondaryColor}`}
-                           to={"/mobility"}>look at it !</Link>
+                           to={"/eportfolio/mobility"}>look at it !</Link>
                        </h2>
                    </div>
                </div>

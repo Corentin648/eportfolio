@@ -22,15 +22,14 @@ const App = () => {
             <Menu/>
             <div className={"hidden md:block pt-[104px]"}></div>
             <Switch>
-                <Route exact path={"/"} component={() => <Home/>}/>
-                <Route path={"/eportfolio"} component={() => <Home/>}/>
-                <Route path={"/leadership"} component={() => <LeadershipManagement/>} />
-                <Route path={"/spanish"} component={() => <Spanish/>} />
-                <Route path={"/mobility"} component={() => <Mobility/>} />
-                <Route path={"/civicengagement"} component={() => <CivicEngagement/>} />
-                <Route path={"/personalprojects"} component={() => <MyProjects/>} />
-                <Route path={"/ppp"} component={() => <PPP/>} />
-                <Route path={"/aboutme"} component={() => <AboutMe/>} />
+                <Route exact path={"/eportfolio"} component={() => <Home/>}/>
+                <Route path={"/eportfolio/leadership"} component={() => <LeadershipManagement/>} />
+                <Route path={"/eportfolio/spanish"} component={() => <Spanish/>} />
+                <Route path={"/eportfolio/mobility"} component={() => <Mobility/>} />
+                <Route path={"/eportfolio/civicengagement"} component={() => <CivicEngagement/>} />
+                <Route path={"/eportfolio/personalprojects"} component={() => <MyProjects/>} />
+                <Route path={"/eportfolio/ppp"} component={() => <PPP/>} />
+                <Route path={"/eportfolio/aboutme"} component={() => <AboutMe/>} />
                 <Route path={"/"} component={() => <div>The page doesn't exist</div>}/>
             </Switch>
 

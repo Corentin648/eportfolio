@@ -54,10 +54,10 @@ const Menu = () => {
                     </button>
                 </div>
 
-                <Link to="/" className="topnav-item rounded-md" onClick={() => handleOpenCloseSidebar()}>Home<hr className={"md:hidden"}/></Link>
-                <Link to="/aboutme" className="topnav-item rounded-md" onClick={() => handleOpenCloseSidebar()}>About me<hr className={"md:hidden"}/></Link>
-                <Link to="/mobility" className={"topnav-item rounded-md"} onClick={() => handleOpenCloseSidebar()}>Mobility<hr className={"md:hidden"}/></Link>
-                <Link to="/personalprojects" className={"topnav-item rounded-md"} onClick={() => handleOpenCloseSidebar()}>My Projects<hr className={"md:hidden"}/></Link>
+                <Link to="/eportfolio" className="topnav-item rounded-md" onClick={() => handleOpenCloseSidebar()}>Home<hr className={"md:hidden"}/></Link>
+                <Link to="/eportfolio/aboutme" className="topnav-item rounded-md" onClick={() => handleOpenCloseSidebar()}>About me<hr className={"md:hidden"}/></Link>
+                <Link to="/eportfolio/mobility" className={"topnav-item rounded-md"} onClick={() => handleOpenCloseSidebar()}>Mobility<hr className={"md:hidden"}/></Link>
+                <Link to="/eportfolio/personalprojects" className={"topnav-item rounded-md"} onClick={() => handleOpenCloseSidebar()}>My Projects<hr className={"md:hidden"}/></Link>
                 <div
                     id={"dropdown"}
                     className={`${dropButtonClick}`}
@@ -72,10 +72,10 @@ const Menu = () => {
                         id={"dropdown-content"}
                         className="md:rounded-md  md:mt-2"
                         onMouseLeave={() => handleOnBlurDropdownContent()}>
-                        <Link to="/leadership" className={"md:rounded-t-md"} onClick={() => handleOpenCloseSidebar()}>Leadership & Management</Link>
-                        <Link to="/civicengagement" className={"md:rounded-b-md"} onClick={() => handleOpenCloseSidebar()}>Civic Engagement</Link>
-                        <Link to="/spanish" className={"md:rounded-t-md"} onClick={() => handleOpenCloseSidebar()}>Spanish</Link>
-                        <Link to="/ppp" className={"md:rounded-b-md"} onClick={() => handleOpenCloseSidebar()}>PPP</Link>
+                        <Link to="/eportfolio/leadership" className={"md:rounded-t-md"} onClick={() => handleOpenCloseSidebar()}>Leadership & Management</Link>
+                        <Link to="/eportfolio/civicengagement" className={"md:rounded-b-md"} onClick={() => handleOpenCloseSidebar()}>Civic Engagement</Link>
+                        <Link to="/eportfolio/spanish" className={"md:rounded-t-md"} onClick={() => handleOpenCloseSidebar()}>Spanish</Link>
+                        <Link to="/eportfolio/ppp" className={"md:rounded-b-md"} onClick={() => handleOpenCloseSidebar()}>PPP</Link>
                     </div>
                 </div>
             </div>
