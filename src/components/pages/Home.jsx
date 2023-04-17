@@ -5,7 +5,7 @@ import {Theme} from "../../theme";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import cv_francais from "../../assets/CV_français.pdf";
 import {
-    faArrowUpRightFromSquare,
+    faArrowRightToBracket,
     faUser
 } from "@fortawesome/free-solid-svg-icons";
 import workaway_logo from "../../assets/workaway_logo.webp";
@@ -32,7 +32,7 @@ const Home = () => {
                        <Link id={"projects-button"}
                             className={`slide-button sm:ml-2 rounded-md p-3 w-min whitespace-nowrap hover:no-underline text-white`}
                             to={"/eportfolio/personalprojects"}>
-                            Browse my projects<FontAwesomeIcon className={"pl-2"} icon={faArrowUpRightFromSquare}/>
+                            Browse my projects<FontAwesomeIcon className={"pl-2"} icon={faArrowRightToBracket} />
                        </Link>
                    </div>
                    <div className={"my-16 flex flex-col md:flex-row items-center"}>
