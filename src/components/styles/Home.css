@@ -16,3 +16,31 @@
 #projects-button {
     background-image: linear-gradient(#008b8b, #008b8b), linear-gradient(#333, #333);
 }
+
+#home-title {
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+#home-title span {
+    display: inline-block;
+    animation: title-fade-in 1s ease-in-out forwards;
+    transform: translateY(110%);
+}
+
+@media screen and (min-width: 768px){
+    #home-title span {
+        animation-delay: 0.4s;
+    }
+}
+
+@keyframes title-fade-in {
+    0% {
+        transform: translateY(110%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+
+}
