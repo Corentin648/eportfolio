@@ -5,9 +5,12 @@ import {Theme} from "../../theme";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import cv_francais from "../../assets/CV_français.pdf";
 import {
-    faArrowRightToBracket,
     faUser
+
 } from "@fortawesome/free-solid-svg-icons";
+import {
+    faFolderOpen
+} from "@fortawesome/free-regular-svg-icons";
 import workaway_logo from "../../assets/workaway_logo.webp";
 import photo_carree_corentin from "../../assets/photo_corentin_carree.webp";
 
@@ -29,12 +32,12 @@ const Home = () => {
                        <Link id={"aboutme-button"}
                            className={`slide-button mb-4 sm:mb-0 sm:mr-2 border-2 border-[#333] rounded-md p-3 w-min whitespace-nowrap hover:no-underline ${Theme.textPrimaryColor}`}
                            to={"/eportfolio/aboutme"}>
-                           <FontAwesomeIcon className={"pr-2"} icon={faUser}/>More about me
+                           <FontAwesomeIcon className={"pr-3"} icon={faUser}/>More about me
                        </Link>
                        <Link id={"projects-button"}
                             className={`slide-button sm:ml-2 rounded-md p-3 w-min whitespace-nowrap hover:no-underline text-white`}
                             to={"/eportfolio/personalprojects"}>
-                            Browse my projects<FontAwesomeIcon className={"pl-2"} icon={faArrowRightToBracket} />
+                            Browse my projects<FontAwesomeIcon className={"pl-3"} icon={faFolderOpen} />
                        </Link>
                    </div>
                    <div className={"my-16 flex flex-col md:flex-row items-center"}>
