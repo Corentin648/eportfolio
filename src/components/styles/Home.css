@@ -28,9 +28,31 @@
     transform: translateY(110%);
 }
 
+#home-subtitle {
+    overflow: hidden;
+}
+
+#home-subtitle span {
+    display: inline-block;
+    animation: title-fade-in 1s ease-in-out forwards;
+    transform: translateY(110%);
+}
+
 @media screen and (min-width: 768px){
     #home-title span {
         animation-delay: 0.4s;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #home-subtitle span {
+        animation-delay: 0.7s;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #home-subtitle span {
+        animation-delay: 0.5s;
     }
 }
 

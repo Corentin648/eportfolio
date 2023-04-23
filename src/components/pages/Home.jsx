@@ -25,8 +25,10 @@ const Home = () => {
                         Hi there ! I'm Corentin Dominguez, a software programming student
                         </span>
                     </h1>
-                   <h3 className={`mt-8 mb-4 ${Theme.textSoftPrimaryColor} text-xl text-left`}>
-                       Currently studying at ENSEEIHT, an engineering school in Toulouse
+                   <h3 id={"home-subtitle"} className={"mt-8 mb-4"}>
+                       <span className={`${Theme.textSoftPrimaryColor} text-xl text-left`}>
+                           Currently studying at ENSEEIHT, an engineering school in Toulouse
+                       </span>
                    </h3>
                    <div className={"mt-16 flex flex-col sm:flex-row"}>
                        <Link id={"aboutme-button"}
